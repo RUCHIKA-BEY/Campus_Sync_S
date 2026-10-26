@@ -1,0 +1,224 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_blank" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#4241bc", "surface-dim": "#d5d9ea", "secondary-fixed": "#dae3f4", "on-primary-fixed-variant": "#3533b0", "on-secondary-fixed-variant": "#3e4755", "on-secondary-container": "#5c6573", "on-tertiary": "#ffffff", "tertiary": "#804300", "surface-variant": "#dee2f3", "surface-container": "#e9edfe", "surface-container-highest": "#dee2f3", "tertiary-fixed-dim": "#ffb77e", "surface-bright": "#faf9ff", "on-tertiary-container": "#ffe8d9", "on-error-container": "#93000a", "on-tertiary-fixed-variant": "#6e3900", "tertiary-fixed": "#ffdcc3", "surface-tint": "#4e4ec9", "inverse-on-surface": "#edf0ff", "on-primary": "#ffffff", "inverse-surface": "#2b303d", "primary-fixed": "#e2dfff", "surface-container-lowest": "#ffffff", "on-primary-container": "#edeaff", "tertiary-container": "#a35700", "inverse-primary": "#c1c1ff", "on-error": "#ffffff", "on-surface": "#161b27", "surface": "#faf9ff", "outline": "#777585", "secondary": "#565f6d", "secondary-fixed-dim": "#bec7d7", "surface-container-high": "#e4e8f8", "secondary-container": "#dae3f4", "error": "#ba1a1a", "on-secondary-fixed": "#131c28", "on-background": "#161b27", "background": "#faf9ff", "on-tertiary-fixed": "#2f1500", "on-primary-fixed": "#0a006b", "on-secondary": "#ffffff", "outline-variant": "#c7c4d6", "primary-fixed-dim": "#c1c1ff", "error-container": "#ffdad6", "primary-container": "#5b5bd6", "surface-container-low": "#f1f3ff", "on-surface-variant": "#464553" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "1rem", "space-md": "0.75rem", "space-xxs": "0.125rem", "margin-lg": "2rem", "margin-md": "1.5rem", "space-2xl": "2rem", "space-sm": "0.5rem", "space-xl": "1.5rem", "gutter-lg": "1.5rem", "gutter": "1rem", "space-lg": "1rem", "space-xs": "0.25rem" }, "fontFamily": { "label-md": ["Inter"], "body-md": ["Inter"], "body-sm": ["Inter"], "label-sm": ["Inter"], "headline-lg": ["Inter"], "code-sm": ["Inter"], "body-lg": ["Inter"], "headline-md": ["Inter"], "headline-sm": ["Inter"], "display-lg": ["Inter"] }, "fontSize": { "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "code-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0em", "fontWeight": "400" }], "body-lg": ["15px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col"><main class="flex-1 flex flex-col relative w-full bg-surface pt-safe pb-safe"><div class="flex flex-col w-full">
+<!-- Interactive State Reviewer Pill Bar (Utility for Design Inspection) -->
+<div class="px-space-md pt-space-xs pb-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">visibility</span>
+<span>Screen State:</span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-highest p-1 rounded-full" id="state-toggle-group">
+<button class="px-space-sm py-0.5 rounded-full font-label-sm text-label-sm bg-primary text-on-primary shadow-sm transition-all" id="btn-state-default" onclick="setScreenState('default')" type="button">Default</button>
+<button class="px-space-sm py-0.5 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" id="btn-state-error" onclick="setScreenState('error')" type="button">Error</button>
+<button class="px-space-sm py-0.5 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" id="btn-state-loading" onclick="setScreenState('loading')" type="button">Loading</button>
+</div>
+</div>
+<!-- Hero Photo Banner -->
+<div class="relative w-full h-44 bg-inverse-surface overflow-hidden">
+<img alt="Students collaborating at study hall" class="w-full h-full object-cover object-center opacity-85" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBmIm_StAtnnR9YYqjY1Tcq6YQ8GWvBkrg9GMH4Jou7gw-IhRyYgkyVzqrNOc9xWvOrbaxfVLhw7p8HB-CMf9iQxUIWem3d-NsxYBovlg1c5Onz4FZBBtcU1TjUwu5zYKPbSIn5nbDa6tEDoSsxh3qwuEq1tHtXD7oT4Glbq_6XXcn_GJbonPbx49IK1t_3Y6A0op2BhvIsGhgmcFQ2w-mngXJpMu_stdaJDM0H-w08NvAUz1B98T7KQ">
+<!-- Gradient Overlay Scrim for Text Readability -->
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/40 to-transparent flex flex-col justify-end p-space-md">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="material-symbols-outlined text-primary-fixed text-[18px]" style="font-variation-settings: 'FILL' 1;">arrow_back_ios_new</span>
+<span class="font-label-sm text-label-sm text-on-primary-container tracking-wider uppercase">Campus Hub</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-inverse-on-surface tracking-tight leading-snug">
+        “Good things happen on campus.”
+      </p>
+</div>
+</div>
+<!-- Main Content Body -->
+<div class="flex flex-col px-space-md pt-space-lg pb-space-2xl space-y-space-lg">
+<!-- Branding Header -->
+<div class="flex flex-col space-y-space-xs">
+<div class="flex items-center gap-space-sm mb-1">
+<div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">sync_saved_locally</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-none tracking-tight">CampusSync</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Central Directory</span>
+</div>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight pt-1">Welcome back.</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Your campus plans, in one place.</p>
+</div>
+<!-- Error Banner / Notification (Toggled by State Switcher) -->
+<div class="hidden rounded-xl bg-error-container p-space-md text-on-error-container shadow-sm" id="error-banner">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-error text-[20px] flex-shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">error</span>
+<div class="flex flex-col flex-1 min-w-0">
+<p class="font-label-md text-label-md font-semibold text-error">Authentication failed</p>
+<p class="font-body-sm text-body-sm text-on-error-container mt-0.5">Incorrect email or password. Please check your institutional ID credentials and try again.</p>
+</div>
+<button class="text-on-error-container/70 hover:text-on-error-container p-1 -mr-1" onclick="setScreenState('default')" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Authentication Form -->
+<form class="flex flex-col space-y-space-md" id="login-form" onsubmit="event.preventDefault(); simulateSubmit();">
+<!-- Email Field -->
+<div class="flex flex-col space-y-space-xs">
+<div class="flex justify-between items-center">
+<label class="font-label-md text-label-md text-on-surface font-medium" for="campus-email">Campus Email</label>
+<span class="font-code-sm text-code-sm text-secondary">SSO / SAML Enabled</span>
+</div>
+<div class="relative flex items-center">
+<span class="absolute left-3 material-symbols-outlined text-on-surface-variant text-[20px] pointer-events-none">mail</span>
+<input autocomplete="email" class="w-full h-12 pl-10 pr-space-md rounded-xl bg-surface-container text-on-surface font-body-md text-body-md placeholder-secondary focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all shadow-sm" id="campus-email" name="email" placeholder="you@university.edu" required="" type="email" value="m.garcia@university.edu">
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Use your official institution credentials (.edu)</p>
+</div>
+<!-- Password Field -->
+<div class="flex flex-col space-y-space-xs">
+<div class="flex justify-between items-center">
+<label class="font-label-md text-label-md text-on-surface font-medium" for="campus-password">Password</label>
+<button class="font-label-sm text-label-sm text-primary hover:text-on-primary-fixed-variant transition-colors" type="button">Forgot password?</button>
+</div>
+<div class="relative flex items-center">
+<span class="absolute left-3 material-symbols-outlined text-on-surface-variant text-[20px] pointer-events-none">lock</span>
+<input autocomplete="current-password" class="w-full h-12 pl-10 pr-12 rounded-xl bg-surface-container text-on-surface font-body-md text-body-md placeholder-secondary focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all shadow-sm" id="campus-password" name="password" placeholder="Enter your security passkey" required="" type="password" value="PasswordDemo2025">
+<button aria-label="Toggle password visibility" class="absolute right-3 w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" id="pwd-toggle-btn" onclick="togglePasswordVisibility()" type="button">
+<span class="material-symbols-outlined text-[20px]" id="pwd-icon">visibility</span>
+</button>
+</div>
+</div>
+<!-- Auto-Routing Intelligence Note -->
+<div class="rounded-xl bg-surface-container-low p-space-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[18px] flex-shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">route</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+<span class="font-medium text-on-surface">Universal Gateway:</span> No role selection required — your account automatically routes to your student, organizer, or DSA workspace.
+        </p>
+</div>
+<!-- Primary Action Button (Sign in / Loading State) -->
+<div class="pt-space-xs">
+<button class="w-full h-12 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-space-sm shadow-md hover:bg-on-primary-fixed-variant active:scale-[0.98] transition-all" id="btn-submit" type="submit">
+<span class="flex items-center gap-space-sm" id="btn-text">
+<span>Sign in to CampusSync</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</span>
+<span class="hidden items-center gap-space-sm" id="btn-spinner">
+<svg class="animate-spin h-5 w-5 text-on-primary" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+<path class="opacity-75" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" fill="currentColor"></path>
+</svg>
+<span>Verifying identity...</span>
+</span>
+</button>
+</div>
+</form>
+<!-- Institutional Quick Info Cards -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<div class="p-space-sm rounded-xl bg-surface-container flex flex-col space-y-1">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span class="font-label-sm text-label-sm font-semibold">2FA Enforced</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Duo &amp; YubiKey hardware keys supported.</p>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container flex flex-col space-y-1">
+<div class="flex items-center gap-1 text-tertiary-container">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+<span class="font-label-sm text-label-sm font-semibold">Session Cache</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Stay verified for 14 active campus days.</p>
+</div>
+</div>
+<!-- Help & Support Footer -->
+<div class="pt-space-md text-center flex flex-col items-center space-y-space-xs">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Need assistance with your university account?
+      </p>
+<div class="flex items-center justify-center gap-space-sm flex-wrap">
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary hover:underline" href="tel:5550198">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>IT Help Desk (Ext. 4357)</span>
+</a>
+<span class="text-on-surface-variant">•</span>
+<button class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">help</span>
+<span>Claim Student Access</span>
+</button>
+</div>
+<p class="font-code-sm text-code-sm text-secondary pt-space-sm">
+        CampusSync OS v4.8.2 • Secure Institutional Protocol
+      </p>
+</div>
+</div>
+</div>
+<script>
+  let currentState = 'default';
+
+  function setScreenState(state) {
+    currentState = state;
+    const btnDefault = document.getElementById('btn-state-default');
+    const btnError = document.getElementById('btn-state-error');
+    const btnLoading = document.getElementById('btn-state-loading');
+    const errorBanner = document.getElementById('error-banner');
+    const btnSubmit = document.getElementById('btn-submit');
+    const btnText = document.getElementById('btn-text');
+    const btnSpinner = document.getElementById('btn-spinner');
+    const emailInput = document.getElementById('campus-email');
+    const passwordInput = document.getElementById('campus-password');
+
+    // Reset pill styles
+    [btnDefault, btnError, btnLoading].forEach(btn => {
+      btn.className = 'px-space-sm py-0.5 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all';
+    });
+
+    if (state === 'default') {
+      btnDefault.className = 'px-space-sm py-0.5 rounded-full font-label-sm text-label-sm bg-primary text-on-primary shadow-sm transition-all';
+      errorBanner.classList.add('hidden');
+      btnSubmit.removeAttribute('disabled');
+      btnSubmit.classList.remove('opacity-75', 'cursor-not-allowed');
+      btnText.classList.remove('hidden');
+      btnText.classList.add('flex');
+      btnSpinner.classList.add('hidden');
+      btnSpinner.classList.remove('flex');
+      emailInput.classList.remove('bg-error-container', 'text-on-error-container');
+      passwordInput.classList.remove('bg-error-container', 'text-on-error-container');
+    } else if (state === 'error') {
+      btnError.className = 'px-space-sm py-0.5 rounded-full font-label-sm text-label-sm bg-error text-on-error shadow-sm transition-all';
+      errorBanner.classList.remove('hidden');
+      btnSubmit.removeAttribute('disabled');
+      btnSubmit.classList.remove('opacity-75', 'cursor-not-allowed');
+      btnText.classList.remove('hidden');
+      btnText.classList.add('flex');
+      btnSpinner.classList.add('hidden');
+      btnSpinner.classList.remove('flex');
+      emailInput.classList.add('bg-error-container', 'text-on-error-container');
+      passwordInput.classList.add('bg-error-container', 'text-on-error-container');
+    } else if (state === 'loading') {
+      btnLoading.className = 'px-space-sm py-0.5 rounded-full font-label-sm text-label-sm bg-primary text-on-primary shadow-sm transition-all';
+      errorBanner.classList.add('hidden');
+      btnSubmit.setAttribute('disabled', 'true');
+      btnSubmit.classList.add('opacity-75', 'cursor-not-allowed');
+      btnText.classList.add('hidden');
+      btnText.classList.remove('flex');
+      btnSpinner.classList.remove('hidden');
+      btnSpinner.classList.add('flex');
+      emailInput.classList.remove('bg-error-container', 'text-on-error-container');
+      passwordInput.classList.remove('bg-error-container', 'text-on-error-container');
+    }
+  }
+
+  function togglePasswordVisibility() {
+    const input = document.getElementById('campus-password');
+    const icon = document.getElementById('pwd-icon');
+    if (input.type === 'password') {
+      input.type = 'text';
+      icon.textContent = 'visibility_off';
+    } else {
+      input.type = 'password';
+      icon.textContent = 'visibility';
+    }
+  }
+
+  function simulateSubmit() {
+    setScreenState('loading');
+    setTimeout(() => {
+      // Simulate quick bounce back to default with successful feedback or reset
+      setScreenState('default');
+    }, 2400);
+  }
+</script></main></body></html>

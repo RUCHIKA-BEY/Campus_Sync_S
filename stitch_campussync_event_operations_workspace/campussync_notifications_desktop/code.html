@@ -1,0 +1,661 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-container":"#dae3f4","on-secondary":"#ffffff","tertiary":"#804300","surface-dim":"#d5d9ea","surface":"#faf9ff","on-error":"#ffffff","on-tertiary-fixed-variant":"#6e3900","tertiary-container":"#a35700","on-surface-variant":"#464553","inverse-surface":"#2b303d","on-primary-container":"#edeaff","on-primary":"#ffffff","primary-container":"#5b5bd6","inverse-primary":"#c1c1ff","on-primary-fixed":"#0a006b","on-tertiary":"#ffffff","surface-container-highest":"#dee2f3","tertiary-fixed":"#ffdcc3","surface-container-high":"#e4e8f8","secondary-fixed-dim":"#bec7d7","on-tertiary-fixed":"#2f1500","primary":"#4241bc","on-secondary-container":"#5c6573","outline":"#777585","surface-bright":"#faf9ff","tertiary-fixed-dim":"#ffb77e","primary-fixed":"#e2dfff","error":"#ba1a1a","secondary":"#565f6d","surface-container-low":"#f1f3ff","background":"#faf9ff","secondary-fixed":"#dae3f4","surface-container":"#e9edfe","primary-fixed-dim":"#c1c1ff","on-error-container":"#93000a","outline-variant":"#c7c4d6","on-secondary-fixed-variant":"#3e4755","on-secondary-fixed":"#131c28","on-primary-fixed-variant":"#3533b0","surface-variant":"#dee2f3","surface-container-lowest":"#ffffff","error-container":"#ffdad6","on-background":"#161b27","inverse-on-surface":"#edf0ff","on-tertiary-container":"#ffe8d9","surface-tint":"#4e4ec9","on-surface":"#161b27"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-xl":"1.5rem","gutter-lg":"1.5rem","space-xxs":"0.125rem","space-sm":"0.5rem","space-xs":"0.25rem","gutter":"1rem","margin-md":"1.5rem","space-2xl":"2rem","space-md":"0.75rem","margin":"1rem","space-lg":"1rem","margin-lg":"2rem"},fontFamily:{"display-lg":["Inter"],"body-lg":["Inter"],"body-md":["Inter"],"label-md":["Inter"],"headline-md":["Inter"],"body-sm":["Inter"],"code-sm":["Inter"],"label-sm":["Inter"],"headline-lg":["Inter"],"headline-sm":["Inter"]},fontSize:{"display-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"600"}],"body-lg":["15px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"400"}],"body-md":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"label-md":["13px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"500"}],"headline-md":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"18px",letterSpacing:"0em",fontWeight:"400"}],"code-sm":["12px",{lineHeight:"16px",letterSpacing:"0em",fontWeight:"400"}],"label-sm":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"500"}],"headline-lg":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-sm":["16px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-60 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-space-lg"><div class="flex flex-col"><div class="px-space-lg pb-space-lg flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">grid_view</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">CampusSync</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none mt-space-xxs">Student Workspace</span></div></div><div class="px-space-md py-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Navigation</div><nav class="flex flex-col gap-space-xxs mt-space-xs" data-active-classes="bg-primary-container text-on-primary font-label-md rounded-lg shadow-sm"><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="home" href="#">Home</a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="discover" href="#">Discover</a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="my-events" href="#">My Events</a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="timetable" href="#">Timetable</a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="profile" href="#">Profile</a></nav></div></div><div class="px-space-md"><div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">Academic Term</span><span class="inline-flex items-center px-space-xs py-space-xxs rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container">Fall 2024</span></div><div class="flex items-center justify-between mt-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant">Status</span><div class="flex items-center gap-space-xxs"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span><span class="font-label-sm text-label-sm text-on-surface">Enrolled</span></div></div></div></div></aside><div class="pl-60 min-h-screen flex flex-col"><header class="fixed top-0 left-60 right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-lg"><div class="flex-1 max-w-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-md text-outline text-[18px] pointer-events-none">search</span><input class="w-full h-9 pl-10 pr-space-md bg-surface-container-lowest text-on-surface placeholder:text-outline text-body-sm font-body-sm rounded-lg border-none shadow-[0_1px_4px_rgba(0,0,0,0.04)] focus:outline-none focus:ring-2 focus:ring-primary-container" placeholder="Search courses, rooms, faculty, or exam dates..." type="text"></div></div><div class="flex items-center gap-gutter"><nav class="flex items-center" data-active-classes="bg-surface-container-high text-primary rounded-lg ring-1 ring-primary-container"><a aria-current="page" class="w-9 h-9 flex items-center justify-center transition-colors relative bg-surface-container-high text-primary rounded-lg ring-1 ring-primary-container" data-path="notifications" href="#" title="Notifications"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></a></nav><div class="flex items-center gap-space-md pl-space-sm"><div class="flex flex-col text-right hidden sm:flex"><span class="font-label-md text-label-md text-on-surface leading-tight">Alex Morgan</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">B.S. Comp Sci</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 px-gutter-lg pb-margin-lg bg-background flex-1"><div class="flex flex-col w-full">
+<!-- Top Breadcrumb & Control Bar -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col gap-space-xxs">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>Student Registry</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-label-md">Notifications</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-space-xs">Notifications</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-2xl">
+        Stay updated on event confirmations, venue changes, On-Duty (OD) request decisions, and post-event feedback.
+      </p>
+</div>
+<!-- Global Actions -->
+<div class="flex items-center gap-space-sm self-start sm:self-center">
+<button class="h-9 px-space-md rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md shadow-sm flex items-center gap-space-xs" id="mark-all-read-btn">
+<span class="material-symbols-outlined text-[18px] text-primary">done_all</span>
+<span>Mark all as read</span>
+</button>
+<button class="h-9 px-space-md rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md shadow-sm flex items-center gap-space-xs" id="open-prefs-btn" title="Notification Preferences">
+<span class="material-symbols-outlined text-[18px] text-secondary">tune</span>
+<span class="hidden md:inline">Preferences</span>
+</button>
+</div>
+</div>
+<!-- Main Split Layout (Notifications Feed + Contextual Inspector Preview) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Feed Column (Left / Main) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Filter Controls & Quick Metrics -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex items-center justify-between gap-space-md flex-wrap">
+<!-- Segmented Filter Tabs -->
+<div class="inline-flex p-space-xxs bg-surface-container-low rounded-lg gap-space-xxs" role="tablist">
+<button class="filter-tab px-space-md py-1 rounded-md font-label-md text-label-md bg-surface-container-lowest text-on-surface shadow-sm transition-all flex items-center gap-space-xs" data-filter="all" id="tab-all">
+<span>All</span>
+<span class="px-space-xs py-space-xxs rounded-full text-label-sm font-label-sm bg-surface-container text-on-surface-variant" id="badge-all-count">6</span>
+</button>
+<button class="filter-tab px-space-md py-1 rounded-md font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-space-xs" data-filter="unread" id="tab-unread">
+<span>Unread</span>
+<span class="px-space-xs py-space-xxs rounded-full text-label-sm font-label-sm bg-primary-container text-on-primary" id="badge-unread-count">3</span>
+</button>
+</div>
+<!-- Quick Feed Summary Status -->
+<div class="flex items-center gap-space-md px-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-space-xxs">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span id="status-feed-text">Showing all updates</span>
+</span>
+<span class="text-outline-variant">|</span>
+<span class="hidden sm:inline">Academic Term: Fall 2024</span>
+</div>
+</div>
+<!-- Section: Today -->
+<div class="section-group flex flex-col gap-space-sm" data-section="today">
+<div class="flex items-center justify-between px-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Today</span>
+<span class="section-badge inline-flex items-center px-space-xs py-space-xxs rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant">3 items</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Nov 14, 2024</span>
+</div>
+<!-- Notification Item 1: Venue update (Unread, Active Selection) -->
+<article class="notification-item is-unread cursor-pointer rounded-xl bg-surface-container-lowest p-space-md shadow-sm transition-all hover:bg-surface-container-low flex flex-col sm:flex-row items-start gap-space-md relative overflow-hidden" data-id="notif-1" data-unread="true">
+<!-- Selection indicator bar -->
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary-container"></div>
+<!-- Category Icon Badge -->
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed flex items-center justify-center shrink-0 text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[20px]">pin_drop</span>
+</div>
+<div class="flex-1 min-w-0 flex flex-col gap-space-xxs">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Venue update: AI Builders Workshop</span>
+<span class="unread-dot w-2 h-2 rounded-full bg-primary-container shrink-0" title="Unread"></span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant shrink-0">15m ago</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Relocated to Seminar Hall B (Turing Wing, 2nd Floor) due to increased capacity. Session time remains 2:00 PM – 4:00 PM.
+            </p>
+<div class="flex items-center justify-between pt-space-xs mt-space-xxs">
+<button class="inline-flex items-center gap-space-xxs text-primary font-label-md text-label-md hover:underline p-0 bg-transparent" onclick="selectNotification('notif-1')">
+<span>View Event Details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+<span class="font-label-sm text-label-sm text-secondary px-space-xs py-space-xxs rounded bg-surface-container-low">Event Logistics</span>
+</div>
+</div>
+</article>
+<!-- Notification Item 2: OD Request Approved (Unread) -->
+<article class="notification-item is-unread cursor-pointer rounded-xl bg-surface-container-lowest p-space-md shadow-sm transition-all hover:bg-surface-container-low flex flex-col sm:flex-row items-start gap-space-md relative overflow-hidden" data-id="notif-2" data-unread="true">
+<!-- Category Icon Badge -->
+<div class="w-10 h-10 rounded-lg bg-secondary-container flex items-center justify-center shrink-0 text-on-secondary-container">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="flex-1 min-w-0 flex flex-col gap-space-xxs">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">OD request approved: CS-302 Web Technology</span>
+<span class="unread-dot w-2 h-2 rounded-full bg-primary-container shrink-0" title="Unread"></span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant shrink-0">2h ago</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Course Coordinator Prof. Vance approved duty leave for AI Builders Workshop. On-duty attendance is now logged in CampusSync.
+            </p>
+<div class="flex items-center justify-between pt-space-xs mt-space-xxs">
+<button class="inline-flex items-center gap-space-xxs text-primary font-label-md text-label-md hover:underline p-0 bg-transparent" onclick="selectNotification('notif-2')">
+<span>View OD Request</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+<span class="font-label-sm text-label-sm text-on-secondary-container px-space-xs py-space-xxs rounded bg-secondary-container">Duty Leave • Logged</span>
+</div>
+</div>
+</article>
+<!-- Notification Item 3: Registration Confirmed (Read, with Image Thumbnail) -->
+<article class="notification-item cursor-pointer rounded-xl bg-surface-container-lowest p-space-md shadow-sm transition-all hover:bg-surface-container-low flex flex-col sm:flex-row items-start gap-space-md relative overflow-hidden" data-id="notif-3" data-unread="false">
+<!-- Thumbnail Image badge using dataset image -->
+<div class="w-12 h-12 rounded-lg overflow-hidden shrink-0 bg-surface-container relative">
+<img alt="AI Builders Workshop preview" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XXTNstWuShBXQKozQ8uEuqcpwXYFS2y5YybycS8A3y7dHs36rEggeVsmZs-fVoUrEVnOeLAgO6ZPbGxB5S-LIJ5QWiXc_or_kEukhLMvkW19PeCa_YWtLOZ2BeJvMdu_2sVV1yqw8btLsNCBLtxs3AnkBkdztPtNLMp-Xlujps6ChTipzwEZYqBEegBDi_gwn4SBA0A_2QbuuPRy-cOvFlpZ5zOyjSgg0Kp-kR7yVkGFPwBSj8L2D6Vjg">
+</div>
+<div class="flex-1 min-w-0 flex flex-col gap-space-xxs">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Registration confirmed: AI Builders Workshop</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant shrink-0">5h ago</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Your seat #042 has been secured. Fast-pass QR code is ready in your event pass.
+            </p>
+<div class="flex items-center justify-between pt-space-xs mt-space-xxs">
+<button class="inline-flex items-center gap-space-xxs text-primary font-label-md text-label-md hover:underline p-0 bg-transparent" onclick="selectNotification('notif-3')">
+<span>View Event Pass</span>
+<span class="material-symbols-outlined text-[16px]">qr_code</span>
+</button>
+<span class="font-label-sm text-label-sm text-secondary px-space-xs py-space-xxs rounded bg-surface-container-low">Confirmed Seat #042</span>
+</div>
+</div>
+</article>
+</div>
+<!-- Section: Earlier -->
+<div class="section-group flex flex-col gap-space-sm mt-space-sm" data-section="earlier">
+<div class="flex items-center justify-between px-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Earlier</span>
+<span class="section-badge inline-flex items-center px-space-xs py-space-xxs rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant">3 items</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Past 7 days</span>
+</div>
+<!-- Notification Item 4: Event Cancelled (Unread) -->
+<article class="notification-item is-unread cursor-pointer rounded-xl bg-surface-container-lowest p-space-md shadow-sm transition-all hover:bg-surface-container-low flex flex-col sm:flex-row items-start gap-space-md relative overflow-hidden" data-id="notif-4" data-unread="true">
+<!-- Alert Category Badge -->
+<div class="w-10 h-10 rounded-lg bg-error-container flex items-center justify-center shrink-0 text-on-error-container">
+<span class="material-symbols-outlined text-[20px]">event_busy</span>
+</div>
+<div class="flex-1 min-w-0 flex flex-col gap-space-xxs">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Event cancelled: Robotic Vision Demo Day</span>
+<span class="unread-dot w-2 h-2 rounded-full bg-primary-container shrink-0" title="Unread"></span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant shrink-0">Yesterday, 4:15 PM</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              The Robotics Club has postponed this session due to lab equipment maintenance. Your calendar slot has been cleared.
+            </p>
+<div class="flex items-center justify-between pt-space-xs mt-space-xxs">
+<button class="inline-flex items-center gap-space-xxs text-primary font-label-md text-label-md hover:underline p-0 bg-transparent" onclick="selectNotification('notif-4')">
+<span>Browse Alternatives</span>
+<span class="material-symbols-outlined text-[16px]">explore</span>
+</button>
+<span class="font-label-sm text-label-sm text-on-error-container px-space-xs py-space-xxs rounded bg-error-container">Session Postponed</span>
+</div>
+</div>
+</article>
+<!-- Notification Item 5: Feedback Available (Read, with Music Image Thumbnail) -->
+<article class="notification-item cursor-pointer rounded-xl bg-surface-container-lowest p-space-md shadow-sm transition-all hover:bg-surface-container-low flex flex-col sm:flex-row items-start gap-space-md relative overflow-hidden" data-id="notif-5" data-unread="false">
+<!-- Thumbnail Image badge -->
+<div class="w-12 h-12 rounded-lg overflow-hidden shrink-0 bg-surface-container relative">
+<img alt="Indie Night Amphitheater preview" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1Vj4oOqN1Neq581Nhcec0qpVtlNpKcrKTP_D4VyNWOCkOQra04vEBjY1xGWGMeSGFQP988B0ExljmQpJ7H2UiWelhUKZW8d4ElqVBaxVOTZFdCC4tv9Z3zdv-O4mTP8aIg0uzUCguUGrIZCJYqcTRBLdrTIwTA6Jt3DjTummxEeROLcFTuHv-2eLwLbEYPHei8eFByJ5bfMMVlCP7SzCr09nySY5wFJdDXDasYMuy7Lhqs02_BfRAeM9GsL">
+</div>
+<div class="flex-1 min-w-0 flex flex-col gap-space-xxs">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Feedback requested: Indie Night Amphitheater</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant shrink-0">Nov 12, 10:30 AM</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Thanks for attending! Tell Campus Music Guild how the sound stage and acoustics went to help improve upcoming concerts.
+            </p>
+<div class="flex items-center justify-between pt-space-xs mt-space-xxs">
+<button class="inline-flex items-center gap-space-xxs text-primary font-label-md text-label-md hover:underline p-0 bg-transparent" onclick="selectNotification('notif-5')">
+<span>Submit Feedback (2 mins)</span>
+<span class="material-symbols-outlined text-[16px]">rate_review</span>
+</button>
+<span class="font-label-sm text-label-sm text-on-primary-fixed-variant px-space-xs py-space-xxs rounded bg-primary-fixed">Guild Survey</span>
+</div>
+</div>
+</article>
+<!-- Notification Item 6: Timetable Safeguard (Read) -->
+<article class="notification-item cursor-pointer rounded-xl bg-surface-container-lowest p-space-md shadow-sm transition-all hover:bg-surface-container-low flex flex-col sm:flex-row items-start gap-space-md relative overflow-hidden" data-id="notif-6" data-unread="false">
+<!-- Blue Calendar badge -->
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">sync</span>
+</div>
+<div class="flex-1 min-w-0 flex flex-col gap-space-xxs">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Timetable sync completed</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant shrink-0">Nov 10, 8:00 AM</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              7 weekly classes and 2 break intervals synced for Term 2024-25 (CS-SEC-B).
+            </p>
+<div class="flex items-center justify-between pt-space-xs mt-space-xxs">
+<button class="inline-flex items-center gap-space-xxs text-primary font-label-md text-label-md hover:underline p-0 bg-transparent" onclick="selectNotification('notif-6')">
+<span>Check Timetable</span>
+<span class="material-symbols-outlined text-[16px]">calendar_month</span>
+</button>
+<span class="font-label-sm text-label-sm text-secondary px-space-xs py-space-xxs rounded bg-surface-container-low">Academic Sync</span>
+</div>
+</div>
+</article>
+</div>
+<!-- Empty state container for Unread Filter if cleared -->
+<div class="hidden bg-surface-container-lowest rounded-xl p-space-2xl text-center flex-col items-center justify-center shadow-sm" id="empty-state">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary-container mb-space-sm">
+<span class="material-symbols-outlined text-[26px]">mark_email_read</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">All caught up!</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm mt-space-xxs">
+          You don't have any unread notifications. Check back later or switch back to the "All" tab.
+        </p>
+<button class="mt-space-md px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md" onclick="setFilter('all')">
+          View All Notifications
+        </button>
+</div>
+</div>
+<!-- Inspector / Contextual Details Column (Right Side Panel, 4 Cols) -->
+<aside class="lg:col-span-4 sticky top-20 flex flex-col gap-space-md">
+<!-- Notification Detail Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md" id="inspector-card">
+<!-- Inspector Header -->
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-medium">Selected Update</span>
+</div>
+<span class="px-space-xs py-space-xxs rounded-full font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed" id="detail-tag">
+            Venue Change
+          </span>
+</div>
+<!-- Detail Title and Meta -->
+<div class="flex flex-col gap-space-xxs">
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight" id="detail-title">
+            Venue update: AI Builders Workshop
+          </h2>
+<span class="font-code-sm text-code-sm text-on-surface-variant" id="detail-timestamp">
+            Delivered Today at 1:45 PM • 15 minutes ago
+          </span>
+</div>
+<!-- Detail Body Message -->
+<div class="p-space-md bg-surface-container-low rounded-lg flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Notice Summary</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed" id="detail-body">
+            The event team has relocated this session to Seminar Hall B (Turing Wing, 2nd Floor) to accommodate additional attendees. Start time remains exactly 2:00 PM. Please proceed directly to Turing Wing East staircase.
+          </p>
+</div>
+<!-- Structured Key-Value Metadata Grid -->
+<div class="grid grid-cols-2 gap-space-sm text-body-sm">
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">New Location</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold mt-space-xxs" id="detail-meta-location">Seminar Hall B</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Schedule</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold mt-space-xxs" id="detail-meta-time">2:00 – 4:00 PM</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Duty Leave (OD)</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold mt-space-xxs" id="detail-meta-od">Approved (CS-302)</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pass Status</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold mt-space-xxs" id="detail-meta-pass">Seat #042 Ready</span>
+</div>
+</div>
+<!-- Action Toolbar -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<button class="w-full h-9 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-space-xs transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">calendar_add_on</span>
+<span>Update Calendar Slot</span>
+</button>
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="h-8 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md flex items-center justify-center gap-space-xxs transition-colors">
+<span class="material-symbols-outlined text-[16px]">confirmation_number</span>
+<span>Event Pass</span>
+</button>
+<button class="h-8 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center justify-center gap-space-xxs transition-colors" id="dismiss-active-btn">
+<span class="material-symbols-outlined text-[16px]">done</span>
+<span>Mark as Read</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Delivery Preferences Mini-Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">notifications_active</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Delivery Channels</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Sync Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Notifications are instantly pushed to your student email (<span class="font-semibold text-on-surface">a.morgan@campus.edu</span>) and the mobile companion app.
+        </p>
+<div class="flex flex-col gap-space-xs pt-space-xxs">
+<label class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors">
+<span class="font-label-md text-label-md text-on-surface">Immediate Venue &amp; Timing Alerts</span>
+<input checked="" class="w-4 h-4 rounded text-primary-container focus:ring-0 accent-primary-container" type="checkbox">
+</label>
+<label class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors">
+<span class="font-label-md text-label-md text-on-surface">On-Duty Faculty Sign-Offs</span>
+<input checked="" class="w-4 h-4 rounded text-primary-container focus:ring-0 accent-primary-container" type="checkbox">
+</label>
+<label class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors">
+<span class="font-label-md text-label-md text-on-surface">Post-Event Feedback Prompts</span>
+<input checked="" class="w-4 h-4 rounded text-primary-container focus:ring-0 accent-primary-container" type="checkbox">
+</label>
+</div>
+</div>
+</aside>
+</div>
+</div>
+<!-- Preferences Slide-Over Drawer Modal -->
+<div aria-labelledby="modal-title" aria-modal="true" class="fixed inset-0 z-50 hidden" id="prefs-modal" role="dialog">
+<!-- Backdrop -->
+<div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm transition-opacity" id="prefs-backdrop"></div>
+<div class="fixed inset-y-0 right-0 max-w-full flex pl-10">
+<div class="w-screen max-w-md bg-surface-container-lowest shadow-xl flex flex-col justify-between">
+<!-- Drawer Header -->
+<div class="p-space-lg bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold" id="modal-title">Notification Settings</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Student Registry Dispatch Rules</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors" id="close-prefs-btn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Drawer Content -->
+<div class="p-space-lg overflow-y-auto flex-1 flex flex-col gap-space-lg">
+<!-- Category Group 1 -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Priority Schedule Notices</span>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-start justify-between p-space-sm bg-surface-container-low rounded-lg">
+<div>
+<p class="font-label-md text-label-md text-on-surface font-medium">Emergency Venue Shifts</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">High-priority SMS and desktop banner alerts</p>
+</div>
+<input checked="" class="mt-1 w-4 h-4 accent-primary-container rounded cursor-not-allowed" disabled="" type="checkbox">
+</div>
+<div class="flex items-start justify-between p-space-sm bg-surface-container-low rounded-lg">
+<div>
+<p class="font-label-md text-label-md text-on-surface font-medium">OD Leave Approvals</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Notify when course coordinator signs attendance</p>
+</div>
+<input checked="" class="mt-1 w-4 h-4 accent-primary-container rounded" type="checkbox">
+</div>
+</div>
+</div>
+<!-- Category Group 2 -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Events &amp; Community</span>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-start justify-between p-space-sm bg-surface-container-low rounded-lg">
+<div>
+<p class="font-label-md text-label-md text-on-surface font-medium">Registered Event Reminders</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Send reminder 1 hour prior to session door open</p>
+</div>
+<input checked="" class="mt-1 w-4 h-4 accent-primary-container rounded" type="checkbox">
+</div>
+<div class="flex items-start justify-between p-space-sm bg-surface-container-low rounded-lg">
+<div>
+<p class="font-label-md text-label-md text-on-surface font-medium">Surveys &amp; Fast Reviews</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Request feedback after attending campus guild events</p>
+</div>
+<input checked="" class="mt-1 w-4 h-4 accent-primary-container rounded" type="checkbox">
+</div>
+</div>
+</div>
+<!-- Notification Frequency Box -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Email Digest Frequency</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Summary of non-critical event news and club updates.</p>
+<select class="mt-space-xs w-full h-9 px-space-sm bg-surface-container-lowest rounded-lg text-body-sm font-body-sm text-on-surface focus:outline-none">
+<option>Daily 8:00 AM Digest</option>
+<option>Weekly Monday Morning Digest</option>
+<option>Instant (Every Notification)</option>
+</select>
+</div>
+</div>
+<!-- Drawer Footer -->
+<div class="p-space-lg bg-surface-container-lowest flex items-center justify-end gap-space-sm">
+<button class="h-9 px-space-md rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-colors" id="cancel-prefs-btn">
+          Cancel
+        </button>
+<button class="h-9 px-space-md rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md transition-colors shadow-sm" id="save-prefs-btn">
+          Save Preferences
+        </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Inline Interaction Behavior -->
+<script>
+  (function() {
+    // Notification Detail Data Map
+    const notificationData = {
+      'notif-1': {
+        tag: 'Venue Change',
+        tagClass: 'bg-tertiary-fixed text-on-tertiary-fixed',
+        title: 'Venue update: AI Builders Workshop',
+        timestamp: 'Delivered Today at 1:45 PM • 15 minutes ago',
+        body: 'The event team has relocated this session to Seminar Hall B (Turing Wing, 2nd Floor) to accommodate additional attendees. Start time remains exactly 2:00 PM. Please proceed directly to Turing Wing East staircase.',
+        location: 'Seminar Hall B',
+        schedule: '2:00 – 4:00 PM',
+        od: 'Approved (CS-302)',
+        pass: 'Seat #042 Ready'
+      },
+      'notif-2': {
+        tag: 'OD Decision',
+        tagClass: 'bg-secondary-container text-on-secondary-container',
+        title: 'OD request approved: CS-302 Web Technology',
+        timestamp: 'Delivered Today at 12:00 PM • 2 hours ago',
+        body: 'Course Coordinator Prof. Vance approved duty leave for AI Builders Workshop. On-duty attendance is now logged in CampusSync. The system has automatically credited your class attendance register.',
+        location: 'Turing Hall A',
+        schedule: 'Full Day Covered',
+        od: 'Signed Prof. Vance',
+        pass: 'Logged #OD-884'
+      },
+      'notif-3': {
+        tag: 'Pass Confirmed',
+        tagClass: 'bg-surface-container-high text-on-surface',
+        title: 'Registration confirmed: AI Builders Workshop',
+        timestamp: 'Delivered Today at 9:00 AM • 5 hours ago',
+        body: 'Your ticket has been confirmed. Fast-pass QR code is generated and ready to present at the door. Please bring your student ID card alongside the mobile fast-pass.',
+        location: 'Seminar Hall B',
+        schedule: '2:00 – 4:00 PM',
+        od: 'Submitted',
+        pass: 'Pass #042 (Confirmed)'
+      },
+      'notif-4': {
+        tag: 'Cancelled',
+        tagClass: 'bg-error-container text-on-error-container',
+        title: 'Event cancelled: Robotic Vision Demo Day',
+        timestamp: 'Delivered Yesterday at 4:15 PM',
+        body: 'The Robotics Club has postponed this session due to lab equipment maintenance. Your calendar slot has been cleared and no action is required on your timetable.',
+        location: 'Robotics Lab 3',
+        schedule: 'Cancelled',
+        od: 'Revoked (Safe)',
+        pass: 'Refunded / N/A'
+      },
+      'notif-5': {
+        tag: 'Feedback Request',
+        tagClass: 'bg-primary-fixed text-on-primary-fixed-variant',
+        title: 'Feedback requested: Indie Night Amphitheater',
+        timestamp: 'Delivered Nov 12, 10:30 AM',
+        body: 'Thanks for attending! Tell Campus Music Guild how the sound stage and acoustics went to help improve upcoming concerts. Submissions take under two minutes.',
+        location: 'Open Amphitheater',
+        schedule: 'Concluded',
+        od: 'Not Applicable',
+        pass: 'Attended'
+      },
+      'notif-6': {
+        tag: 'Timetable Sync',
+        tagClass: 'bg-surface-container text-primary',
+        title: 'Timetable sync completed',
+        timestamp: 'Delivered Nov 10, 8:00 AM',
+        body: '7 weekly classes and 2 break intervals synced for Term 2024-25 (CS-SEC-B). The schedule has been reconciled with official department records without conflicts.',
+        location: 'CS Department',
+        schedule: 'Term 2024-25',
+        od: 'Auto-sync active',
+        pass: 'Enrolled'
+      }
+    };
+
+    let activeFilter = 'all';
+    let currentSelectedId = 'notif-1';
+
+    window.selectNotification = function(id) {
+      currentSelectedId = id;
+      const data = notificationData[id];
+      if (!data) return;
+
+      // Update Inspector Panel UI
+      const tagEl = document.getElementById('detail-tag');
+      tagEl.textContent = data.tag;
+      tagEl.className = 'px-space-xs py-space-xxs rounded-full font-label-sm text-label-sm ' + data.tagClass;
+
+      document.getElementById('detail-title').textContent = data.title;
+      document.getElementById('detail-timestamp').textContent = data.timestamp;
+      document.getElementById('detail-body').textContent = data.body;
+      document.getElementById('detail-meta-location').textContent = data.location;
+      document.getElementById('detail-meta-time').textContent = data.schedule;
+      document.getElementById('detail-meta-od').textContent = data.od;
+      document.getElementById('detail-meta-pass').textContent = data.pass;
+
+      // Update active selection indicators in list
+      document.querySelectorAll('.notification-item').forEach(item => {
+        const isCurrent = item.dataset.id === id;
+        const selectorBar = item.querySelector('.selection-bar');
+        if (isCurrent) {
+          if (!item.querySelector('.absolute.left-0')) {
+            const bar = document.createElement('div');
+            bar.className = 'absolute left-0 top-0 bottom-0 w-1 bg-primary-container selection-bar';
+            item.appendChild(bar);
+          }
+        } else {
+          const existingBar = item.querySelector('.selection-bar');
+          if (existingBar) existingBar.remove();
+        }
+      });
+    };
+
+    // Filter switching logic
+    window.setFilter = function(filter) {
+      activeFilter = filter;
+      const tabAll = document.getElementById('tab-all');
+      const tabUnread = document.getElementById('tab-unread');
+      const feedStatus = document.getElementById('status-feed-text');
+      const emptyState = document.getElementById('empty-state');
+      const items = document.querySelectorAll('.notification-item');
+      const sectionGroups = document.querySelectorAll('.section-group');
+
+      if (filter === 'all') {
+        tabAll.className = 'filter-tab px-space-md py-1 rounded-md font-label-md text-label-md bg-surface-container-lowest text-on-surface shadow-sm transition-all flex items-center gap-space-xs';
+        tabUnread.className = 'filter-tab px-space-md py-1 rounded-md font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-space-xs';
+        feedStatus.textContent = 'Showing all updates';
+      } else {
+        tabUnread.className = 'filter-tab px-space-md py-1 rounded-md font-label-md text-label-md bg-surface-container-lowest text-on-surface shadow-sm transition-all flex items-center gap-space-xs';
+        tabAll.className = 'filter-tab px-space-md py-1 rounded-md font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-space-xs';
+        feedStatus.textContent = 'Showing unread updates only';
+      }
+
+      let visibleCount = 0;
+      items.forEach(item => {
+        const isUnread = item.dataset.unread === 'true';
+        if (filter === 'unread' && !isUnread) {
+          item.classList.add('hidden');
+        } else {
+          item.classList.remove('hidden');
+          visibleCount++;
+        }
+      });
+
+      // Update Section headers visibility
+      sectionGroups.forEach(sec => {
+        const visibleChildren = sec.querySelectorAll('.notification-item:not(.hidden)');
+        if (visibleChildren.length === 0) {
+          sec.classList.add('hidden');
+        } else {
+          sec.classList.remove('hidden');
+          const badge = sec.querySelector('.section-badge');
+          if (badge) badge.textContent = visibleChildren.length + ' item' + (visibleChildren.length > 1 ? 's' : '');
+        }
+      });
+
+      if (visibleCount === 0) {
+        emptyState.classList.remove('hidden');
+        emptyState.classList.add('flex');
+      } else {
+        emptyState.classList.add('hidden');
+        emptyState.classList.remove('flex');
+      }
+    };
+
+    // Filter Tab click listeners
+    document.getElementById('tab-all').addEventListener('click', () => setFilter('all'));
+    document.getElementById('tab-unread').addEventListener('click', () => setFilter('unread'));
+
+    // Clicking any card opens it in inspector
+    document.querySelectorAll('.notification-item').forEach(item => {
+      item.addEventListener('click', function(e) {
+        // Prevent action links duplicate triggers
+        if (!e.target.closest('button')) {
+          selectNotification(this.dataset.id);
+        }
+      });
+    });
+
+    // Mark all as read button
+    document.getElementById('mark-all-read-btn').addEventListener('click', () => {
+      document.querySelectorAll('.notification-item').forEach(item => {
+        item.dataset.unread = 'false';
+        item.classList.remove('is-unread');
+        const dot = item.querySelector('.unread-dot');
+        if (dot) dot.remove();
+      });
+      document.getElementById('badge-unread-count').textContent = '0';
+      if (activeFilter === 'unread') {
+        setFilter('unread');
+      }
+    });
+
+    // Dismiss active notification button in inspector
+    document.getElementById('dismiss-active-btn').addEventListener('click', () => {
+      const activeItem = document.querySelector(`.notification-item[data-id="${currentSelectedId}"]`);
+      if (activeItem) {
+        activeItem.dataset.unread = 'false';
+        const dot = activeItem.querySelector('.unread-dot');
+        if (dot) dot.remove();
+        
+        // Recalculate unread badge count
+        const unreadRemaining = document.querySelectorAll('.notification-item[data-unread="true"]').length;
+        document.getElementById('badge-unread-count').textContent = unreadRemaining;
+
+        if (activeFilter === 'unread') {
+          setFilter('unread');
+        }
+      }
+    });
+
+    // Preferences Modal Controls
+    const prefsModal = document.getElementById('prefs-modal');
+    const openPrefsBtn = document.getElementById('open-prefs-btn');
+    const closePrefsBtn = document.getElementById('close-prefs-btn');
+    const cancelPrefsBtn = document.getElementById('cancel-prefs-btn');
+    const savePrefsBtn = document.getElementById('save-prefs-btn');
+    const prefsBackdrop = document.getElementById('prefs-backdrop');
+
+    function togglePrefs(show) {
+      if (show) {
+        prefsModal.classList.remove('hidden');
+      } else {
+        prefsModal.classList.add('hidden');
+      }
+    }
+
+    openPrefsBtn.addEventListener('click', () => togglePrefs(true));
+    closePrefsBtn.addEventListener('click', () => togglePrefs(false));
+    cancelPrefsBtn.addEventListener('click', () => togglePrefs(false));
+    savePrefsBtn.addEventListener('click', () => togglePrefs(false));
+    prefsBackdrop.addEventListener('click', () => togglePrefs(false));
+
+  })();
+</script></main></div></body></html>

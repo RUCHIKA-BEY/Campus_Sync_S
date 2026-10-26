@@ -1,0 +1,479 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"surface":"#faf9ff","secondary-fixed-dim":"#bec7d7","inverse-on-surface":"#edf0ff","surface-bright":"#faf9ff","tertiary-container":"#a35700","secondary-fixed":"#dae3f4","on-surface":"#161b27","error":"#ba1a1a","tertiary":"#804300","on-secondary-fixed":"#131c28","on-tertiary-container":"#ffe8d9","primary-fixed":"#e2dfff","on-error-container":"#93000a","on-primary-fixed-variant":"#3533b0","on-primary":"#ffffff","primary":"#4241bc","error-container":"#ffdad6","outline":"#777585","inverse-surface":"#2b303d","tertiary-fixed-dim":"#ffb77e","on-error":"#ffffff","on-tertiary-fixed":"#2f1500","on-secondary-fixed-variant":"#3e4755","on-tertiary":"#ffffff","on-primary-container":"#edeaff","outline-variant":"#c7c4d6","surface-container-highest":"#dee2f3","tertiary-fixed":"#ffdcc3","on-primary-fixed":"#0a006b","primary-container":"#5b5bd6","on-background":"#161b27","surface-container-high":"#e4e8f8","surface-variant":"#dee2f3","on-surface-variant":"#464553","surface-tint":"#4e4ec9","on-secondary-container":"#5c6573","surface-container-lowest":"#ffffff","primary-fixed-dim":"#c1c1ff","secondary-container":"#dae3f4","inverse-primary":"#c1c1ff","on-tertiary-fixed-variant":"#6e3900","surface-container":"#e9edfe","surface-dim":"#d5d9ea","background":"#faf9ff","secondary":"#565f6d","on-secondary":"#ffffff","surface-container-low":"#f1f3ff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-lg":"1.5rem","space-2xl":"2rem","margin":"1rem","space-md":"0.75rem","margin-md":"1.5rem","space-xxs":"0.125rem","space-sm":"0.5rem","margin-lg":"2rem","space-xs":"0.25rem","space-lg":"1rem","gutter":"1rem","space-xl":"1.5rem"},"fontFamily":{"headline-lg":["Inter"],"body-md":["Inter"],"display-lg":["Inter"],"headline-sm":["Inter"],"label-sm":["Inter"],"label-md":["Inter"],"body-sm":["Inter"],"headline-md":["Inter"],"code-sm":["Inter"],"body-lg":["Inter"]},"fontSize":{"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"500"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"code-sm":["12px",{"lineHeight":"16px","letterSpacing":"0em","fontWeight":"400"}],"body-lg":["15px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><aside class="fixed left-0 top-0 h-screen w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 px-space-xl flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">assured_workload</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-tight">CampusSync</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none tracking-wide uppercase">DSA Portal</span></div></div><div class="px-space-md py-space-sm"><span class="px-space-sm font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Operations</span></div><nav class="flex flex-col gap-space-xxs px-space-md" data-active-classes="bg-primary text-on-primary font-medium rounded-lg shadow-sm"><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm transition-all bg-primary text-on-primary font-medium rounded-lg shadow-sm" data-path="event-proposals" href="#"><span class="material-symbols-outlined text-[20px]">fact_check</span>Event Proposals</a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="venue-timetable" href="#"><span class="material-symbols-outlined text-[20px]">calendar_month</span>Venue Timetable</a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="on-duty-clearance" href="#"><span class="material-symbols-outlined text-[20px]">verified_user</span>On-Duty Clearance</a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="audit-logs" href="#"><span class="material-symbols-outlined text-[20px]">history_edu</span>Audit Logs</a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span>Settings</a></nav></div><div class="p-space-md m-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm font-semibold text-on-surface">System Status</span><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span></div><span class="font-body-sm text-body-sm text-on-surface-variant">Academic Term: Fall '24</span><span class="font-label-sm text-label-sm text-on-surface-variant">DSA Core Node v2.4</span></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-xl flex items-center justify-between"><div class="flex items-center gap-space-lg"><nav class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant"><span class="hover:text-on-surface transition-colors cursor-pointer">Event Proposals</span><span class="material-symbols-outlined text-[16px] text-outline-variant">chevron_right</span><span class="font-medium text-on-surface">Review</span></nav></div><div class="flex items-center gap-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-md text-[18px] text-outline">search</span><input class="w-64 pl-9 pr-space-md py-space-xs h-9 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all" placeholder="Search proposals, venues, orgs..." type="search"></div><button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span></button><div class="h-6 w-[1px] bg-surface-container-highest"></div><div class="flex items-center gap-space-sm pl-space-xs py-space-xxs rounded-full hover:bg-surface-container-low transition-colors cursor-pointer"><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface leading-tight font-medium">Dr. Eleanor Vance</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none">DSA Admin</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen px-space-xl py-space-xl"><div class="flex flex-col w-full gap-space-xl">
+<!-- Top Navigation & Proposal Metadata Header -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pb-space-xs">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<a class="inline-flex items-center gap-space-xs font-label-md text-label-md text-primary hover:text-on-primary-fixed-variant transition-colors group" href="#">
+<span class="material-symbols-outlined text-[18px] group-hover:-translate-x-0.5 transition-transform">arrow_back</span>
+          Back to Proposals Queue
+        </a>
+<span class="text-outline-variant">•</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high font-code-sm text-code-sm font-semibold tracking-wider text-on-surface-variant">
+          DSA-2024-884
+        </span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+          Pending Dean Review
+        </span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">schedule</span>
+<span>Submitted Nov 12, 2024 at 14:28 EST by <strong class="text-on-surface font-medium">Marcus Chen</strong> (Vice President, CodeCamp Society)</span>
+</div>
+</div>
+<!-- Quick Action / Status Callout -->
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<div class="hidden lg:flex flex-col text-right pr-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">SLA Deadline</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Nov 15 (24h remaining)</span>
+</div>
+<button class="lg:hidden inline-flex items-center gap-space-xs bg-primary text-on-primary px-space-md py-space-xs rounded-lg font-label-md text-label-md shadow-sm" onclick="document.getElementById('decision-card').scrollIntoView({ behavior: 'smooth' })">
+<span class="material-symbols-outlined text-[18px]">gavel</span>
+        Jump to Decision
+      </button>
+</div>
+</div>
+<!-- Two-Column Workbench Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- LEFT MAIN CONTENT COLUMN (approx 65% / 8 cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-xl">
+<!-- SECTION 1: Event Identity & Overview Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<!-- Banner Image Container -->
+<div class="relative w-full h-56 sm:h-72 bg-surface-container overflow-hidden">
+<img alt="College tech club members collaborating actively around laptops, monitors, and workshop whiteboards" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1W3tqOK3pQcIvtJPGs0xz7L4Y_vJnjn8oSWgMMNYZ_vlA_9RsjBSH8nQj-gq9IFrDqibll7YVJJZlnniz7XNIPj9_3cmsnhA5GNZbypk7sPkrRxjQIf295n7JLdQYt1gMtWUTpDBVi9KyGj1Zcmbg8Syo5ZVriRDbLxB_xpyyEs243WQ6aJ-WGZ_ywy1R7HhNlGxzFNNVBhqrL2f3b-47XtM3p2AF2SOHqrNf9BYVX8Pg">
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/85 via-on-surface/20 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 flex items-end justify-between gap-space-md text-surface-container-lowest">
+<div class="flex flex-col gap-1 max-w-xl">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold tracking-wide">
+                  Student Life &amp; STEM
+                </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+                  Tier-1 Verified Campus Society
+                </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-surface-container-lowest font-bold tracking-tight mt-1">
+                CodeCamp Winter Hackathon 2024: Open Source Sprint
+              </h1>
+</div>
+<div class="hidden sm:flex flex-col items-end bg-surface-container-lowest/15 backdrop-blur-md px-3 py-1.5 rounded-lg border border-surface-container-lowest/20">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-surface-container-highest">Duration</span>
+<span class="font-headline-sm text-headline-sm font-bold text-surface-container-lowest">33 Hours</span>
+</div>
+</div>
+</div>
+<!-- Body & Detailed Specifications -->
+<div class="p-space-lg flex flex-col gap-space-lg">
+<!-- Club & Narrative Description -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-on-surface-variant">Proposal Overview</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Lock Hash: <span class="font-mono">#9f8a2-c11</span></span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+              A 36-hour continuous weekend hackathon focusing on campus utility tooling, distributed systems, and open-source contributions. Features mentorship sprints, lightning workshops, and faculty evaluation panels. All food, sleeping gear, and hardware setups managed by CodeCamp operations.
+            </p>
+</div>
+<!-- Key Specs Bento Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Spec Item 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1.5 hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[20px]">calendar_today</span>
+<span>Date &amp; Schedule</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+                Sat, Dec 7 – Sun, Dec 8
+              </p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                09:00 AM (Sat) to 18:00 PM (Sun) • 33 Continuous Hours
+              </span>
+</div>
+<!-- Spec Item 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1.5 hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[20px]">meeting_room</span>
+<span>Requested Venue</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+                Innovation Hub &amp; Lab 4
+              </p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                North Tech Quad, 2nd Floor Computing Wing
+              </span>
+</div>
+<!-- Spec Item 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1.5 hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between text-primary font-label-md text-label-md font-semibold">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px]">groups</span>
+<span>Requested Capacity</span>
+</div>
+<span class="text-xs px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-semibold">83% Load</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+                150 Attendees
+              </p>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 my-0.5 overflow-hidden">
+<div class="bg-primary h-1.5 rounded-full" style="width: 83%"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                Venue max: 180 seats • Fire marshal clearance verified
+              </span>
+</div>
+<!-- Spec Item 4 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1.5 hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between text-primary font-label-md text-label-md font-semibold">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+<span>Academic On-Duty Clearance</span>
+</div>
+<span class="text-xs px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-semibold">Cleared</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+                45 Eligible Students
+              </p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                School of Computing lab waivers checked. Zero core exam conflicts.
+              </span>
+</div>
+</div>
+<!-- Governance Lock Note -->
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px] text-secondary">lock</span>
+<span>Organizer submission is locked. Direct edits by DSA are restricted under campus governance policy.</span>
+</div>
+</div>
+</div>
+<!-- SECTION 2: Diagnostic: Venue Conflict Check (CRITICAL) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md relative overflow-hidden">
+<div class="flex items-center justify-between flex-wrap gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md font-semibold text-on-surface">Venue Conflict Diagnostic</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Automated timetable arbitration engine v4.2</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            Available &amp; Uncontested
+          </span>
+</div>
+<!-- Venue Schedule Verification Bar -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-medium text-on-surface">Innovation Hub &amp; Lab 4 Availability Timeline</span>
+<span class="font-label-sm text-label-sm text-emerald-700 font-medium">100% Free Window</span>
+</div>
+<!-- Visual Timetable Bar -->
+<div class="grid grid-cols-12 gap-1 w-full h-6 bg-surface-container rounded-md p-1">
+<div class="col-span-12 bg-emerald-500/80 hover:bg-emerald-600 rounded transition-colors flex items-center justify-center text-[10px] font-semibold text-white tracking-wide">
+              RESERVED FOR CODECAMP SPRINT (DEC 7, 09:00 – DEC 8, 18:00)
+            </div>
+</div>
+<div class="flex items-center justify-between text-xs text-on-surface-variant font-code-sm">
+<span>Sat Dec 7, 00:00</span>
+<span>Sat Dec 7, 12:00</span>
+<span>Sun Dec 8, 00:00</span>
+<span>Sun Dec 8, 12:00</span>
+<span>Sun Dec 8, 23:59</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-1">
+<strong class="text-emerald-800 font-semibold">Innovation Hub &amp; Lab 4</strong> is fully unreserved during requested window Dec 7 09:00 – Dec 8 18:00. Facility operations team has been notified of ventilation and 24-hour smart-lock scheduling.
+          </p>
+</div>
+<!-- Collapsible System Safeguard Explainer -->
+<div class="rounded-xl bg-surface-container p-space-md flex flex-col gap-space-xs">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">policy</span>
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Automated Collision Enforcement Safeguard</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                If a venue collision is detected (e.g., concurrent room booking or facility maintenance schedule), approval is strictly blocked by the system until organizers relocate or modify dates, preserving room booking integrity.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 3: Overlapping Campus Events (Non-Venue Conflicts) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xxs">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px]">event_note</span>
+<h2 class="font-headline-md text-headline-md font-semibold text-on-surface">Other Overlapping Campus Events</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            These events take place during the same weekend window but in <strong class="text-on-surface font-medium">different campus locations</strong>. They do <span class="uppercase tracking-wider font-semibold text-primary">not</span> block venue approval, but are displayed for campus crowd density and security awareness.
+          </p>
+</div>
+<!-- Overlap Items List -->
+<div class="flex flex-col gap-space-sm">
+<!-- Card 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-space-md hover:bg-surface-container transition-colors">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[22px]">precision_manufacturing</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Annual Inter-College Robotics Expo</h3>
+<span class="text-xs px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-semibold">Different Facility</span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm mt-1 flex-wrap">
+<span>Host: <strong class="text-on-surface">Robotics Club</strong></span>
+<span>•</span>
+<span>Sun, Dec 8 (10:00 AM – 4:00 PM)</span>
+<span>•</span>
+<span class="text-on-surface font-medium">Main Indoor Gymnasium</span>
+</div>
+</div>
+</div>
+<div class="sm:text-right shrink-0">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary px-2.5 py-1 rounded-md bg-surface-container">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                Zero physical interference
+              </span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-space-md hover:bg-surface-container transition-colors">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[22px]">calculate</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Departmental Math Olympiad Heats</h3>
+<span class="text-xs px-2 py-0.5 rounded-full bg-amber-100 text-amber-800 font-semibold">Minor Student Overlap</span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm mt-1 flex-wrap">
+<span>Host: <strong class="text-on-surface">Math Society</strong></span>
+<span>•</span>
+<span>Sat, Dec 7 (2:00 PM – 5:00 PM)</span>
+<span>•</span>
+<span class="text-on-surface font-medium">Turing Lecture Hall C</span>
+</div>
+</div>
+</div>
+<div class="sm:text-right shrink-0">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-tertiary-fixed-variant px-2.5 py-1 rounded-md bg-tertiary-fixed">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                3 shared participants flagged
+              </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT DECISION INSPECTOR COLUMN (approx 35% / 4 cols, Sticky) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg lg:sticky lg:top-20" id="decision-card">
+<!-- Primary Decision Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-lg">
+<!-- Reviewer Header -->
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[20px]">person</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Dr. Eleanor Vance</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Dean of Student Affairs</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Authorizer</span>
+</div>
+<!-- Verification Checklist -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase font-semibold text-on-surface-variant tracking-wider">Dean Adjudication Checklist</span>
+<div class="space-y-2 mt-1">
+<label class="flex items-center gap-space-sm p-space-xs rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer text-on-surface font-body-sm text-body-sm">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary cursor-pointer" type="checkbox">
+<span>Venue clearance confirmed (0 collisions)</span>
+</label>
+<label class="flex items-center gap-space-sm p-space-xs rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer text-on-surface font-body-sm text-body-sm">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary cursor-pointer" type="checkbox">
+<span>Capacity under room threshold (83% of 180)</span>
+</label>
+<label class="flex items-center gap-space-sm p-space-xs rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer text-on-surface font-body-sm text-body-sm">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary cursor-pointer" type="checkbox">
+<span>Faculty endorsement: <strong class="font-medium text-on-surface">Prof. D. Raman</strong></span>
+</label>
+<label class="flex items-center gap-space-sm p-space-xs rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer text-on-surface font-body-sm text-body-sm">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary cursor-pointer" type="checkbox">
+<span>Overnight security protocol logged with Campus Safety</span>
+</label>
+</div>
+</div>
+<!-- Action Selection Tabs / Default CTA View -->
+<div class="flex flex-col gap-space-sm" id="default-actions">
+<button class="w-full h-10 px-space-lg rounded-lg bg-primary hover:bg-on-primary-fixed-variant text-on-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-space-sm transition-all shadow-sm active:scale-[0.98]" id="btn-approve" onclick="switchState('approve')">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+            Approve Proposal
+          </button>
+<div class="grid grid-cols-2 gap-space-sm">
+<button class="h-9 px-space-md rounded-lg bg-surface-container-lowest text-error hover:bg-error-container hover:text-on-error-container font-label-md text-label-md font-medium flex items-center justify-center gap-space-xs transition-colors border border-error-container" id="btn-reject" onclick="switchState('reject')">
+<span class="material-symbols-outlined text-[16px]">close</span>
+              Reject
+            </button>
+<button class="h-9 px-space-md rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md font-medium flex items-center justify-center gap-space-xs transition-colors border border-outline-variant" id="btn-revision" onclick="switchState('revision')">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+              Request Edit
+            </button>
+</div>
+</div>
+<!-- FLOW A: APPROVAL CONFIRMATION PANEL (Toggleable) -->
+<div class="hidden flex flex-col gap-space-md p-space-md rounded-xl bg-surface-container-low border border-primary/20" id="flow-approve">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-primary font-headline-sm text-headline-sm font-semibold">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+              Confirm Approval
+            </div>
+<button class="text-on-surface-variant hover:text-on-surface" onclick="switchState('default')">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-medium" for="approval-notes">Stipulations &amp; Key Handover Notes (Optional)</label>
+<textarea class="w-full p-2.5 rounded-lg bg-surface-container-lowest font-body-sm text-body-sm text-on-surface border border-outline-variant focus:outline-none focus:ring-2 focus:ring-primary" id="approval-notes" placeholder="e.g., Lab 4 keys to be signed out from North Quad dispatch by Friday 5:00 PM." rows="2"></textarea>
+</div>
+<div class="flex flex-col gap-space-xs pt-1">
+<button class="w-full h-10 rounded-lg bg-primary hover:bg-on-primary-fixed-variant text-on-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-space-xs shadow-sm" onclick="executeAction('Approved')">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+              Confirm &amp; Issue Permit #DSA-2024-884
+            </button>
+<button class="w-full h-8 rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-medium" onclick="switchState('default')">
+              Cancel
+            </button>
+</div>
+</div>
+<!-- FLOW B: REJECTION PANEL (Toggleable) -->
+<div class="hidden flex flex-col gap-space-md p-space-md rounded-xl bg-error-container/40 border border-error/20" id="flow-reject">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-error font-headline-sm text-headline-sm font-semibold">
+<span class="material-symbols-outlined text-[20px]">cancel</span>
+              Reject Proposal &amp; Memorandum
+            </div>
+<button class="text-on-surface-variant hover:text-on-surface" onclick="switchState('default')">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-medium" for="reject-category">Primary Rejection Category</label>
+<select class="w-full h-9 px-2 rounded-lg bg-surface-container-lowest font-body-sm text-body-sm text-on-surface border border-outline-variant focus:outline-none focus:ring-2 focus:ring-primary" id="reject-category">
+<option value="policy">Campus Policy Non-Compliance</option>
+<option value="safety">Safety &amp; Fire Code Regulation</option>
+<option value="timing">Scheduling &amp; Campus Congestion</option>
+<option value="advisor">Missing Advisor Endorsement</option>
+</select>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-medium" for="reject-reason">Mandatory Dean Rationale <span class="text-error">*</span></label>
+<textarea class="w-full p-2.5 rounded-lg bg-surface-container-lowest font-body-sm text-body-sm text-on-surface border border-outline-variant focus:outline-none focus:ring-2 focus:ring-error" id="reject-reason" placeholder="Explain specific reasons and remedial guidelines for the student organizers..." required="" rows="3"></textarea>
+</div>
+<div class="flex flex-col gap-space-xs pt-1">
+<button class="w-full h-10 rounded-lg bg-error hover:bg-on-error-container text-on-error font-label-md text-label-md font-semibold flex items-center justify-center gap-space-xs shadow-sm" onclick="executeAction('Rejected')">
+<span class="material-symbols-outlined text-[18px]">block</span>
+              Confirm Rejection
+            </button>
+<button class="w-full h-8 rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-medium" onclick="switchState('default')">
+              Cancel
+            </button>
+</div>
+</div>
+<!-- FLOW C: REQUEST REVISION PANEL (Toggleable) -->
+<div class="hidden flex flex-col gap-space-md p-space-md rounded-xl bg-surface-container-low border border-outline-variant" id="flow-revision">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-on-surface font-headline-sm text-headline-sm font-semibold">
+<span class="material-symbols-outlined text-[20px]">edit_calendar</span>
+              Request Revisions
+            </div>
+<button class="text-on-surface-variant hover:text-on-surface" onclick="switchState('default')">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-medium" for="revision-notes">Revision Instructions for Marcus Chen</label>
+<textarea class="w-full p-2.5 rounded-lg bg-surface-container-lowest font-body-sm text-body-sm text-on-surface border border-outline-variant focus:outline-none focus:ring-2 focus:ring-primary" id="revision-notes" placeholder="Provide actionable items for student organizers to amend..." rows="3"></textarea>
+</div>
+<div class="flex flex-col gap-space-xs pt-1">
+<button class="w-full h-10 rounded-lg bg-surface-container-highest hover:bg-surface-variant text-on-surface font-label-md text-label-md font-semibold flex items-center justify-center gap-space-xs shadow-sm" onclick="executeAction('Revision Requested')">
+              Send Revision Dispatch
+            </button>
+<button class="w-full h-8 rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-medium" onclick="switchState('default')">
+              Cancel
+            </button>
+</div>
+</div>
+<!-- Venue Collision Safeguard Notice -->
+<div class="p-space-sm rounded-lg bg-surface-container flex items-start gap-space-xs text-on-surface-variant font-label-sm text-label-sm leading-normal">
+<span class="material-symbols-outlined text-[18px] text-tertiary shrink-0 mt-0.5">info</span>
+<span>
+<strong class="text-on-surface font-medium">Collision Policy Rule:</strong> If an active venue collision were detected, the system would permanently lock the “Approve” action until organizers reassign rooms.
+          </span>
+</div>
+</div>
+<!-- Supporting Document Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase font-semibold text-on-surface-variant tracking-wider">Attached Verification Documents</span>
+<div class="flex flex-col gap-1.5">
+<a class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low transition-colors group" href="#">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-primary text-[20px]">picture_as_pdf</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm font-medium text-on-surface truncate group-hover:text-primary transition-colors">Risk_Assessment_Hackathon24.pdf</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1.4 MB • Signed by Campus Safety</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">download</span>
+</a>
+<a class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low transition-colors group" href="#">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-primary text-[20px]">description</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm font-medium text-on-surface truncate group-hover:text-primary transition-colors">OD_Student_Eligibility_List.xlsx</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">420 KB • 45 Students Certified</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">download</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive State Controller Script -->
+<script>
+    function switchState(state) {
+      const defaultActions = document.getElementById('default-actions');
+      const flowApprove = document.getElementById('flow-approve');
+      const flowReject = document.getElementById('flow-reject');
+      const flowRevision = document.getElementById('flow-revision');
+
+      // Hide all states first
+      defaultActions.classList.add('hidden');
+      flowApprove.classList.add('hidden');
+      flowReject.classList.add('hidden');
+      flowRevision.classList.add('hidden');
+
+      if (state === 'approve') {
+        flowApprove.classList.remove('hidden');
+      } else if (state === 'reject') {
+        flowReject.classList.remove('hidden');
+      } else if (state === 'revision') {
+        flowRevision.classList.remove('hidden');
+      } else {
+        defaultActions.classList.remove('hidden');
+      }
+    }
+
+    function executeAction(status) {
+      alert(`Permit Status Updated: ${status}\nAudit notification dispatched to Marcus Chen (CodeCamp Society) and Dean Records.`);
+      switchState('default');
+    }
+  </script>
+</div></main></div></body></html>

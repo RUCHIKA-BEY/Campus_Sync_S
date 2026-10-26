@@ -1,0 +1,730 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-fixed":"#0a006b","surface":"#faf9ff","secondary-fixed":"#dae3f4","on-error-container":"#93000a","on-error":"#ffffff","surface-container":"#e9edfe","on-primary-fixed-variant":"#3533b0","surface-container-lowest":"#ffffff","surface-container-highest":"#dee2f3","surface-container-low":"#f1f3ff","outline":"#777585","tertiary-container":"#a35700","surface-tint":"#4e4ec9","secondary-container":"#dae3f4","surface-container-high":"#e4e8f8","on-tertiary-fixed-variant":"#6e3900","on-secondary-container":"#5c6573","surface-bright":"#faf9ff","on-secondary-fixed-variant":"#3e4755","on-secondary":"#ffffff","error":"#ba1a1a","primary-container":"#5b5bd6","on-primary-container":"#edeaff","error-container":"#ffdad6","on-tertiary-fixed":"#2f1500","primary-fixed-dim":"#c1c1ff","outline-variant":"#c7c4d6","tertiary-fixed-dim":"#ffb77e","secondary":"#565f6d","on-primary":"#ffffff","inverse-primary":"#c1c1ff","tertiary":"#804300","tertiary-fixed":"#ffdcc3","on-surface":"#161b27","on-secondary-fixed":"#131c28","background":"#faf9ff","surface-dim":"#d5d9ea","inverse-surface":"#2b303d","surface-variant":"#dee2f3","on-tertiary":"#ffffff","primary-fixed":"#e2dfff","secondary-fixed-dim":"#bec7d7","primary":"#4241bc","on-background":"#161b27","on-tertiary-container":"#ffe8d9","inverse-on-surface":"#edf0ff","on-surface-variant":"#464553"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"1rem","space-sm":"0.5rem","space-xl":"1.5rem","space-xs":"0.25rem","margin-md":"1.5rem","space-2xl":"2rem","space-md":"0.75rem","margin-lg":"2rem","gutter-lg":"1.5rem","space-xxs":"0.125rem","gutter":"1rem","space-lg":"1rem"},"fontFamily":{"label-md":["Inter"],"body-lg":["Inter"],"body-md":["Inter"],"headline-sm":["Inter"],"headline-lg":["Inter"],"headline-md":["Inter"],"display-lg":["Inter"],"label-sm":["Inter"],"body-sm":["Inter"],"code-sm":["Inter"]},"fontSize":{"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"500"}],"body-lg":["15px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"code-sm":["12px",{"lineHeight":"16px","letterSpacing":"0em","fontWeight":"400"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-space-xl flex items-center justify-between bg-surface-container-low"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">hub</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">CampusSync</span><span class="font-label-sm text-label-sm text-on-surface-variant">CodeCamp Hub</span></div></div></div><div class="px-space-md py-space-sm"><div class="px-space-sm py-space-xs mb-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Workspace</div><nav class="flex flex-col gap-space-xxs" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm"><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg transition-colors bg-primary-container text-on-primary-container font-headline-sm" data-path="live-check-in" href="#"><span class="material-symbols-outlined text-[20px]">how_to_reg</span><span>Live Check-in</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="attendee-roster" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span>Attendee Roster</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="event-schedule" href="#"><span class="material-symbols-outlined text-[20px]">event_available</span><span>Schedule &amp; Tracks</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="credential-badges" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span>Badges &amp; RFID</span></a></nav><div class="mt-space-lg px-space-sm py-space-xs mb-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Operations</div><nav class="flex flex-col gap-space-xxs" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="venue-logistics" href="#"><span class="material-symbols-outlined text-[20px]">meeting_room</span><span>Venue &amp; Rooms</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="incident-audit-log" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span>Audit &amp; Logs</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="hub-settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Hub Settings</span></a></nav></div></div><div class="p-space-md bg-surface-container"><div class="flex items-center justify-between px-space-sm py-space-xs"><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface font-semibold">Scanner Bridge</span><span class="font-code-sm text-code-sm text-secondary">v2.4 Online (COM4)</span></div><span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-lg w-96"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-space-md text-on-surface-variant text-[20px]">search</span><input class="w-full h-9 pl-10 pr-space-md bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest transition-colors" placeholder="Search badge, ticket ID, student name..." type="text"></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><div class="h-6 px-space-sm rounded-full bg-surface-container-highest flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-label-sm text-label-sm text-on-surface">Session Active</span></div><div class="h-6 px-space-sm rounded-full bg-secondary-container flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px] text-on-secondary-container">wifi</span><span class="font-label-sm text-label-sm text-on-secondary-container">Sync Stable</span></div></div><div class="h-6 w-[1px] bg-surface-container-highest"></div><div class="flex items-center gap-space-md"><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Marcus Chen</span><span class="font-label-sm text-label-sm text-on-surface-variant">Lead Coordinator</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 bg-background w-full min-h-screen"><div class="flex flex-col w-full">
+<div class="p-space-xl flex flex-col gap-space-lg max-w-[1720px] mx-auto w-full">
+<!-- Context Bar & Event Breadcrumb -->
+<div class="flex flex-wrap items-center justify-between gap-space-md bg-surface-container-low px-space-xl py-space-md rounded-xl shadow-sm">
+<div class="flex items-center gap-space-lg flex-wrap">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse"></div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Active Session</span>
+</div>
+<div class="h-4 w-px bg-surface-container-highest"></div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">AI Builders Workshop: Large Action Models</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Turing Auditorium • Session 02 of 03 • 02:00 PM – 05:30 PM</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-md py-1.5 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+<span class="font-code-sm text-code-sm text-on-surface font-semibold">OD Verification Active</span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-md py-1.5 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">usb</span>
+<span class="font-code-sm text-code-sm text-secondary">HID Scanner: Ready</span>
+</div>
+</div>
+</div>
+<!-- Balanced Two-Column Split Layout -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-xl items-start">
+<!-- LEFT COLUMN: Scanner & Immediate Verification Console (7 cols on 12-col grid) -->
+<section class="xl:col-span-7 flex flex-col gap-space-lg">
+<!-- Hardware Station Wrapper -->
+<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col gap-space-lg">
+<!-- Station Header -->
+<div class="flex items-center justify-between flex-wrap gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">center_focus_strong</span>
+</div>
+<div class="flex flex-col">
+<h1 class="font-headline-sm text-headline-sm text-on-surface">Door Station Scanner — Gate B Kiosk</h1>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Connected: Logitech 4K Kiosk Cam / 60 FPS</span>
+</div>
+</div>
+<!-- Viewport Hardware Toggles -->
+<div class="flex items-center gap-space-xs bg-surface-container-low p-1 rounded-lg">
+<button class="flex items-center gap-space-xs px-space-sm py-1.5 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors font-label-sm text-label-sm" id="toggle-flash" onclick="toggleFlashState()" title="Toggle Auxiliary Flash">
+<span class="material-symbols-outlined text-[16px]" id="flash-icon">flash_off</span>
+<span id="flash-text">Flash</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-sm py-1.5 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors font-label-sm text-label-sm" id="toggle-input" onclick="switchCameraInput()" title="Switch Optical Lens">
+<span class="material-symbols-outlined text-[16px]">flip_camera_ios</span>
+<span>Switch (Cam 2)</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-sm py-1.5 rounded bg-surface-container-lowest shadow-sm text-primary font-semibold transition-colors font-label-sm text-label-sm" id="toggle-chime" onclick="toggleChimeState()" title="Sound Indicator">
+<span class="material-symbols-outlined text-[16px]" id="chime-icon">volume_up</span>
+<span id="chime-text">Chime On</span>
+</button>
+</div>
+</div>
+<!-- Ultra High-Contrast Camera Viewport -->
+<div class="relative w-full aspect-[16/9] bg-inverse-surface rounded-xl overflow-hidden flex items-center justify-center select-none shadow-inner">
+<!-- Real-time HUD Meta Overlay (Top) -->
+<div class="absolute top-space-md left-space-md right-space-md flex items-center justify-between pointer-events-none z-20">
+<div class="flex items-center gap-space-xs bg-inverse-surface/80 px-space-sm py-1 rounded font-code-sm text-code-sm text-inverse-on-surface">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+<span>OPTICAL_DECODE: ACTIVE</span>
+</div>
+<div class="flex items-center gap-space-sm bg-inverse-surface/80 px-space-sm py-1 rounded font-code-sm text-code-sm text-inverse-on-surface">
+<span>ISO Auto</span>
+<span>•</span>
+<span>1080p @ 60fps</span>
+</div>
+</div>
+<!-- Optical Scan Reticle Frame (Strictly Non-Decorative / Functional Targeting) -->
+<div class="relative w-64 h-64 sm:w-72 sm:h-72 flex items-center justify-center pointer-events-none z-10">
+<!-- Corner Brackets -->
+<div class="absolute top-0 left-0 w-8 h-8 border-t-4 border-l-4 border-primary-container rounded-tl-sm"></div>
+<div class="absolute top-0 right-0 w-8 h-8 border-t-4 border-r-4 border-primary-container rounded-tr-sm"></div>
+<div class="absolute bottom-0 left-0 w-8 h-8 border-b-4 border-l-4 border-primary-container rounded-bl-sm"></div>
+<div class="absolute bottom-0 right-0 w-8 h-8 border-b-4 border-r-4 border-primary-container rounded-br-sm"></div>
+<!-- Scanning Laser Guide Sweeper -->
+<div class="w-full h-0.5 bg-primary-container shadow-[0_0_12px_#5b5bd6] animate-[bounce_2s_infinite]"></div>
+<!-- Reticle Center Crosshair -->
+<div class="absolute w-4 h-4 flex items-center justify-center opacity-40">
+<div class="w-full h-0.5 bg-inverse-on-surface"></div>
+<div class="h-full w-0.5 bg-inverse-on-surface absolute"></div>
+</div>
+</div>
+<!-- Background Texture Pattern for Contrast -->
+<div class="absolute inset-0 opacity-15 flex flex-col justify-between p-space-md pointer-events-none">
+<div class="flex justify-between font-code-sm text-code-sm text-inverse-on-surface"><span>CAM_DEV_01</span><span>LATENCY: 8ms</span></div>
+<div class="flex justify-between font-code-sm text-code-sm text-inverse-on-surface"><span>BUFFER: CLEAR</span><span>ALGO: Aztec+QR+PDF417</span></div>
+</div>
+<!-- HUD Instruction at bottom of viewport -->
+<div class="absolute bottom-space-md px-space-md py-1 bg-inverse-surface/90 rounded font-code-sm text-code-sm text-inverse-on-surface z-20">
+              Center attendee digital credential or badge QR inside targeting reticle
+            </div>
+</div>
+<!-- Camera Permissions & Fallback Guidance Banner -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md bg-surface-container-low p-space-md rounded-lg">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">videocam</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Camera permissions active &amp; hardware-accelerated</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Optical feed running at 60 FPS via WebCodecs API pipeline.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm bg-surface-container-highest px-space-sm py-1.5 rounded">
+<span class="material-symbols-outlined text-[16px]">info</span>
+<span>USB Wedge ready on barcode scan</span>
+</div>
+</div>
+<!-- Quick Action & Fallback Toolbar -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-xs">
+<button class="flex items-center gap-space-sm px-space-md py-2 bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded-lg font-label-md text-label-md transition-colors shadow-sm" onclick="triggerManualStateModal()">
+<span class="material-symbols-outlined text-[18px]">manage_search</span>
+<span>Manual Lookup &amp; Search Attendee</span>
+</button>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Rapid Sim:</span>
+<span class="font-code-sm text-code-sm text-secondary bg-surface-container-low px-space-xs py-0.5 rounded">Press [Space] to simulate QR</span>
+</div>
+</div>
+</div>
+<!-- Interactive State Testing Console (6 Operator Feedback States) -->
+<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<div class="font-headline-sm text-headline-sm text-on-surface">Verification State Inspector</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Tap operational state buttons below to review scanner display behavior:</div>
+</div>
+<span class="font-code-sm text-code-sm text-primary bg-primary-container/10 px-space-sm py-1 rounded font-semibold">6 System States</span>
+</div>
+<!-- Selector Buttons -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-xs bg-surface-container-low p-1.5 rounded-lg">
+<button class="state-pill-btn active px-space-sm py-2 rounded-md font-label-sm text-label-sm font-semibold transition-all bg-surface-container-lowest text-primary shadow-sm flex items-center justify-center gap-1.5" id="btn-state-success" onclick="setFeedbackState('success')">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>1. Valid Entry</span>
+</button>
+<button class="state-pill-btn px-space-sm py-2 rounded-md font-label-sm text-label-sm font-semibold transition-all text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1.5" id="btn-state-duplicate" onclick="setFeedbackState('duplicate')">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>2. Duplicate</span>
+</button>
+<button class="state-pill-btn px-space-sm py-2 rounded-md font-label-sm text-label-sm font-semibold transition-all text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1.5" id="btn-state-wrong-event" onclick="setFeedbackState('wrong-event')">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span>3. Wrong Event</span>
+</button>
+<button class="state-pill-btn px-space-sm py-2 rounded-md font-label-sm text-label-sm font-semibold transition-all text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1.5" id="btn-state-invalid" onclick="setFeedbackState('invalid')">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span>4. Invalid Pass</span>
+</button>
+<button class="state-pill-btn px-space-sm py-2 rounded-md font-label-sm text-label-sm font-semibold transition-all text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1.5" id="btn-state-camera-err" onclick="setFeedbackState('camera-err')">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>5. Cam Offline</span>
+</button>
+<button class="state-pill-btn px-space-sm py-2 rounded-md font-label-sm text-label-sm font-semibold transition-all text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1.5" id="btn-state-manual" onclick="setFeedbackState('manual')">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>6. Manual Check</span>
+</button>
+</div>
+<!-- Dynamic Large Verification Feedback Box -->
+<div class="min-h-[220px] transition-all duration-200" id="feedback-display">
+<!-- STATE 1: SUCCESSFUL CHECK-IN (Default) -->
+<div class="state-view flex flex-col bg-surface-container-low p-space-xl rounded-xl" id="state-success-card">
+<div class="flex items-start justify-between flex-wrap gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-[32px]">check_circle</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-0.5 bg-primary/10 text-primary font-label-sm text-label-sm font-semibold rounded-full flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                        Checked In Successfully
+                      </span>
+<span class="font-code-sm text-code-sm text-secondary">02:01:14 PM</span>
+</div>
+<span class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight mt-0.5">Aarav Sharma</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Roll No: <span class="font-code-sm text-code-sm font-semibold text-on-surface">EC2022-118</span> • Electronics &amp; Comm. (Sem 6)</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Assigned Seating</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">Row D • Seat #42</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md bg-surface-container-lowest p-space-md rounded-lg flex items-center justify-between flex-wrap gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">assignment_turned_in</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">OD Exemption Granted</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Verified OD Approved: CS-302 Web Tech Lab (Prof. V. Nair)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm text-on-surface-variant bg-surface-container-high px-space-sm py-1 rounded">
+<span>Pass Token:</span>
+<span class="text-on-surface font-semibold">PK-8839-AIW</span>
+</div>
+</div>
+</div>
+<!-- STATE 2: DUPLICATE ENTRY -->
+<div class="state-view hidden flex flex-col bg-surface-container-high p-space-xl rounded-xl" id="state-duplicate-card">
+<div class="flex items-start justify-between flex-wrap gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-xl bg-tertiary-container flex items-center justify-center text-on-tertiary shadow-sm">
+<span class="material-symbols-outlined text-[32px]">warning</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-0.5 bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm font-semibold rounded-full flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                        Duplicate Pass Detected
+                      </span>
+</div>
+<span class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight mt-0.5">Marcus Chen</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Roll No: <span class="font-code-sm text-code-sm font-semibold text-on-surface">CS2023-042</span> • Computer Science (Sem 4)</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest px-space-md py-space-sm rounded-lg text-right">
+<span class="font-label-sm text-label-sm text-tertiary font-semibold block">Prior Check-in Record</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Today at 02:14 PM</span>
+</div>
+</div>
+<div class="mt-space-lg bg-surface-container-lowest p-space-md rounded-lg flex items-center justify-between flex-wrap gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px]">door_front</span>
+<span class="font-body-sm text-body-sm text-on-surface">Registered at <span class="font-semibold">Station Kiosk 01 (Gate A)</span> by Operator #04</span>
+</div>
+<button class="px-space-md py-1.5 bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold rounded hover:bg-surface-container-high transition-colors">
+                  Flag Multi-Entry Incident
+                </button>
+</div>
+</div>
+<!-- STATE 3: WRONG EVENT PASS -->
+<div class="state-view hidden flex flex-col bg-surface-container-high p-space-xl rounded-xl" id="state-wrong-event-card">
+<div class="flex items-start justify-between flex-wrap gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-xl bg-error flex items-center justify-center text-on-error shadow-sm">
+<span class="material-symbols-outlined text-[32px]">event_busy</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-0.5 bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold rounded-full flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                        Event Mismatch
+                      </span>
+</div>
+<span class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight mt-0.5">This pass belongs to another event</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">QR Token matches external campus registry index</span>
+</div>
+</div>
+</div>
+<div class="mt-space-lg bg-surface-container-lowest p-space-md rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ticket Registered To:</span>
+<span class="font-label-md text-label-md text-error font-semibold">"Winter Hackathon 2024"</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Scheduled Location:</span>
+<span class="font-label-sm text-label-sm text-on-surface">Mechanical Seminar Hall C</span>
+</div>
+</div>
+</div>
+<!-- STATE 4: INVALID PASS -->
+<div class="state-view hidden flex flex-col bg-surface-container-high p-space-xl rounded-xl" id="state-invalid-card">
+<div class="flex items-start justify-between flex-wrap gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-xl bg-error flex items-center justify-center text-on-error shadow-sm">
+<span class="material-symbols-outlined text-[32px]">block</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-0.5 bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold rounded-full flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                        Verification Failed
+                      </span>
+</div>
+<span class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight mt-0.5">Invalid pass</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cryptographic signature mismatch / barcode expired or revoked</span>
+</div>
+</div>
+</div>
+<div class="mt-space-lg bg-surface-container-lowest p-space-md rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-error text-[20px]">security</span>
+<span class="font-code-sm text-code-sm text-on-surface">HMAC-SHA256 Checksum failed. Unknown ticket token issuer.</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">Reject Entry</span>
+</div>
+</div>
+<!-- STATE 5: CAMERA UNAVAILABLE -->
+<div class="state-view hidden flex flex-col bg-surface-container-low p-space-xl rounded-xl" id="state-camera-err-card">
+<div class="flex items-start justify-between flex-wrap gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-xl bg-secondary flex items-center justify-center text-on-secondary shadow-sm">
+<span class="material-symbols-outlined text-[32px]">videocam_off</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-0.5 bg-surface-container-highest text-secondary font-label-sm text-label-sm font-semibold rounded-full flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                        Feed Offline
+                      </span>
+</div>
+<span class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight mt-0.5">Camera Video Feed Unavailable</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Optical frame acquisition paused due to driver or USB bus reset</span>
+</div>
+</div>
+</div>
+<div class="mt-space-lg bg-surface-container-lowest p-space-md rounded-lg flex items-center justify-between flex-wrap gap-space-md">
+<div class="flex flex-col gap-0.5">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Immediate Fallback: Hardware USB Wedge Mode</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Plug handheld barcode scanner into USB Port 2 or perform roster search</span>
+</div>
+<button class="px-space-md py-1.5 bg-primary text-on-primary font-label-sm text-label-sm font-semibold rounded-lg hover:bg-primary/90 transition-colors">
+                  Retry Camera Permissions
+                </button>
+</div>
+</div>
+<!-- STATE 6: MANUAL CHECK-IN CONFIRMATION -->
+<div class="state-view hidden flex flex-col bg-surface-container-low p-space-xl rounded-xl" id="state-manual-card">
+<div class="flex items-start justify-between flex-wrap gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-xl bg-primary-container flex items-center justify-center text-on-primary-container shadow-sm">
+<span class="material-symbols-outlined text-[32px]">badge</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-0.5 bg-primary-container/20 text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold rounded-full flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                        Manual ID Verification
+                      </span>
+</div>
+<span class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight mt-0.5">Aarav Sharma</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Manually verified via College ID card. Confirm entry?</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-xl py-2.5 bg-primary text-on-primary rounded-lg font-label-md text-label-md font-semibold hover:bg-primary/90 shadow-sm transition-transform active:scale-95 flex items-center gap-1.5" onclick="setFeedbackState('success')">
+<span class="material-symbols-outlined text-[18px]">how_to_reg</span>
+<span>Confirm Check-in</span>
+</button>
+</div>
+</div>
+<div class="mt-space-lg bg-surface-container-lowest p-space-md rounded-lg flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Inspector: <span class="font-semibold text-on-surface">Marcus Chen (Lead Coordinator)</span></span>
+<span>Audit Note: <span class="text-on-surface">Student forgot phone; Physical ID card inspected #EC-118</span></span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- RIGHT COLUMN: Attendance Roster Stream & Instant Quick-Admit (5 cols on 12-col grid) -->
+<section class="xl:col-span-5 flex flex-col gap-space-lg">
+<!-- Attendance Summary Metrics Cards -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Registered</span>
+<div class="flex items-baseline gap-space-xs mt-space-sm">
+<span class="font-display-lg text-display-lg text-on-surface font-bold leading-none">120</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">cap</span>
+</div>
+<div class="mt-space-xs w-full bg-surface-container-high h-1 rounded-full overflow-hidden">
+<div class="bg-secondary h-full w-full"></div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-primary font-semibold">Checked In</span>
+<div class="flex items-baseline gap-space-xs mt-space-sm">
+<span class="font-display-lg text-display-lg text-primary font-bold leading-none">98</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">81.6%</span>
+</div>
+<div class="mt-space-xs w-full bg-surface-container-high h-1 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[81.6%]"></div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pending</span>
+<div class="flex items-baseline gap-space-xs mt-space-sm">
+<span class="font-display-lg text-display-lg text-on-surface font-bold leading-none">22</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">due</span>
+</div>
+<div class="mt-space-xs w-full bg-surface-container-high h-1 rounded-full overflow-hidden">
+<div class="bg-surface-container-highest h-full w-[18.4%]"></div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">OD Eligible</span>
+<div class="flex items-baseline gap-space-xs mt-space-sm">
+<span class="font-display-lg text-display-lg text-on-surface font-bold leading-none">94</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">sync</span>
+</div>
+<div class="mt-space-xs w-full bg-surface-container-high h-1 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full w-[78.3%]"></div>
+</div>
+</div>
+</div>
+<!-- Live Attendance & Check-in Feed Container -->
+<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between flex-wrap gap-space-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Recent Check-ins &amp; Audit</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Real-time gate ingress stream</span>
+</div>
+<!-- Quick Filter Pills -->
+<div class="flex items-center gap-space-xxs bg-surface-container-low p-1 rounded-lg">
+<button class="filter-pill-btn px-space-sm py-1 rounded text-on-surface font-label-sm text-label-sm bg-surface-container-lowest shadow-sm font-semibold" id="filter-all" onclick="filterFeed('all')">
+                All (120)
+              </button>
+<button class="filter-pill-btn px-space-sm py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-medium" id="filter-checked" onclick="filterFeed('checked')">
+                Checked In (98)
+              </button>
+<button class="filter-pill-btn px-space-sm py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-medium" id="filter-pending" onclick="filterFeed('pending')">
+                Pending (22)
+              </button>
+</div>
+</div>
+<!-- Instant Search & Quick Admit Input -->
+<div class="relative w-full flex items-center">
+<span class="material-symbols-outlined absolute left-space-md text-on-surface-variant text-[20px]">search</span>
+<input class="w-full h-10 pl-10 pr-24 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest transition-colors" id="student-search-input" oninput="handleRosterSearch(this.value)" placeholder="Search checked-in or pending students by name, roll, or pass ref..." type="text">
+<button class="absolute right-1.5 px-space-sm py-1 bg-primary text-on-primary font-label-sm text-label-sm rounded hover:bg-primary/90 transition-colors shadow-sm" onclick="triggerManualAdmitBySearch()">
+              1-Tap Admit
+            </button>
+</div>
+<!-- Chronological Live Audit Stream of Last 6 Check-ins -->
+<div class="flex flex-col gap-space-xs mt-space-xs" id="roster-stream-container">
+<!-- Item 1 -->
+<div class="roster-item checked p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">qr_code_scanner</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Aarav Sharma</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">EC2022-118</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Row D #42 • Gate B (Kiosk 02)</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<span class="font-code-sm text-code-sm text-on-surface font-semibold">01:58 PM</span>
+<span class="font-label-sm text-label-sm text-primary font-medium flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> QR Optical
+                </span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="roster-item checked p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">qr_code_scanner</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Pooja Krishnan</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">CS2022-094</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Row B #18 • Gate B (Kiosk 02)</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<span class="font-code-sm text-code-sm text-on-surface font-semibold">01:56 PM</span>
+<span class="font-label-sm text-label-sm text-primary font-medium flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> QR Optical
+                </span>
+</div>
+</div>
+<!-- Item 3 (Manual Method) -->
+<div class="roster-item checked p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-8 h-8 rounded-full bg-primary-container/20 text-on-primary-fixed-variant flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Rohan Varma</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">IT2021-033</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Row A #06 • Gate B (Manual Override)</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<span class="font-code-sm text-code-sm text-on-surface font-semibold">01:54 PM</span>
+<span class="font-label-sm text-label-sm text-on-primary-fixed-variant font-medium flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> ID Verified
+                </span>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="roster-item checked p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">qr_code_scanner</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Sneha Deshmukh</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">AI2023-012</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Row F #29 • Gate B (Kiosk 02)</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<span class="font-code-sm text-code-sm text-on-surface font-semibold">01:51 PM</span>
+<span class="font-label-sm text-label-sm text-primary font-medium flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> QR Optical
+                </span>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="roster-item checked p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">qr_code_scanner</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Dev Patel</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">CS2022-155</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Row C #11 • Gate B (Kiosk 02)</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<span class="font-code-sm text-code-sm text-on-surface font-semibold">01:48 PM</span>
+<span class="font-label-sm text-label-sm text-primary font-medium flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> QR Optical
+                </span>
+</div>
+</div>
+<!-- Item 6 (Pending Item for review) -->
+<div class="roster-item pending p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Tanvi Kulkarni</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">EC2022-044</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Row E #14 • Not Arrived</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs flex-shrink-0">
+<button class="px-space-sm py-1 bg-surface-container-highest hover:bg-primary hover:text-on-primary text-on-surface rounded font-label-sm text-label-sm transition-colors" onclick="admitSingleStudent('Tanvi Kulkarni', 'EC2022-044', 'Row E #14')">
+                  Admit
+                </button>
+</div>
+</div>
+</div>
+<!-- Bottom Summary Indicator -->
+<div class="pt-space-sm flex items-center justify-between border-t border-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">sync</span>
+<span>Syncing with Campus Mainframe</span>
+</span>
+<span class="font-code-sm text-code-sm text-secondary">Gate B Operator: Marcus Chen</span>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<script>
+  let flashActive = false;
+  let chimeActive = true;
+  let currentCam = 1;
+
+  function setFeedbackState(stateId) {
+    const states = ['success', 'duplicate', 'wrong-event', 'invalid', 'camera-err', 'manual'];
+    
+    states.forEach(st => {
+      const card = document.getElementById(`state-${st}-card`);
+      const btn = document.getElementById(`btn-state-${st}`);
+      if (card) {
+        if (st === stateId) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      }
+      if (btn) {
+        if (st === stateId) {
+          btn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+          btn.classList.remove('text-on-surface-variant');
+        } else {
+          btn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+          btn.classList.add('text-on-surface-variant');
+        }
+      }
+    });
+
+    if (chimeActive && (stateId === 'success' || stateId === 'manual')) {
+      playFeedbackTone(880);
+    } else if (chimeActive && (stateId === 'duplicate' || stateId === 'wrong-event' || stateId === 'invalid')) {
+      playFeedbackTone(220);
+    }
+  }
+
+  function toggleFlashState() {
+    flashActive = !flashActive;
+    const icon = document.getElementById('flash-icon');
+    const text = document.getElementById('flash-text');
+    if (flashActive) {
+      icon.innerText = 'flash_on';
+      text.innerText = 'Flash On';
+      icon.classList.add('text-tertiary-container');
+    } else {
+      icon.innerText = 'flash_off';
+      text.innerText = 'Flash';
+      icon.classList.remove('text-tertiary-container');
+    }
+  }
+
+  function switchCameraInput() {
+    currentCam = currentCam === 1 ? 2 : 1;
+    const btn = document.getElementById('toggle-input');
+    btn.innerHTML = `<span class="material-symbols-outlined text-[16px]">flip_camera_ios</span><span>Switch (Cam ${currentCam})</span>`;
+  }
+
+  function toggleChimeState() {
+    chimeActive = !chimeActive;
+    const btn = document.getElementById('toggle-chime');
+    const icon = document.getElementById('chime-icon');
+    const text = document.getElementById('chime-text');
+    if (chimeActive) {
+      icon.innerText = 'volume_up';
+      text.innerText = 'Chime On';
+      btn.classList.add('text-primary');
+      btn.classList.remove('text-secondary');
+    } else {
+      icon.innerText = 'volume_off';
+      text.innerText = 'Muted';
+      btn.classList.remove('text-primary');
+      btn.classList.add('text-secondary');
+    }
+  }
+
+  function playFeedbackTone(freq) {
+    try {
+      const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+      osc.type = 'sine';
+      osc.frequency.value = freq;
+      gain.gain.setValueAtTime(0.04, audioCtx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.15);
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+      osc.start();
+      osc.stop(audioCtx.currentTime + 0.16);
+    } catch(e) {
+      // AudioContext fallback
+    }
+  }
+
+  function filterFeed(type) {
+    const items = document.querySelectorAll('.roster-item');
+    const buttons = {
+      'all': document.getElementById('filter-all'),
+      'checked': document.getElementById('filter-checked'),
+      'pending': document.getElementById('filter-pending')
+    };
+
+    Object.keys(buttons).forEach(key => {
+      const btn = buttons[key];
+      if (key === type) {
+        btn.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm', 'font-semibold');
+        btn.classList.remove('text-on-surface-variant', 'font-medium');
+      } else {
+        btn.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm', 'font-semibold');
+        btn.classList.add('text-on-surface-variant', 'font-medium');
+      }
+    });
+
+    items.forEach(el => {
+      if (type === 'all') {
+        el.style.display = 'flex';
+      } else if (type === 'checked') {
+        el.style.display = el.classList.contains('checked') ? 'flex' : 'none';
+      } else if (type === 'pending') {
+        el.style.display = el.classList.contains('pending') ? 'flex' : 'none';
+      }
+    });
+  }
+
+  function handleRosterSearch(val) {
+    const term = val.toLowerCase().trim();
+    const items = document.querySelectorAll('.roster-item');
+    items.forEach(el => {
+      const text = el.innerText.toLowerCase();
+      if (!term || text.includes(term)) {
+        el.style.display = 'flex';
+      } else {
+        el.style.display = 'none';
+      }
+    });
+  }
+
+  function triggerManualStateModal() {
+    setFeedbackState('manual');
+  }
+
+  function triggerManualAdmitBySearch() {
+    const input = document.getElementById('student-search-input');
+    const val = input.value.trim() || 'Aarav Sharma';
+    setFeedbackState('manual');
+  }
+
+  function admitSingleStudent(name, roll, seat) {
+    setFeedbackState('success');
+    const successCard = document.getElementById('state-success-card');
+    const titleSpan = successCard.querySelector('.font-headline-lg');
+    const rollSpan = successCard.querySelector('.font-code-sm');
+    if (titleSpan) titleSpan.innerText = name;
+    if (rollSpan) rollSpan.innerText = roll;
+  }
+
+  // Rapid Spacebar trigger simulation for kiosk operators
+  window.addEventListener('keydown', (e) => {
+    if (e.code === 'Space' && e.target.tagName !== 'INPUT') {
+      e.preventDefault();
+      setFeedbackState('success');
+    }
+  });
+</script></main></div></body></html>

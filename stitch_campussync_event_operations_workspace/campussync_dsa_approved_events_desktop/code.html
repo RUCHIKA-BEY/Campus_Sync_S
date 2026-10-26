@@ -1,0 +1,430 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary-fixed-dim":"#ffb77e","on-primary-fixed":"#0a006b","primary":"#4241bc","on-error-container":"#93000a","on-tertiary-fixed":"#2f1500","on-error":"#ffffff","on-tertiary-fixed-variant":"#6e3900","inverse-surface":"#2b303d","secondary-fixed":"#dae3f4","on-primary":"#ffffff","surface-container":"#e9edfe","secondary-fixed-dim":"#bec7d7","background":"#faf9ff","on-background":"#161b27","surface-container-high":"#e4e8f8","surface-container-lowest":"#ffffff","on-primary-fixed-variant":"#3533b0","on-secondary-container":"#5c6573","surface-container-low":"#f1f3ff","on-secondary":"#ffffff","on-tertiary-container":"#ffe8d9","on-primary-container":"#edeaff","surface-tint":"#4e4ec9","outline-variant":"#c7c4d6","tertiary":"#804300","surface":"#faf9ff","surface-bright":"#faf9ff","outline":"#777585","inverse-primary":"#c1c1ff","on-surface":"#161b27","inverse-on-surface":"#edf0ff","surface-container-highest":"#dee2f3","on-surface-variant":"#464553","tertiary-container":"#a35700","tertiary-fixed":"#ffdcc3","on-secondary-fixed":"#131c28","primary-fixed":"#e2dfff","primary-fixed-dim":"#c1c1ff","surface-dim":"#d5d9ea","secondary":"#565f6d","error":"#ba1a1a","on-tertiary":"#ffffff","primary-container":"#5b5bd6","surface-variant":"#dee2f3","on-secondary-fixed-variant":"#3e4755","secondary-container":"#dae3f4","error-container":"#ffdad6"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-sm":"0.5rem","space-xs":"0.25rem","margin-lg":"2rem","space-md":"0.75rem","space-lg":"1rem","gutter-lg":"1.5rem","gutter":"1rem","margin-md":"1.5rem","space-xxs":"0.125rem","space-xl":"1.5rem","margin":"1rem","space-2xl":"2rem"},fontFamily:{"headline-sm":["Inter"],"body-md":["Inter"],"headline-md":["Inter"],"body-sm":["Inter"],"code-sm":["Inter"],"display-lg":["Inter"],"label-sm":["Inter"],"label-md":["Inter"],"body-lg":["Inter"],"headline-lg":["Inter"]},fontSize:{"headline-sm":["16px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"headline-md":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"18px",letterSpacing:"0em",fontWeight:"400"}],"code-sm":["12px",{lineHeight:"16px",letterSpacing:"0em",fontWeight:"400"}],"display-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"600"}],"label-sm":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"500"}],"label-md":["13px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"500"}],"body-lg":["15px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"400"}],"headline-lg":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}]}}}}</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-space-xl flex items-center gap-space-sm bg-surface-container-low"><div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">account_balance</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">DSA Portal</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none mt-1">Student Affairs</span></div></div><div class="px-space-md py-space-sm"><div class="px-space-sm pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-outline">Workspaces</div><nav class="flex flex-col gap-space-xxs" data-active-classes="bg-primary-container text-on-primary font-medium rounded-lg shadow-sm"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="event-proposals" href="#"><span class="material-symbols-outlined text-[20px]">description</span><span>Event Proposals</span></a><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm transition-all bg-primary-container text-on-primary font-medium rounded-lg shadow-sm" data-path="approved-events" href="#"><span class="material-symbols-outlined text-[20px]">verified</span><span>Approved Events</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="venue-timetable" href="#"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span>Venue Timetable</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="on-duty-clearance" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span>On-Duty Clearance</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="audit-logs" href="#"><span class="material-symbols-outlined text-[20px]">history_edu</span><span>Audit Logs</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Settings</span></a></nav></div></div><div class="p-space-md m-space-md rounded-xl bg-surface-container-lowest shadow-[0_1px_4px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-sm"><div class="w-2 h-2 rounded-full bg-primary"></div><span class="font-label-sm text-label-sm text-on-surface font-medium">Academic Term 2024-B</span></div><div class="font-code-sm text-code-sm text-on-surface-variant mt-1">Governance Node v4.2</div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/80 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-space-xl flex items-center justify-between"><div class="flex items-center gap-space-md flex-1 max-w-md"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-space-md text-outline text-[18px] pointer-events-none">search</span><input class="w-full h-9 pl-10 pr-space-md bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Search proposals, venues, permits..." type="text"></div></div><div class="flex items-center gap-space-lg"><button class="relative p-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary"></span></button><div class="h-6 w-px bg-outline-variant/30"></div><div class="flex items-center gap-space-md"><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface font-medium leading-none">Dr. Eleanor Vance</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none mt-1">Dean of Student Affairs</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="p-space-xl flex flex-col gap-space-xl max-w-7xl mx-auto w-full">
+<!-- Top Action & View Context -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs text-outline font-label-sm text-label-sm uppercase tracking-wider mb-1">
+<span>Student Affairs</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-medium">Authorizations &amp; Registry</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">Approved Events</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Directory of authorized student society events and confirmed participation records.</p>
+</div>
+<!-- Segmented Status Tabs -->
+<div class="inline-flex p-1 bg-surface-container-high rounded-xl self-start md:self-auto" id="view-tabs" role="tablist">
+<button class="tab-trigger flex items-center gap-space-xs px-space-lg py-1.5 rounded-lg font-label-md text-label-md transition-all bg-surface-container-lowest text-on-surface shadow-sm font-medium" data-target="upcoming" id="tab-upcoming" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">event_available</span>
+<span>Upcoming</span>
+<span class="ml-1 px-1.5 py-0.2 bg-primary-fixed text-on-primary-fixed rounded-full text-[11px] font-semibold">6</span>
+</button>
+<button class="tab-trigger flex items-center gap-space-xs px-space-lg py-1.5 rounded-lg font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" data-target="past" id="tab-past" type="button">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span>Past</span>
+<span class="ml-1 px-1.5 py-0.2 bg-surface-container-highest text-on-surface-variant rounded-full text-[11px] font-semibold">34</span>
+</button>
+</div>
+</div>
+<!-- Summary KPI Strip (Clean counts, zero telemetry/graphs) -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md">
+<div class="p-space-lg bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Total Approved (AY 24-25)</span>
+<span class="material-symbols-outlined text-primary text-[20px]">assignment_turned_in</span>
+</div>
+<div class="mt-space-md flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-surface font-semibold tracking-tight">40</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Events</span>
+</div>
+</div>
+<div class="p-space-lg bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Upcoming Scheduled</span>
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+</div>
+<div class="mt-space-md flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-primary font-semibold tracking-tight">6</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Events</span>
+</div>
+</div>
+<div class="p-space-lg bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Average Student Turnout</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">how_to_reg</span>
+</div>
+<div class="mt-space-md flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-surface font-semibold tracking-tight">92%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Attendance Rate</span>
+</div>
+</div>
+<div class="p-space-lg bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Active Sanctioned Societies</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">groups</span>
+</div>
+<div class="mt-space-md flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-surface font-semibold tracking-tight">18</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Clubs</span>
+</div>
+</div>
+</div>
+<!-- Filter & Search Bar -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[18px] pointer-events-none">search</span>
+<input class="w-full h-10 pl-10 pr-space-md bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-colors shadow-[inset_0_1px_2px_rgba(0,0,0,0.03)]" id="event-search-input" placeholder="Search by event title, venue, or society..." type="text">
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Date Filter Dropdown -->
+<div class="relative min-w-[140px]">
+<select class="w-full h-10 px-3 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md rounded-lg appearance-none cursor-pointer focus:outline-none pr-8 transition-colors">
+<option>All Dates</option>
+<option>This Week</option>
+<option>This Month</option>
+<option>Fall Term '24</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline text-[18px] pointer-events-none">expand_more</span>
+</div>
+<!-- Club Filter Dropdown -->
+<div class="relative min-w-[190px]">
+<select class="w-full h-10 px-3 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md rounded-lg appearance-none cursor-pointer focus:outline-none pr-8 transition-colors">
+<option>All Registered Clubs</option>
+<option>CodeCamp Society</option>
+<option>Turing Robotics Club</option>
+<option>Math &amp; Computing Society</option>
+<option>Design &amp; Engineering Guild</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline text-[18px] pointer-events-none">expand_more</span>
+</div>
+<!-- Sort Selector -->
+<div class="relative min-w-[210px]">
+<select class="w-full h-10 px-3 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md rounded-lg appearance-none cursor-pointer focus:outline-none pr-8 transition-colors">
+<option>Sort by Date (Soonest first)</option>
+<option>Sort by Capacity (High to Low)</option>
+<option>Sort by Club Alphabetical</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline text-[18px] pointer-events-none">sort</span>
+</div>
+</div>
+</div>
+<!-- Main List Container -->
+<div class="flex flex-col gap-space-lg">
+<!-- Section: Upcoming Scheduled Events -->
+<div class="flex flex-col gap-space-md" id="section-upcoming">
+<div class="flex items-center justify-between px-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Upcoming Scheduled Events</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">3 of 6 shown</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Real-time RSVP sync</span>
+</div>
+<!-- Event Row 1 -->
+<div class="event-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="flex items-start sm:items-center gap-space-lg flex-1 min-w-0">
+<!-- Poster Thumbnail -->
+<div class="w-20 h-20 sm:w-24 sm:h-24 rounded-lg overflow-hidden flex-shrink-0 relative bg-surface-container shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Close up of student modern artificial intelligence workstation showing machine learning neural network schematics on twin vertical monitor screens in an engineering laboratory bathed in soft purple ambient neon lights with neat notebooks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIDT0wPOWFD1XiT0-kIgnzKNmz0YbGCkau29whvz4hIpq7KsIm3DRqtG-r1jV7Hbioh08yBSrrxRSHpQK6dGAKGyv91KmGs7F01HBz1zHrFrbDn-saeDGisYE0RwCHeczORyRxjcGKpBjvjM6nb-u4rLR_tNDtgOqtesz9Fnt8hjwQEYdoH1-kQsYqgsXmxsCFEVcf3kbxtJlF-dHWzHp0FUaIoqqDdquD0U6IPNYo">
+<div class="absolute bottom-1 right-1 px-1.5 py-0.5 bg-inverse-surface/80 backdrop-blur text-inverse-on-surface rounded font-code-sm text-[10px] font-medium leading-none">THU</div>
+</div>
+<!-- Event Details -->
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-[11px] font-medium tracking-tight">CodeCamp Society</span>
+<span class="font-label-sm text-label-sm text-outline">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tier 1 Charter</span>
+<span class="font-label-sm text-label-sm text-outline">•</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-code-sm text-[11px]">#DSA-2024-079 • Verified</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface truncate mt-0.5">AI Builders Workshop: Foundational LLM Agents</h2>
+<div class="flex flex-wrap items-center gap-x-4 gap-y-1 font-body-sm text-body-sm text-on-surface-variant mt-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+<span>Thu, Nov 14, 2024 • 2:00 PM – 4:00 PM</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">location_on</span>
+<span class="truncate">Seminar Hall B (Engineering Block)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Capacity & Action Right Column -->
+<div class="flex items-center justify-between lg:justify-end gap-space-xl pt-space-md lg:pt-0 border-t sm:border-t-0 border-surface-container-high">
+<!-- Capacity Simple Progress -->
+<div class="flex flex-col gap-1 min-w-[140px]">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-on-surface font-medium">120 / 120 (Full)</span>
+<span class="text-error font-medium">At Capacity</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-primary rounded-full w-full"></div>
+</div>
+<div class="font-code-sm text-code-sm text-outline mt-0.5">
+                Check-ins: — (Opens at 1:45 PM)
+              </div>
+</div>
+<!-- Action -->
+<button class="h-9 px-space-md bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface rounded-lg font-label-md text-label-md flex items-center gap-1.5 transition-colors whitespace-nowrap" type="button">
+<span>View Event Details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Event Row 2 -->
+<div class="event-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="flex items-start sm:items-center gap-space-lg flex-1 min-w-0">
+<!-- Poster Thumbnail -->
+<div class="w-20 h-20 sm:w-24 sm:h-24 rounded-lg overflow-hidden flex-shrink-0 relative bg-surface-container shadow-sm">
+<img class="w-full h-full object-cover" data-alt="A modern collaborative tech hackathon arena with university teams gathered around large wooden modular desks with laptops, stickers, and open source documentation visible in soft diffuse daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_cP8-H1kQPw1HHgGh5GLAY6aWIjy_LJU_5AZh4GqqFK6DBuIMDgk-EHto_Rlxkhu32UziByBtq9GrCPQxo08pnV4j_6VZ8ehbMBZamr-Aw5GtGiEauPTN2PX765m4pqCQ85xV_Ru58BpX0BCRONCQhVCrCsS-9gClcmOhx7llldkSfxRMiFWliN5A5DHzV9KRl7sE_hYQKEFavf8GJx8SuMwReX0LPGW1GZcJK2UB">
+<div class="absolute bottom-1 right-1 px-1.5 py-0.5 bg-inverse-surface/80 backdrop-blur text-inverse-on-surface rounded font-code-sm text-[10px] font-medium leading-none">SAT</div>
+</div>
+<!-- Event Details -->
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-[11px] font-medium tracking-tight">CodeCamp Society</span>
+<span class="font-label-sm text-label-sm text-outline">•</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-code-sm text-[11px]">#DSA-2024-884 • Clearance Cleared</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface truncate mt-0.5">CodeCamp Winter Hackathon 2024: Open Source Sprint</h2>
+<div class="flex flex-wrap items-center gap-x-4 gap-y-1 font-body-sm text-body-sm text-on-surface-variant mt-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+<span>Sat, Dec 7 – Sun, Dec 8, 2024 • 9:00 AM – 6:00 PM</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">location_on</span>
+<span class="truncate">Innovation Hub &amp; Lab 4</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Capacity & Action Right Column -->
+<div class="flex items-center justify-between lg:justify-end gap-space-xl pt-space-md lg:pt-0 border-t sm:border-t-0 border-surface-container-high">
+<!-- Capacity Simple Progress -->
+<div class="flex flex-col gap-1 min-w-[140px]">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-on-surface font-medium">150 / 180 seats</span>
+<span class="text-on-surface-variant">30 left</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 83%"></div>
+</div>
+<div class="font-code-sm text-code-sm text-outline mt-0.5">
+                Check-ins: — (Upcoming)
+              </div>
+</div>
+<!-- Action -->
+<button class="h-9 px-space-md bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface rounded-lg font-label-md text-label-md flex items-center gap-1.5 transition-colors whitespace-nowrap" type="button">
+<span>View Event Details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Event Row 3 -->
+<div class="event-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="flex items-start sm:items-center gap-space-lg flex-1 min-w-0">
+<!-- Poster Thumbnail -->
+<div class="w-20 h-20 sm:w-24 sm:h-24 rounded-lg overflow-hidden flex-shrink-0 relative bg-surface-container shadow-sm">
+<img class="w-full h-full object-cover" data-alt="High tech quadcopter drone hovering steadily above a manicured campus grass courtyard during an engineering demonstration with student pilots holding flight controllers under a bright overcast sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDocHFkyclDsfc3ynbQNjxr9fr2vDuBkn5QX8az5H4MueBXtTm9mJzIVU6nzWj4T-iGhV_T6lqtpPVgtuMaY5-9qWWFUeKmXVKLoBLg2NIJFciUsOK_TKxDW0Ytbq_DNiBvsCDyIIoj3Sm5I2isDYcdG8OxYNNjdS1xqTt-nnDFdT-6LA7beHorb3q24s8nGmaZPlhnI4xp9LrpWNJZW--1HrLhtxCxXdSp5Yp38zmn">
+<div class="absolute bottom-1 right-1 px-1.5 py-0.5 bg-inverse-surface/80 backdrop-blur text-inverse-on-surface rounded font-code-sm text-[10px] font-medium leading-none">WED</div>
+</div>
+<!-- Event Details -->
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[11px] font-medium tracking-tight">Turing Robotics Club</span>
+<span class="font-label-sm text-label-sm text-outline">•</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-code-sm text-[11px]">#DSA-2024-912 • Outdoor Permit</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface truncate mt-0.5">Autonomous Drone Showcase &amp; Live Flight Testing</h2>
+<div class="flex flex-wrap items-center gap-x-4 gap-y-1 font-body-sm text-body-sm text-on-surface-variant mt-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+<span>Wed, Dec 18, 2024 • 2:00 PM – 5:30 PM</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">location_on</span>
+<span class="truncate">West Quad Field (Courtyard A)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Capacity & Action Right Column -->
+<div class="flex items-center justify-between lg:justify-end gap-space-xl pt-space-md lg:pt-0 border-t sm:border-t-0 border-surface-container-high">
+<!-- Capacity Simple Progress -->
+<div class="flex flex-col gap-1 min-w-[140px]">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-on-surface font-medium">88 / 100 RSVPs</span>
+<span class="text-on-surface-variant">12 left</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 88%"></div>
+</div>
+<div class="font-code-sm text-code-sm text-outline mt-0.5">
+                Check-ins: — (Upcoming)
+              </div>
+</div>
+<!-- Action -->
+<button class="h-9 px-space-md bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface rounded-lg font-label-md text-label-md flex items-center gap-1.5 transition-colors whitespace-nowrap" type="button">
+<span>View Event Details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Section: Past Events & Participation Log (Completed) -->
+<div class="flex flex-col gap-space-md pt-space-lg" id="section-past">
+<div class="flex items-center justify-between px-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-outline">verified</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Recent Past Events &amp; Participation Log (Completed)</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Official Dean Attendance Ledger</span>
+</div>
+<!-- Past Event Row 4a -->
+<div class="event-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="flex items-start sm:items-center gap-space-lg flex-1 min-w-0">
+<!-- Poster Thumbnail -->
+<div class="w-20 h-20 sm:w-24 sm:h-24 rounded-lg overflow-hidden flex-shrink-0 relative bg-surface-container shadow-sm">
+<img class="w-full h-full object-cover" data-alt="University lecture amphitheater filled with attentive students listening to a machine learning speaker standing by a podium with university crest, sleek modern academic hall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXKQzHrGrMYM3N-XR111eylJ8V4UvJ531y9Akm4JsUG-RPDE1BaTs6oxsqmTbF-BFbbUQt7Ht0oDB8WAk_ZJnoLdJoY2Z1lnyr2vRPbG88rNGroShQNwLF9GwSPHSHJucLvVaoftA9xveX69L-06CiemZK966nRYGOyvaGUIQ2qWCo_TIxSzm1Dj5PBmoQyDJ8btql4zb-vdzFNeQKvBt3jIJthwX0ndafvohH7-EU">
+<div class="absolute bottom-1 right-1 px-1.5 py-0.5 bg-inverse-surface/80 backdrop-blur text-inverse-on-surface rounded font-code-sm text-[10px] font-medium leading-none">NOV</div>
+</div>
+<!-- Event Details -->
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[11px] font-medium tracking-tight">Math &amp; Computing Society</span>
+<span class="font-label-sm text-label-sm text-outline">•</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-code-sm text-[11px]">#DSA-2024-055 • Concluded</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface truncate mt-0.5">DataSummit: Machine Learning in Campus Operations</h2>
+<div class="flex flex-wrap items-center gap-x-4 gap-y-1 font-body-sm text-body-sm text-on-surface-variant mt-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">event</span>
+<span>Wed, Nov 6, 2024 • 10:00 AM – 3:30 PM</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">location_on</span>
+<span class="truncate">Turing Lecture Theatre B</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Attendance Count & Action Right Column -->
+<div class="flex items-center justify-between lg:justify-end gap-space-xl pt-space-md lg:pt-0 border-t sm:border-t-0 border-surface-container-high">
+<div class="flex flex-col gap-0.5 min-w-[170px]">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-md text-label-md text-on-surface font-medium">89 verified check-ins</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">95 registered (94% turnout)</span>
+</div>
+<button class="h-9 px-space-md bg-surface-container-low hover:bg-surface-container-high text-on-surface rounded-lg font-label-md text-label-md flex items-center gap-1.5 transition-colors whitespace-nowrap" type="button">
+<span>View Attendance Log</span>
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+</button>
+</div>
+</div>
+<!-- Past Event Row 4b -->
+<div class="event-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="flex items-start sm:items-center gap-space-lg flex-1 min-w-0">
+<!-- Poster Thumbnail -->
+<div class="w-20 h-20 sm:w-24 sm:h-24 rounded-lg overflow-hidden flex-shrink-0 relative bg-surface-container shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Student founders pitching hardware prototypes in a bright glass atrium incubator auditorium, panel of judges seated at front tables taking notes, warm spotlighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCng7BuGo5R87oMnb4G7mHjNwDnvIIqFWwpFynyP9j80tFUs4Lx7D93dcqzEYP3EgBUH2-eVcr96j40vLIioFL4IXTJGgKW0Qf3R_ocTyN1gkTt2ks0L4GQmZDujxvOf4N4SHhWZnvi-9bzppElx8zWueem6e4mHAumhEAFLzMbmuYO87P9qg3tu1cNoVcsolmj7dvieVR8vj-474e4mMqnXJ-39J9cKjjAtVfbTFhI">
+<div class="absolute bottom-1 right-1 px-1.5 py-0.5 bg-inverse-surface/80 backdrop-blur text-inverse-on-surface rounded font-code-sm text-[10px] font-medium leading-none">OCT</div>
+</div>
+<!-- Event Details -->
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[11px] font-medium tracking-tight">Design &amp; Engineering Guild</span>
+<span class="font-label-sm text-label-sm text-outline">•</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-code-sm text-[11px]">#DSA-2024-041 • Concluded</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface truncate mt-0.5">Founders Friday: Autumn Startup Pitch</h2>
+<div class="flex flex-wrap items-center gap-x-4 gap-y-1 font-body-sm text-body-sm text-on-surface-variant mt-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">event</span>
+<span>Fri, Oct 25, 2024 • 5:00 PM – 8:00 PM</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">location_on</span>
+<span class="truncate">Atrium Incubator Hall</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Attendance Count & Action Right Column -->
+<div class="flex items-center justify-between lg:justify-end gap-space-xl pt-space-md lg:pt-0 border-t sm:border-t-0 border-surface-container-high">
+<div class="flex flex-col gap-0.5 min-w-[170px]">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-md text-label-md text-on-surface font-medium">54 verified check-ins</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">60 registered (90% turnout)</span>
+</div>
+<button class="h-9 px-space-md bg-surface-container-low hover:bg-surface-container-high text-on-surface rounded-lg font-label-md text-label-md flex items-center gap-1.5 transition-colors whitespace-nowrap" type="button">
+<span>View Attendance Log</span>
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Administrative Footer Metadata / Fast Pagination Strip -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col sm:flex-row items-center justify-between gap-space-md text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">verified_user</span>
+<span>All records cryptographically signed under DSA Academic Term 2024-B authorization matrix.</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="text-on-surface font-medium">Displaying 5 of 40 events</span>
+<button class="px-2.5 py-1 bg-surface-container-lowest hover:bg-surface-container text-on-surface rounded font-medium shadow-sm transition-colors" type="button">Previous</button>
+<button class="px-2.5 py-1 bg-surface-container-lowest hover:bg-surface-container text-on-surface rounded font-medium shadow-sm transition-colors" type="button">Next</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const tabUpcoming = document.getElementById('tab-upcoming');
+    const tabPast = document.getElementById('tab-past');
+    const sectionUpcoming = document.getElementById('section-upcoming');
+    const sectionPast = document.getElementById('section-past');
+    const searchInput = document.getElementById('event-search-input');
+    const cards = document.querySelectorAll('.event-card');
+
+    function setActiveTab(isUpcoming) {
+      if (isUpcoming) {
+        tabUpcoming.className = 'tab-trigger flex items-center gap-space-xs px-space-lg py-1.5 rounded-lg font-label-md text-label-md transition-all bg-surface-container-lowest text-on-surface shadow-sm font-medium';
+        tabPast.className = 'tab-trigger flex items-center gap-space-xs px-space-lg py-1.5 rounded-lg font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container';
+        sectionUpcoming.style.display = 'flex';
+        sectionPast.style.display = 'flex';
+      } else {
+        tabPast.className = 'tab-trigger flex items-center gap-space-xs px-space-lg py-1.5 rounded-lg font-label-md text-label-md transition-all bg-surface-container-lowest text-on-surface shadow-sm font-medium';
+        tabUpcoming.className = 'tab-trigger flex items-center gap-space-xs px-space-lg py-1.5 rounded-lg font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container';
+        sectionUpcoming.style.display = 'none';
+        sectionPast.style.display = 'flex';
+        sectionPast.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    if (tabUpcoming && tabPast) {
+      tabUpcoming.addEventListener('click', () => setActiveTab(true));
+      tabPast.addEventListener('click', () => setActiveTab(false));
+    }
+
+    if (searchInput) {
+      searchInput.addEventListener('input', function(e) {
+        const query = e.target.value.toLowerCase().trim();
+        cards.forEach(card => {
+          const text = card.textContent.toLowerCase();
+          if (text.includes(query)) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    }
+  })();
+</script></main></div></body></html>

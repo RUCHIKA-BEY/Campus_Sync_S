@@ -1,0 +1,461 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff","inverse-primary":"#c1c1ff","inverse-on-surface":"#edf0ff","background":"#faf9ff","secondary-container":"#dae3f4","surface-container":"#e9edfe","error":"#ba1a1a","tertiary-fixed":"#ffdcc3","tertiary-fixed-dim":"#ffb77e","primary-fixed-dim":"#c1c1ff","on-tertiary-fixed":"#2f1500","surface-dim":"#d5d9ea","on-surface-variant":"#464553","surface-tint":"#4e4ec9","secondary-fixed-dim":"#bec7d7","surface-container-highest":"#dee2f3","tertiary":"#804300","on-error-container":"#93000a","inverse-surface":"#2b303d","outline":"#777585","surface-container-lowest":"#ffffff","on-secondary-fixed":"#131c28","on-primary":"#ffffff","on-background":"#161b27","primary-container":"#5b5bd6","surface-container-high":"#e4e8f8","tertiary-container":"#a35700","on-secondary-fixed-variant":"#3e4755","on-primary-fixed":"#0a006b","secondary":"#565f6d","surface-bright":"#faf9ff","on-surface":"#161b27","on-tertiary-container":"#ffe8d9","outline-variant":"#c7c4d6","on-tertiary":"#ffffff","on-tertiary-fixed-variant":"#6e3900","surface":"#faf9ff","primary":"#4241bc","on-error":"#ffffff","on-primary-fixed-variant":"#3533b0","on-primary-container":"#edeaff","primary-fixed":"#e2dfff","secondary-fixed":"#dae3f4","on-secondary-container":"#5c6573","surface-variant":"#dee2f3","surface-container-low":"#f1f3ff","error-container":"#ffdad6"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-lg":"1rem","space-sm":"0.5rem","margin":"1rem","margin-lg":"2rem","space-xl":"1.5rem","space-2xl":"2rem","gutter-lg":"1.5rem","space-xxs":"0.125rem","gutter":"1rem","margin-md":"1.5rem","space-xs":"0.25rem","space-md":"0.75rem"},fontFamily:{"headline-sm":["Inter"],"body-sm":["Inter"],"code-sm":["Inter"],"headline-lg":["Inter"],"headline-md":["Inter"],"body-md":["Inter"],"label-md":["Inter"],"label-sm":["Inter"],"display-lg":["Inter"],"body-lg":["Inter"]},fontSize:{"headline-sm":["16px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"18px",letterSpacing:"0em",fontWeight:"400"}],"code-sm":["12px",{lineHeight:"16px",letterSpacing:"0em",fontWeight:"400"}],"headline-lg":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-md":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"label-md":["13px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"500"}],"label-sm":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"500"}],"display-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"600"}],"body-lg":["15px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-60 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 px-space-xl flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">hub</span></div><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">CampusSync</span></div><div class="px-space-md py-space-sm"><span class="px-space-sm font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Student Space</span></div><nav class="flex flex-col gap-space-xxs px-space-sm" data-active-classes="bg-surface-container text-primary font-label-md"><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg transition-colors bg-surface-container text-primary font-label-md" data-path="event-details" href="#"><span class="material-symbols-outlined text-[20px]">event</span>Events &amp; Workshops</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="campus-directory" href="#"><span class="material-symbols-outlined text-[20px]">groups</span>Clubs &amp; Orgs</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="facility-reservations" href="#"><span class="material-symbols-outlined text-[20px]">meeting_room</span>Facility Bookings</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="student-permits" href="#"><span class="material-symbols-outlined text-[20px]">assignment</span>Permit Requests</a></nav></div><div class="p-space-md"><div class="bg-surface-container-lowest p-space-md rounded-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">Academic Term</span><span class="px-space-xs py-space-xxs rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[10px]">Active</span></div><span class="font-label-md text-label-md text-on-surface">Spring 2025</span></div></div></aside><div class="pl-60"><header class="fixed top-0 left-60 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="hover:text-on-surface cursor-pointer">Student Portal</span><span>/</span><span class="text-on-surface font-label-md text-label-md">Engineering Council</span></div></div><div class="flex items-center gap-space-lg"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-sm text-[18px] text-on-surface-variant">search</span><input class="h-9 pl-9 pr-space-md bg-surface-container-lowest rounded-lg text-body-sm font-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-2 focus:ring-primary/20 w-64" placeholder="Search sessions, venues, clubs..." type="text"></div><div class="flex items-center gap-space-sm"><button class="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors relative"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-tertiary-container"></span></button><button class="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">help_outline</span></button></div><div class="flex items-center gap-space-sm pl-space-sm"><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface leading-tight">Alex Chen</span><span class="font-code-sm text-code-sm text-on-surface-variant">#STU-88291</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full relative">
+<!-- BACKGROUND CONTEXT: Realistic Event Details Canvas -->
+<div class="w-full px-space-2xl py-space-xl flex flex-col gap-space-xl opacity-40 pointer-events-none select-none filter blur-[1px]">
+<!-- Breadcrumb & Top Bar -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm font-label-md text-label-md text-on-surface-variant">
+<span>Events</span>
+<span>/</span>
+<span>Technical Workshops</span>
+<span>/</span>
+<span class="text-on-surface font-headline-sm text-headline-sm">AI Builders Workshop</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="px-space-md py-space-xxs rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Tech &amp; Innovation</span>
+<span class="px-space-md py-space-xxs rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">48 / 60 Seats Filled</span>
+</div>
+</div>
+<!-- Event Hero Strip -->
+<div class="bg-surface-container-lowest rounded-xl p-space-2xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex justify-between items-start gap-space-2xl">
+<div class="flex flex-col gap-space-md max-w-3xl">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-space-xxs rounded-lg bg-surface-container text-primary font-label-sm text-label-sm">CodeCamp Campus Chapter</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">·</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Level: Intermediate</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">AI Builders Workshop: Foundational LLM Agent Workflows</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+          Hands-on architectural walkthrough constructing autonomous tool-calling pipelines using open weight models. Laptops required with Python 3.10+ installed.
+        </p>
+<div class="grid grid-cols-3 gap-space-lg pt-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">calendar_today</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Date &amp; Time</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Thu, Nov 14 · 2:00 – 4:00 PM</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">location_on</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Venue</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Seminar Hall B, CS Block</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">badge</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Instructor</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Dr. Aris Thorne</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end gap-space-md min-w-[220px]">
+<button class="w-full h-11 bg-primary text-on-primary font-headline-sm text-headline-sm rounded-lg flex items-center justify-center shadow-sm">
+          Register for Event
+        </button>
+<span class="text-on-surface-variant font-code-sm text-code-sm">Requires Active Student Sign-in</span>
+</div>
+</div>
+<!-- Background Outline Columns -->
+<div class="grid grid-cols-3 gap-space-xl">
+<div class="col-span-2 bg-surface-container-lowest rounded-xl p-space-xl h-64 flex flex-col gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface">Syllabus Overview</span>
+<div class="h-4 bg-surface-container-high rounded w-3/4"></div>
+<div class="h-4 bg-surface-container-high rounded w-5/6"></div>
+<div class="h-4 bg-surface-container-high rounded w-1/2"></div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-xl h-64 flex flex-col gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface">Prerequisites</span>
+<div class="h-4 bg-surface-container-high rounded w-4/5"></div>
+<div class="h-4 bg-surface-container-high rounded w-2/3"></div>
+</div>
+</div>
+</div>
+<!-- FOCUSED MODAL OVERLAY: Direct semi-transparent backdrop -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-space-lg bg-on-background/40 backdrop-blur-[6px]">
+<!-- MODAL DIALOG CONTAINER (~580px wide) -->
+<div class="w-full max-w-[600px] bg-surface-container-lowest rounded-xl shadow-[0_12px_40px_rgba(22,27,39,0.18)] flex flex-col overflow-hidden animate-in fade-in duration-200">
+<!-- INTERACTIVE SCENARIO SWITCHER TOOLBAR -->
+<div class="bg-surface-container-high px-space-lg py-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[15px] text-primary">science</span>
+<span class="font-label-sm text-[11px] uppercase tracking-wider text-on-surface-variant font-semibold">Testing Sandbox: Timetable Conflict States</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Switch preview:</span>
+</div>
+<!-- 6 Segmented State Buttons -->
+<div class="grid grid-cols-6 gap-space-xxs bg-surface-container-lowest p-space-xxs rounded-lg shadow-sm" id="scenario-selector-bar">
+<button class="scenario-btn px-space-xs py-space-xs rounded font-label-sm text-[11px] text-on-surface-variant hover:text-on-surface transition-all text-center truncate" data-state="checking">
+            Checking
+          </button>
+<button class="scenario-btn px-space-xs py-space-xs rounded font-label-sm text-[11px] text-on-surface-variant hover:text-on-surface transition-all text-center truncate" data-state="no-conflict">
+            Clear
+          </button>
+<button class="scenario-btn active-tab bg-primary text-on-primary font-semibold px-space-xs py-space-xs rounded font-label-sm text-[11px] transition-all text-center truncate" data-state="partial-conflict">
+            Partial
+          </button>
+<button class="scenario-btn px-space-xs py-space-xs rounded font-label-sm text-[11px] text-on-surface-variant hover:text-on-surface transition-all text-center truncate" data-state="full-conflict">
+            Full Overlap
+          </button>
+<button class="scenario-btn px-space-xs py-space-xs rounded font-label-sm text-[11px] text-on-surface-variant hover:text-on-surface transition-all text-center truncate" data-state="no-timetable">
+            No Table
+          </button>
+<button class="scenario-btn px-space-xs py-space-xs rounded font-label-sm text-[11px] text-on-surface-variant hover:text-on-surface transition-all text-center truncate" data-state="policy-blocked">
+            Policy Lock
+          </button>
+</div>
+</div>
+<!-- MODAL HEADER -->
+<div class="px-space-xl pt-space-lg pb-space-md flex items-start justify-between bg-surface-container-lowest">
+<div class="flex flex-col gap-space-xxs">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">Register for Event</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-primary font-medium">AI Builders Workshop</span>
+<span class="text-on-surface-variant text-body-sm">·</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">CodeCamp Campus Chapter</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" title="Close">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- DYNAMIC STATE CONTAINER -->
+<div class="px-space-xl pb-space-xl flex flex-col gap-space-lg min-h-[380px] justify-between">
+<!-- ============================================== -->
+<!-- STATE 1: CHECKING TIMETABLE -->
+<!-- ============================================== -->
+<div class="state-panel hidden flex-col gap-space-xl my-auto py-space-xl items-center text-center" id="state-checking">
+<div class="w-16 h-16 rounded-2xl bg-surface-container-high flex items-center justify-center text-primary relative">
+<span class="material-symbols-outlined text-[32px] animate-bounce">calendar_clock</span>
+<span class="absolute -top-1 -right-1 w-3 h-3 rounded-full bg-primary animate-ping"></span>
+</div>
+<div class="flex flex-col gap-space-xs max-w-md">
+<h3 class="font-headline-md text-headline-md text-on-surface">Checking your timetable…</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Connecting with institutional timetable records for <strong class="text-on-surface">Thursday, Nov 14 (2:00 PM – 4:00 PM)</strong>...
+            </p>
+</div>
+<!-- Indeterminate Scanner Bar -->
+<div class="w-full max-w-sm h-1.5 bg-surface-container-highest rounded-full overflow-hidden relative">
+<div class="absolute inset-y-0 bg-primary w-2/5 rounded-full animate-pulse transition-all" style="animation: shimmer 1.4s infinite ease-in-out;"></div>
+</div>
+<div class="pt-space-md">
+<button class="h-9 px-space-xl rounded-lg bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors">
+              Cancel
+            </button>
+</div>
+</div>
+<!-- ============================================== -->
+<!-- STATE 2: NO CONFLICT (SCHEDULE CLEAR) -->
+<!-- ============================================== -->
+<div class="state-panel hidden flex-col gap-space-lg" id="state-no-conflict">
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-space-xxs rounded-full bg-[#ECFDF5] text-[#065F46] font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-[#10B981]"></span>
+<span>Schedule verified</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mt-space-xs">Your schedule is clear.</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Your timetable has no scheduled class during this event.
+            </p>
+</div>
+<!-- Event Summary Card -->
+<div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col gap-space-md shadow-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-space-xxs">
+<span class="font-headline-sm text-headline-sm text-on-surface">AI Builders Workshop</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Foundational LLM Agent Workflows</span>
+</div>
+<span class="px-space-sm py-space-xxs rounded bg-surface-container text-primary font-code-sm text-code-sm font-semibold">2 Hours</span>
+</div>
+<div class="grid grid-cols-2 gap-space-md pt-space-xs font-label-md text-label-md">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">schedule</span>
+<span>Thu, Nov 14 · 2:00 – 4:00 PM</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">meeting_room</span>
+<span>Seminar Hall B</span>
+</div>
+</div>
+</div>
+<!-- Capacity Reassurance -->
+<div class="flex items-center gap-space-sm text-on-surface-variant font-label-sm text-label-sm px-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">verified_user</span>
+<span>Free entry · Confirmed seat reserved instantly upon submission.</span>
+</div>
+<!-- Actions -->
+<div class="flex items-center justify-end gap-space-md pt-space-sm">
+<button class="h-10 px-space-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors">
+              Cancel
+            </button>
+<button class="h-10 px-space-xl bg-[#5B5BD6] hover:bg-[#4E4EC5] text-on-primary font-label-md text-label-md rounded-lg shadow-sm transition-all active:scale-[0.98]">
+              Confirm registration
+            </button>
+</div>
+</div>
+<!-- ============================================== -->
+<!-- STATE 3: PARTIAL CONFLICT (DEFAULT / FEATURED) -->
+<!-- ============================================== -->
+<div class="state-panel flex flex-col gap-space-md" id="state-partial-conflict">
+<div class="flex flex-col gap-space-xxs">
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-space-xxs rounded-full bg-[#FFFBEB] text-[#92400E] font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-[#F59E0B]"></span>
+<span>Timetable Overlap Detected</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mt-space-xs">Part of this event overlaps a class.</h3>
+</div>
+<!-- Details Breakdown Grid -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm">
+<div class="grid grid-cols-3 gap-space-md font-body-sm text-body-sm pb-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Registered Event</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-space-xxs">2:00 – 4:00 PM</span>
+<span class="text-on-surface-variant text-[11px]">Total 2 hours</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Class in Session</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-space-xxs">2:00 – 3:00 PM</span>
+<span class="text-on-surface-variant text-[11px]">CS-302 · Prof. Vance</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Conflict Scope</span>
+<span class="font-headline-sm text-headline-sm text-tertiary-container mt-space-xxs">1 Hour Overlap</span>
+<span class="text-on-surface-variant text-[11px]">2:00 PM – 3:00 PM</span>
+</div>
+</div>
+<!-- VISUAL TIMELINE COMPONENT (2:00 PM to 4:00 PM segmented bar) -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between font-label-sm text-[11px] text-on-surface-variant px-space-xxs">
+<span>2:00 PM</span>
+<span class="translate-x-[-10px]">3:00 PM</span>
+<span>4:00 PM</span>
+</div>
+<!-- Bar Track -->
+<div class="h-9 w-full bg-surface-container-highest rounded-lg overflow-hidden flex relative">
+<!-- Segment 1: Overlap Block (2:00 - 3:00 PM) -->
+<div class="w-1/2 h-full bg-[#FEF3C7] text-[#92400E] flex items-center justify-center gap-space-xs px-space-sm relative overflow-hidden" title="CS-302 Web Technology Lecture">
+<div class="absolute inset-0 opacity-15" style="background-image: repeating-linear-gradient(45deg, #000 0, #000 6px, transparent 0, transparent 12px);"></div>
+<span class="material-symbols-outlined text-[15px] z-10 text-[#D97706]">warning</span>
+<span class="font-label-sm text-[11px] font-semibold truncate z-10">Overlap: 1 hr (CS-302)</span>
+</div>
+<!-- Segment 2: Workshop Window (3:00 - 4:00 PM) -->
+<div class="w-1/2 h-full bg-primary-fixed text-primary flex items-center justify-center gap-space-xs px-space-sm">
+<span class="material-symbols-outlined text-[15px]">check_circle</span>
+<span class="font-label-sm text-[11px] font-semibold truncate">Clear Session (1 hr)</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-[11px] font-code-sm text-on-surface-variant pt-space-xxs">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded bg-[#F59E0B]"></span> CS-302 Web Technology (2:00–3:00)</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded bg-primary"></span> Free Workshop Period (3:00–4:00)</span>
+</div>
+</div>
+</div>
+<!-- Policy & OD Request Checkbox -->
+<div class="flex flex-col gap-space-xs">
+<p class="font-body-sm text-body-sm text-on-surface">
+              Academic policy allows partial conflict registration with an official On-Duty (OD) request.
+            </p>
+<label class="flex items-center gap-space-sm cursor-pointer select-none bg-surface-container-low p-space-sm rounded-lg hover:bg-surface-container transition-colors">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary cursor-pointer" type="checkbox">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Request OD for the overlapping class</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Automates duty leave routing to CS-302 course coordinator.</span>
+</div>
+</label>
+<!-- OD Note -->
+<div class="bg-surface-container-high/80 rounded-lg p-space-sm flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant mt-0.5">info</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant leading-tight">
+<strong>OD Policy Note:</strong> OD requests are reviewed separately by faculty. Submitting this registration does not guarantee administrative approval.
+              </span>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex items-center justify-end gap-space-md pt-space-xxs">
+<button class="h-10 px-space-lg rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors">
+              Go back
+            </button>
+<button class="h-10 px-space-xl bg-[#5B5BD6] hover:bg-[#4E4EC5] text-on-primary font-label-md text-label-md rounded-lg shadow-sm transition-all active:scale-[0.98]">
+              Continue registration
+            </button>
+</div>
+</div>
+<!-- ============================================== -->
+<!-- STATE 4: FULL CONFLICT -->
+<!-- ============================================== -->
+<div class="state-panel hidden flex-col gap-space-md" id="state-full-conflict">
+<div class="flex flex-col gap-space-xxs">
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-space-xxs rounded-full bg-[#FEF2F2] text-[#991B1B] font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-[#EF4444]"></span>
+<span>Direct Class Conflict</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mt-space-xs">Classes overlap the full event.</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            You are enrolled in <strong class="text-on-surface">CS-302 Web Technology Lab (2:00 PM – 3:30 PM)</strong> followed by <strong class="text-on-surface">CS-308 Distributed Systems (3:30 PM – 4:30 PM)</strong>. Enrolled classes span the entire 2:00 PM – 4:00 PM event duration.
+          </p>
+<!-- Timeline graphic showing entire duration blocked -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between font-label-sm text-[11px] text-on-surface-variant px-space-xxs">
+<span>2:00 PM</span>
+<span class="translate-x-[20px]">3:30 PM</span>
+<span>4:00 PM</span>
+</div>
+<div class="h-9 w-full bg-[#FEE2E2] rounded-lg overflow-hidden flex relative">
+<div class="w-3/4 h-full bg-[#FCA5A5]/40 text-[#991B1B] flex items-center justify-center px-space-sm truncate font-label-sm text-[11px] font-semibold border-r border-[#EF4444]/20">
+                CS-302 Lab (2:00 – 3:30 PM)
+              </div>
+<div class="w-1/4 h-full bg-[#F87171]/40 text-[#991B1B] flex items-center justify-center px-space-sm truncate font-label-sm text-[11px] font-semibold">
+                CS-308 (3:30+)
+              </div>
+</div>
+<div class="flex items-center gap-space-xs text-[#991B1B] font-label-sm text-label-sm pt-space-xxs">
+<span class="material-symbols-outlined text-[16px]">cancel</span>
+<span>100% timetable overlap. Zero workshop clearance window available.</span>
+</div>
+</div>
+<div class="bg-surface-container-high p-space-md rounded-lg text-body-sm font-body-sm text-on-surface-variant">
+            University attendance policies require mandatory presence for scheduled course sessions. Event permits cannot supersede back-to-back lecture enrollment.
+          </div>
+<!-- Actions: No primary action available -->
+<div class="flex items-center justify-between pt-space-xs">
+<button class="h-10 px-space-md text-primary hover:underline font-label-md text-label-md flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span>View my timetable</span>
+</button>
+<button class="h-10 px-space-xl bg-surface-container-highest text-on-surface hover:bg-surface-container-high font-label-md text-label-md rounded-lg transition-colors">
+              Go back to event details
+            </button>
+</div>
+</div>
+<!-- ============================================== -->
+<!-- STATE 5: NO TIMETABLE -->
+<!-- ============================================== -->
+<div class="state-panel hidden flex-col gap-space-md" id="state-no-timetable">
+<div class="flex flex-col gap-space-xxs">
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-space-xxs rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Timetable Not Connected</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mt-space-xs">We can’t check your schedule yet.</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            No academic timetable has been uploaded or synchronized for <strong class="text-on-surface">Term 1 (Spring 2025)</strong>. We cannot verify whether you have mandatory classes during Thursday, 2:00 PM – 4:00 PM.
+          </p>
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface-variant shrink-0">
+<span class="material-symbols-outlined text-[22px]">upload_file</span>
+</div>
+<div class="flex flex-col gap-space-xxs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Sync SIS schedule to enable live conflict alerts</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Upload your semester .ICS calendar file or log into the SIS portal to unlock automatic On-Duty pass requests.
+              </p>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-high text-on-surface-variant font-label-sm text-[12px]">
+            Student Union policy allows manual self-clearance if you do not have conflicting classes.
+          </div>
+<!-- Actions -->
+<div class="flex items-center justify-between pt-space-xs">
+<button class="h-10 px-space-xs text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors">
+              Continue without checking
+            </button>
+<div class="flex items-center gap-space-sm">
+<button class="h-10 px-space-md text-on-surface-variant hover:text-on-surface font-label-md text-label-md">
+                Cancel
+              </button>
+<button class="h-10 px-space-xl bg-[#5B5BD6] hover:bg-[#4E4EC5] text-on-primary font-label-md text-label-md rounded-lg shadow-sm transition-all active:scale-[0.98] flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Add timetable</span>
+</button>
+</div>
+</div>
+</div>
+<!-- ============================================== -->
+<!-- STATE 6: REGISTRATION NOT PERMITTED BY POLICY -->
+<!-- ============================================== -->
+<div class="state-panel hidden flex-col gap-space-md" id="state-policy-blocked">
+<div class="flex flex-col gap-space-xxs">
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-space-xxs rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+<span>Registration Blocked by Academic Policy</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mt-space-xs">Registration not permitted by policy.</h3>
+</div>
+<div class="bg-[#FEF2F2] rounded-xl p-space-md flex flex-col gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-[#991B1B] mt-0.5">policy</span>
+<p class="font-body-md text-body-md text-[#991B1B] leading-relaxed">
+<strong>University Academic Regulations (Section 4.2):</strong> Non-curricular registration is strictly prohibited for events overlapping core mandatory laboratory courses without prior faculty dean pre-clearance.
+              </p>
+</div>
+<div class="bg-surface-container-lowest/80 p-space-sm rounded-lg font-code-sm text-code-sm text-on-surface flex items-center justify-between">
+<span>Restricted Unit: CS-302 Web Technology Lab</span>
+<span class="text-error font-semibold">MANDATORY_LAB_BLOCK</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Because this conflict involves an un-waivable practical lab, student On-Duty (OD) self-requests are disallowed by the department.
+          </p>
+<!-- Crucial constraint: Primary action is disabled or replaced with Return -->
+<div class="flex items-center justify-end gap-space-md pt-space-md">
+<button class="h-10 px-space-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md rounded-lg transition-colors flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Return to event details</span>
+</button>
+</div>
+</div>
+</div>
+<!-- AUDIT RAIL / STATUS FOOTER BAR -->
+<div class="bg-surface-container px-space-xl py-space-xs flex items-center justify-between text-on-surface-variant font-code-sm text-[11px]">
+<div class="flex items-center gap-space-sm">
+<span>Student ID: <strong class="text-on-surface">#STU-88291</strong></span>
+<span>·</span>
+<span>Program: CS B.Tech (Yr 3)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+<span>SIS Synced: Nov 14, 08:30 AM</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Quick State Switcher micro-interaction
+  const scenarioButtons = document.querySelectorAll('.scenario-btn');
+  const statePanels = document.querySelectorAll('.state-panel');
+
+  scenarioButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetState = btn.dataset.state;
+
+      // Update button highlights
+      scenarioButtons.forEach(b => {
+        b.classList.remove('active-tab', 'bg-primary', 'text-on-primary', 'font-semibold');
+        b.classList.add('text-on-surface-variant');
+      });
+      btn.classList.add('active-tab', 'bg-primary', 'text-on-primary', 'font-semibold');
+      btn.classList.remove('text-on-surface-variant');
+
+      // Switch panels
+      statePanels.forEach(panel => {
+        if (panel.id === `state-${targetState}`) {
+          panel.classList.remove('hidden');
+          panel.classList.add('flex');
+        } else {
+          panel.classList.add('hidden');
+          panel.classList.remove('flex');
+        }
+      });
+    });
+  });
+</script></main></div></body></html>

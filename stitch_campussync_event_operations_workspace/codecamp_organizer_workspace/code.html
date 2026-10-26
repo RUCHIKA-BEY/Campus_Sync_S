@@ -1,0 +1,489 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>CodeCamp — Organizer Workspace</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              purple: '#5B5BD6',
+              purpleHover: '#4B4BC7',
+              purpleLight: '#EEF0FD',
+              ink: '#191D24',
+              secondary: '#5B6472',
+              border: '#E5E7EB',
+              cardBorder: '#ECEEF2',
+              apricot: '#FEF3C7',
+              apricotText: '#B45309',
+              amber: '#F59E0B',
+            }
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #F7F8FA;
+        color: #191D24;
+      }
+    }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+</head>
+<body class="font-sans antialiased min-h-screen flex text-[15px]">
+<!-- LEFT NAVIGATION (~224px wide) -->
+<aside class="w-56 shrink-0 bg-white border-r border-[#ECEEF2] flex flex-col justify-between fixed top-0 bottom-0 left-0 z-30">
+<div class="flex flex-col">
+<!-- CampusSync App Header -->
+<div class="h-16 px-5 flex items-center gap-2.5 border-b border-[#F0F2F5]">
+<div class="w-7 h-7 rounded-lg bg-[#5B5BD6] flex items-center justify-center text-white shadow-sm">
+<span class="material-symbols-outlined text-[17px]">hub</span>
+</div>
+<div class="flex flex-col leading-none">
+<span class="font-semibold text-[15px] tracking-tight text-[#191D24]">CampusSync</span>
+</div>
+</div>
+<!-- Club Identity Pill -->
+<div class="px-3.5 py-3 border-b border-[#F0F2F5]">
+<div class="flex items-center justify-between px-2.5 py-2 rounded-lg bg-[#F7F8FA] border border-[#E9EBEF]">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-6 h-6 rounded-md bg-[#FEF3C7] text-[#B45309] font-bold text-[11px] flex items-center justify-center shrink-0">
+              CC
+            </div>
+<span class="text-[13px] font-semibold text-[#191D24] truncate">CodeCamp</span>
+</div>
+<span class="text-[10px] font-semibold text-[#B45309] bg-[#FEF3C7] px-1.5 py-0.5 rounded">Club</span>
+</div>
+</div>
+<!-- Primary Nav Items -->
+<nav class="flex flex-col gap-0.5 px-2.5 py-3">
+<a class="flex items-center gap-2.5 px-3 py-2 rounded-lg bg-[#5B5BD6]/10 text-[#5B5BD6] font-medium text-[14px] transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px]">space_dashboard</span>
+<span>Overview</span>
+</a>
+<a class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-[#5B6472] hover:text-[#191D24] hover:bg-[#F3F4F6] font-medium text-[14px] transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px]">calendar_today</span>
+<span>Events</span>
+</a>
+<a class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-[#5B6472] hover:text-[#191D24] hover:bg-[#F3F4F6] font-medium text-[14px] transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px]">group</span>
+<span>Registrations</span>
+</a>
+<a class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-[#5B6472] hover:text-[#191D24] hover:bg-[#F3F4F6] font-medium text-[14px] transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px]">qr_code_scanner</span>
+<span>Check-in</span>
+</a>
+</nav>
+</div>
+<!-- Bottom Nav Items & User Account -->
+<div class="flex flex-col border-t border-[#F0F2F5] px-2.5 py-3">
+<a class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-[#5B6472] hover:text-[#191D24] hover:bg-[#F3F4F6] font-medium text-[13px] transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">domain</span>
+<span>Club profile</span>
+</a>
+<a class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-[#5B6472] hover:text-[#191D24] hover:bg-[#F3F4F6] font-medium text-[13px] transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">help_outline</span>
+<span>Help</span>
+</a>
+<!-- Organizer Account Alex Rivera -->
+<div class="mt-2 pt-2 border-t border-[#F0F2F5] flex items-center justify-between px-2.5 py-1.5 rounded-lg hover:bg-[#F9FAFB] transition-colors">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-7 h-7 rounded-full bg-[#191D24] text-white flex items-center justify-center font-medium text-[12px] shrink-0">
+            AR
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="text-[13px] font-semibold text-[#191D24] truncate leading-tight">Alex Rivera</span>
+<span class="text-[11px] text-[#5B6472] truncate">Organizer</span>
+</div>
+</div>
+</div>
+</div>
+</aside>
+<!-- MAIN WORKSPACE CONTENT -->
+<main class="ml-56 flex-1 min-h-screen pb-16">
+<div class="max-w-[1180px] mx-auto px-8 pt-8">
+<!-- PAGE HEADER -->
+<header class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4">
+<div>
+<h1 class="text-[32px] font-bold text-[#191D24] tracking-tight leading-tight">
+            Make something happen.
+          </h1>
+<p class="text-[15px] text-[#5B6472] mt-1">
+            Here’s what’s happening at CodeCamp.
+          </p>
+</div>
+<div class="shrink-0">
+<button class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-[#5B5BD6] text-white font-medium text-[14px] hover:bg-[#4B4BC7] shadow-sm transition-all active:scale-[0.98]">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Create event</span>
+</button>
+</div>
+</header>
+<!-- QUIET SUMMARY ROW -->
+<div class="flex items-center gap-2.5 py-3 text-[14px] text-[#5B6472] border-b border-[#E5E7EB]">
+<span class="font-medium text-[#191D24]">4 upcoming events</span>
+<span class="text-[#D1D5DB]">•</span>
+<span class="font-medium text-[#191D24]">186 registrations</span>
+<span class="text-[#D1D5DB]">•</span>
+<span class="font-medium text-[#B45309]">1 awaiting approval</span>
+</div>
+<!-- MAIN FEATURE & ATTENTION GRID -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-7">
+<!-- LEFT: MAIN FEATURE - "YOUR NEXT EVENT" (8 cols) -->
+<section class="lg:col-span-8 bg-white rounded-2xl border border-[#ECEEF2] p-6 shadow-sm flex flex-col">
+<div class="flex items-center justify-between mb-4">
+<span class="text-[12px] font-semibold text-[#5B6472] uppercase tracking-wider">Your Next Event</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700 text-[12px] font-medium border border-emerald-100">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+              Approved · Registration open
+            </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center flex-1">
+<!-- Event Poster Graphic -->
+<div class="md:col-span-5 h-[220px] rounded-xl overflow-hidden relative flex flex-col justify-between p-5 bg-gradient-to-br from-[#1E1B4B] via-[#312E81] to-[#4338CA] text-white shadow-inner select-none">
+<!-- Geometric decorative art elements -->
+<div class="absolute -right-6 -bottom-6 w-36 h-36 rounded-full bg-[#6366F1]/30 blur-xl pointer-events-none"></div>
+<div class="absolute right-3 top-3 w-16 h-16 rounded-full border border-white/10 flex items-center justify-center">
+<div class="w-8 h-8 rounded-full bg-amber-400/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-amber-300 text-[18px]">bolt</span>
+</div>
+</div>
+<!-- Poster Typography -->
+<div>
+<span class="inline-block text-[10px] tracking-widest uppercase font-semibold text-indigo-200/90 bg-white/10 backdrop-blur-sm px-2 py-0.5 rounded">
+                  TECH LAB // 04
+                </span>
+<p class="text-[18px] font-bold tracking-tight text-white mt-2 leading-snug">
+                  AI BUILDERS WORKSHOP
+                </p>
+<p class="text-[11px] text-indigo-200 font-mono mt-0.5">
+                  LLM AGENTS // API SPRINT
+                </p>
+</div>
+<div class="flex items-end justify-between border-t border-white/10 pt-3">
+<span class="text-[12px] font-mono font-medium text-white/90 tracking-wider">NOV 2025</span>
+<span class="text-[11px] font-sans font-semibold text-amber-300 uppercase tracking-wide">HALL B</span>
+</div>
+</div>
+<!-- Event Details -->
+<div class="md:col-span-7 flex flex-col justify-between h-full py-0.5">
+<div>
+<span class="text-[12px] font-semibold text-[#5B5BD6] tracking-wide uppercase">
+                  CodeCamp Workshop
+                </span>
+<h3 class="text-[22px] font-bold text-[#191D24] mt-1 tracking-tight leading-snug">
+                  AI Builders Workshop
+                </h3>
+<p class="text-[14px] text-[#5B6472] mt-1.5 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-[#9CA3AF]">schedule</span>
+<span>Friday, 2:00 – 4:00 PM</span>
+<span class="text-[#D1D5DB]">·</span>
+<span>Seminar Hall B</span>
+</p>
+</div>
+<!-- Capacity & Progress -->
+<div class="my-4">
+<div class="flex justify-between items-center text-[13px] mb-1.5">
+<span class="text-[#5B6472]">Registration progress</span>
+<span class="font-medium text-[#191D24]">42 of 80 places filled</span>
+</div>
+<div class="w-full h-2 rounded-full bg-[#F3F4F6] overflow-hidden">
+<div class="h-full bg-[#5B5BD6] rounded-full transition-all" style="width: 52.5%;"></div>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-3 pt-1">
+<button class="px-4 py-2 rounded-lg bg-[#5B5BD6] text-white font-medium text-[13px] hover:bg-[#4B4BC7] transition-colors shadow-sm">
+                  Manage event
+                </button>
+<a class="text-[13px] font-medium text-[#5B6472] hover:text-[#191D24] transition-colors" href="#">
+                  View event page →
+                </a>
+</div>
+</div>
+</div>
+</section>
+<!-- RIGHT: "NEEDS YOUR ATTENTION" (4 cols) -->
+<section class="lg:col-span-4 bg-white rounded-2xl border border-[#ECEEF2] p-6 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<h2 class="text-[15px] font-semibold text-[#191D24] tracking-tight">
+                Needs your attention
+              </h2>
+<span class="text-[11px] font-medium text-[#5B6472] bg-[#F3F4F6] px-2 py-0.5 rounded-full">
+                2 items
+              </span>
+</div>
+<div class="flex flex-col divide-y divide-[#F3F4F6]">
+<!-- Attention Item 1 -->
+<div class="py-3.5 first:pt-0">
+<div class="flex items-start gap-2.5">
+<div class="w-2 h-2 rounded-full bg-rose-500 mt-2 shrink-0"></div>
+<div class="flex-1">
+<h4 class="text-[14px] font-semibold text-[#191D24]">
+                      Hackathon Kickoff
+                    </h4>
+<p class="text-[13px] text-[#5B6472] mt-0.5 leading-snug">
+                      The selected venue is already booked for part of this event.
+                    </p>
+<a class="inline-flex items-center gap-1 text-[13px] font-medium text-[#5B5BD6] hover:text-[#4B4BC7] mt-2" href="#">
+<span>Review venue</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Attention Item 2 -->
+<div class="py-3.5 last:pb-0">
+<div class="flex items-start gap-2.5">
+<div class="w-2 h-2 rounded-full bg-amber-500 mt-2 shrink-0"></div>
+<div class="flex-1">
+<h4 class="text-[14px] font-semibold text-[#191D24]">
+                      Design Jam
+                    </h4>
+<p class="text-[13px] text-[#5B6472] mt-0.5 leading-snug">
+                      Your proposal is waiting for DSA review.
+                    </p>
+<a class="inline-flex items-center gap-1 text-[13px] font-medium text-[#5B5BD6] hover:text-[#4B4BC7] mt-2" href="#">
+<span>View proposal</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-4 border-t border-[#F3F4F6] text-[12px] text-[#9CA3AF] text-center">
+            All other events and bookings are clear
+          </div>
+</section>
+</div>
+<!-- "YOUR EVENTS" SECTION -->
+<section class="mt-10">
+<div class="flex items-center justify-between mb-5">
+<h2 class="text-[20px] font-bold text-[#191D24] tracking-tight">
+            Your events
+          </h2>
+<a class="text-[14px] font-medium text-[#5B5BD6] hover:text-[#4B4BC7] transition-colors" href="#">
+            View all events →
+          </a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Event Card 1: Hackathon Kickoff -->
+<div class="bg-white rounded-2xl border border-[#ECEEF2] overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+<!-- Poster Header -->
+<div class="h-32 bg-gradient-to-tr from-[#991B1B] via-[#DC2626] to-[#F97316] p-4 flex flex-col justify-between text-white relative">
+<span class="text-[10px] font-mono tracking-widest text-orange-200 uppercase bg-black/20 self-start px-2 py-0.5 rounded">
+                COMPETITION // FALL
+              </span>
+<div class="flex items-end justify-between">
+<span class="font-bold text-[16px] tracking-tight text-white drop-shadow-sm">HACKATHON '25</span>
+<span class="text-[11px] font-mono text-orange-100">48H SPRINT</span>
+</div>
+</div>
+<!-- Card Body -->
+<div class="p-5 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-2">
+<h3 class="text-[16px] font-bold text-[#191D24] truncate">
+                    Hackathon Kickoff
+                  </h3>
+<span class="px-2 py-0.5 rounded-full text-[11px] font-medium bg-rose-50 text-rose-700 border border-rose-100 shrink-0">
+                    Venue conflict
+                  </span>
+</div>
+<div class="space-y-1 text-[13px] text-[#5B6472]">
+<p class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-[#9CA3AF]">calendar_today</span>
+<span>Nov 14, 9:00 AM</span>
+</p>
+<p class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-[#9CA3AF]">location_on</span>
+<span>Main Quad / Amphitheater</span>
+</p>
+</div>
+</div>
+<div class="mt-5 pt-3.5 border-t border-[#F3F4F6] flex items-center justify-between">
+<span class="text-[12px] text-[#5B6472]">84 registered</span>
+<button class="px-3 py-1.5 rounded-lg bg-[#F7F8FA] hover:bg-[#EEF0FD] hover:text-[#5B5BD6] text-[#191D24] font-medium text-[13px] transition-colors">
+                  Manage event
+                </button>
+</div>
+</div>
+</div>
+<!-- Event Card 2: React Study Circle -->
+<div class="bg-white rounded-2xl border border-[#ECEEF2] overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+<!-- Poster Header -->
+<div class="h-32 bg-gradient-to-tr from-[#0F766E] via-[#0D9488] to-[#2DD4BF] p-4 flex flex-col justify-between text-white relative">
+<span class="text-[10px] font-mono tracking-widest text-teal-100 uppercase bg-black/20 self-start px-2 py-0.5 rounded">
+                PEER COHORT // LABS
+              </span>
+<div class="flex items-end justify-between">
+<span class="font-bold text-[16px] tracking-tight text-white drop-shadow-sm">REACT &amp; NEXT.JS</span>
+<span class="text-[11px] font-mono text-teal-100">WEEKLY</span>
+</div>
+</div>
+<!-- Card Body -->
+<div class="p-5 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-2">
+<h3 class="text-[16px] font-bold text-[#191D24] truncate">
+                    React Study Circle
+                  </h3>
+<span class="px-2 py-0.5 rounded-full text-[11px] font-medium bg-emerald-50 text-emerald-700 border border-emerald-100 shrink-0">
+                    40/40 filled
+                  </span>
+</div>
+<div class="space-y-1 text-[13px] text-[#5B6472]">
+<p class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-[#9CA3AF]">calendar_today</span>
+<span>Oct 28, 5:30 PM</span>
+</p>
+<p class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-[#9CA3AF]">location_on</span>
+<span>CS Lab 3</span>
+</p>
+</div>
+</div>
+<div class="mt-5 pt-3.5 border-t border-[#F3F4F6] flex items-center justify-between">
+<span class="text-[12px] text-emerald-600 font-medium">Approved</span>
+<button class="px-3 py-1.5 rounded-lg bg-[#F7F8FA] hover:bg-[#EEF0FD] hover:text-[#5B5BD6] text-[#191D24] font-medium text-[13px] transition-colors">
+                  Manage event
+                </button>
+</div>
+</div>
+</div>
+<!-- Event Card 3: Design Jam -->
+<div class="bg-white rounded-2xl border border-[#ECEEF2] overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+<!-- Poster Header -->
+<div class="h-32 bg-gradient-to-tr from-[#701A75] via-[#A21CAF] to-[#F472B6] p-4 flex flex-col justify-between text-white relative">
+<span class="text-[10px] font-mono tracking-widest text-pink-100 uppercase bg-black/20 self-start px-2 py-0.5 rounded">
+                COMMUNITY // CRITIQUE
+              </span>
+<div class="flex items-end justify-between">
+<span class="font-bold text-[16px] tracking-tight text-white drop-shadow-sm">DESIGN JAM</span>
+<span class="text-[11px] font-mono text-pink-100">STUDIO B</span>
+</div>
+</div>
+<!-- Card Body -->
+<div class="p-5 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-2">
+<h3 class="text-[16px] font-bold text-[#191D24] truncate">
+                    Design Jam
+                  </h3>
+<span class="px-2 py-0.5 rounded-full text-[11px] font-medium bg-amber-50 text-amber-700 border border-amber-100 shrink-0">
+                    In review
+                  </span>
+</div>
+<div class="space-y-1 text-[13px] text-[#5B6472]">
+<p class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-[#9CA3AF]">calendar_today</span>
+<span>Dec 02, 1:00 PM</span>
+</p>
+<p class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-[#9CA3AF]">location_on</span>
+<span>Design Hub B</span>
+</p>
+</div>
+</div>
+<div class="mt-5 pt-3.5 border-t border-[#F3F4F6] flex items-center justify-between">
+<span class="text-[12px] text-[#5B6472]">Proposal pending</span>
+<button class="px-3 py-1.5 rounded-lg bg-[#F7F8FA] hover:bg-[#EEF0FD] hover:text-[#5B5BD6] text-[#191D24] font-medium text-[13px] transition-colors">
+                  Manage event
+                </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- "RECENT SIGN-UPS" (Quiet secondary section) -->
+<section class="mt-10 bg-white rounded-2xl border border-[#ECEEF2] p-6 shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<h2 class="text-[18px] font-bold text-[#191D24] tracking-tight">
+            Recent sign-ups
+          </h2>
+<a class="text-[13px] font-medium text-[#5B5BD6] hover:text-[#4B4BC7] transition-colors" href="#">
+            View all registrations →
+          </a>
+</div>
+<div class="divide-y divide-[#F3F4F6]">
+<!-- Item 1: Alex Chen -->
+<div class="py-3 flex items-center justify-between hover:bg-[#F9FAFB] px-2 rounded-lg transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-[#EEF0FD] text-[#5B5BD6] font-semibold text-[12px] flex items-center justify-center">
+                AC
+              </div>
+<span class="font-medium text-[#191D24] text-[14px]">Alex Chen</span>
+</div>
+<div class="text-[14px] text-[#5B6472]">
+              AI Builders Workshop
+            </div>
+<div class="text-[13px] text-[#9CA3AF]">
+              12 mins ago
+            </div>
+</div>
+<!-- Item 2: Priya Sharma -->
+<div class="py-3 flex items-center justify-between hover:bg-[#F9FAFB] px-2 rounded-lg transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-amber-50 text-amber-700 font-semibold text-[12px] flex items-center justify-center">
+                PS
+              </div>
+<span class="font-medium text-[#191D24] text-[14px]">Priya Sharma</span>
+</div>
+<div class="text-[14px] text-[#5B6472]">
+              Hackathon Kickoff
+            </div>
+<div class="text-[13px] text-[#9CA3AF]">
+              34 mins ago
+            </div>
+</div>
+<!-- Item 3: Marcus Vance -->
+<div class="py-3 flex items-center justify-between hover:bg-[#F9FAFB] px-2 rounded-lg transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-teal-50 text-teal-700 font-semibold text-[12px] flex items-center justify-center">
+                MV
+              </div>
+<span class="font-medium text-[#191D24] text-[14px]">Marcus Vance</span>
+</div>
+<div class="text-[14px] text-[#5B6472]">
+              React Study Circle
+            </div>
+<div class="text-[13px] text-[#9CA3AF]">
+              1 hour ago
+            </div>
+</div>
+<!-- Item 4: Jordan Lee -->
+<div class="py-3 flex items-center justify-between hover:bg-[#F9FAFB] px-2 rounded-lg transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-[#F3F4F6] text-[#4B5563] font-semibold text-[12px] flex items-center justify-center">
+                JL
+              </div>
+<span class="font-medium text-[#191D24] text-[14px]">Jordan Lee</span>
+</div>
+<div class="text-[14px] text-[#5B6472]">
+              AI Builders Workshop
+            </div>
+<div class="text-[13px] text-[#9CA3AF]">
+              2 hours ago
+            </div>
+</div>
+</div>
+</section>
+</div>
+</main>
+</body></html>

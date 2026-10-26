@@ -1,0 +1,574 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary":"#ffffff","outline-variant":"#c7c4d6","surface":"#faf9ff","on-primary-container":"#edeaff","surface-container-high":"#e4e8f8","surface-tint":"#4e4ec9","on-surface-variant":"#464553","tertiary-fixed-dim":"#ffb77e","surface-container-low":"#f1f3ff","inverse-on-surface":"#edf0ff","on-secondary-fixed-variant":"#3e4755","surface-variant":"#dee2f3","tertiary-container":"#a35700","on-secondary-fixed":"#131c28","on-secondary-container":"#5c6573","primary-fixed-dim":"#c1c1ff","primary-container":"#5b5bd6","on-tertiary":"#ffffff","inverse-surface":"#2b303d","on-primary-fixed-variant":"#3533b0","primary":"#4241bc","on-error":"#ffffff","secondary":"#565f6d","secondary-fixed":"#dae3f4","secondary-container":"#dae3f4","outline":"#777585","tertiary":"#804300","background":"#faf9ff","on-tertiary-fixed-variant":"#6e3900","surface-dim":"#d5d9ea","on-surface":"#161b27","on-tertiary-container":"#ffe8d9","secondary-fixed-dim":"#bec7d7","tertiary-fixed":"#ffdcc3","error":"#ba1a1a","surface-container-lowest":"#ffffff","on-primary-fixed":"#0a006b","on-primary":"#ffffff","inverse-primary":"#c1c1ff","surface-container-highest":"#dee2f3","on-tertiary-fixed":"#2f1500","surface-bright":"#faf9ff","primary-fixed":"#e2dfff","error-container":"#ffdad6","on-error-container":"#93000a","on-background":"#161b27","surface-container":"#e9edfe"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xxs":"0.125rem","margin":"1rem","space-lg":"1rem","space-xs":"0.25rem","gutter":"1rem","space-2xl":"2rem","margin-lg":"2rem","space-md":"0.75rem","space-sm":"0.5rem","gutter-lg":"1.5rem","space-xl":"1.5rem","margin-md":"1.5rem"},"fontFamily":{"headline-md":["Inter"],"body-md":["Inter"],"headline-sm":["Inter"],"label-md":["Inter"],"code-sm":["Inter"],"label-sm":["Inter"],"body-lg":["Inter"],"body-sm":["Inter"],"display-lg":["Inter"],"headline-lg":["Inter"]},"fontSize":{"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"500"}],"code-sm":["12px",{"lineHeight":"16px","letterSpacing":"0em","fontWeight":"400"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"body-lg":["15px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface text-on-surface font-body-md"><aside class="fixed left-0 top-0 h-screen w-[260px] bg-surface-container-lowest border-r border-surface-variant z-40 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center justify-between border-b border-surface-variant"><div class="flex items-center gap-space-sm"><img alt="CampusSync Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UnA5LrOV99Q8wyLv-SOt5TwhW_xspIKfCyO_J0Y-m8hSShf_dsqn-O0zmX33q3GoX-mz0rcy-nyD81gcYlVa5NRNW_JMY4FV5GQPwqiZ4YOlnVfDK6h8Ha9B0f9Q8m67uRFEvU603CVRNUaDh4B3rHeNEm6zM5_Evrmsed5WrxsnFgofeH9l3LlCBEE5F7RT-1Vt4oU4Jm8MYHzM8TlJTu23KlhFOpd-lQ3CqluF0oxVoeMcH6WWcMiWE"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">CampusSync</span></div><span class="px-space-xs py-space-xxs rounded bg-secondary-container text-on-secondary-fixed text-label-sm font-label-sm">Ops Suite</span></div><div class="px-space-md py-space-sm border-b border-surface-variant"><div class="relative"><button class="w-full flex items-center justify-between px-space-sm py-space-xs rounded bg-surface-container-low border border-surface-variant text-left hover:bg-surface-container transition-colors" type="button"><div class="flex flex-col"><span class="text-label-sm font-label-sm text-secondary">Active Perspective</span><span class="text-body-sm font-body-sm font-medium text-on-surface truncate">DSA Officer (Reviewer)</span></div><span class="material-symbols-outlined text-secondary text-sm">unfold_more</span></button></div></div><nav class="px-space-sm py-space-md space-y-space-md" data-active-classes="bg-primary-container text-on-primary font-medium rounded-lg"><div class="space-y-space-xxs"><span class="px-space-sm text-label-sm font-label-sm uppercase tracking-wider text-secondary">CORE</span><div class="space-y-1 mt-space-xxs"><a class="flex items-center justify-between px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="proposals-approvals" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-base">verified_user</span><span class="text-body-sm font-body-sm">Proposals &amp; Approvals</span></div><span class="px-space-xs py-space-xxs rounded-full bg-tertiary-fixed text-on-tertiary-fixed text-label-sm font-label-sm">4 Pending</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="conflict-detection-calendar" href="#"><span class="material-symbols-outlined text-base">calendar_month</span><span class="text-body-sm font-body-sm">Conflict Detection</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="on-duty-requests" href="#"><span class="material-symbols-outlined text-base">assignment_turned_in</span><span class="text-body-sm font-body-sm">OD Requests</span></a></div></div><div class="space-y-space-xxs"><span class="px-space-sm text-label-sm font-label-sm uppercase tracking-wider text-secondary">OPERATIONS</span><div class="space-y-1 mt-space-xxs"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="venue-booking-limits" href="#"><span class="material-symbols-outlined text-base">domain</span><span class="text-body-sm font-body-sm">Venue Booking &amp; Limits</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="qr-check-in-attendance" href="#"><span class="material-symbols-outlined text-base">qr_code_scanner</span><span class="text-body-sm font-body-sm">QR Attendance</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="communications-alerts" href="#"><span class="material-symbols-outlined text-base">campaign</span><span class="text-body-sm font-body-sm">Communications</span></a></div></div><div class="space-y-space-xxs"><span class="px-space-sm text-label-sm font-label-sm uppercase tracking-wider text-secondary">SYSTEM</span><div class="space-y-1 mt-space-xxs"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="clubs-organizations" href="#"><span class="material-symbols-outlined text-base">groups</span><span class="text-body-sm font-body-sm">Clubs &amp; Orgs</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="audit-logs-security" href="#"><span class="material-symbols-outlined text-base">security</span><span class="text-body-sm font-body-sm">Audit Logs</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="workspace-settings" href="#"><span class="material-symbols-outlined text-base">settings</span><span class="text-body-sm font-body-sm">Settings</span></a></div></div></nav></div><div class="p-space-md border-t border-surface-variant bg-surface-container-low"><div class="flex items-center justify-between text-label-sm font-label-sm mb-space-xxs"><span class="text-secondary truncate">North Quad • Fall 2025</span><div class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-emerald-500"></span><span class="text-on-surface">Healthy</span></div></div><div class="text-code-sm font-code-sm text-secondary">v2.4.8-prod</div></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-container-lowest border-b border-surface-variant z-30 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-lg"><div class="flex items-center text-body-sm font-body-sm text-secondary"><span class="hover:text-on-surface transition-colors cursor-pointer">Student Affairs</span><span class="mx-2 text-outline-variant">/</span><span class="text-on-surface font-medium">Proposals &amp; Review Queue</span></div><div class="relative hidden xl:flex items-center"><span class="material-symbols-outlined absolute left-2.5 text-secondary text-base">search</span><input class="h-9 pl-9 pr-14 w-72 rounded bg-surface-container-low border border-surface-variant text-body-sm font-body-sm text-on-surface focus:outline-none focus:border-primary-container focus:bg-surface-container-lowest transition-all" placeholder="Search events, venues, clubs..." type="text"><kbd class="absolute right-2 px-1.5 py-0.5 rounded bg-surface-container-high text-code-sm font-code-sm text-secondary">⌘K</kbd></div></div><div class="flex items-center gap-space-md"><button class="hidden sm:flex items-center gap-1.5 h-9 px-space-md rounded bg-surface-container-low border border-surface-variant text-body-sm font-body-sm text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-base text-secondary">event_available</span><span>Venues</span></button><button class="flex items-center gap-1.5 h-9 px-space-md rounded bg-primary-container text-on-primary text-body-sm font-body-sm font-medium hover:bg-primary transition-colors" type="button"><span class="material-symbols-outlined text-base">add</span><span>New Proposal</span></button><div class="h-5 w-px bg-surface-variant mx-space-xxs"></div><button class="relative p-1.5 rounded hover:bg-surface-container text-secondary hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-lg">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><span class="hidden md:inline-flex px-space-xs py-space-xxs rounded bg-secondary-container text-on-secondary-fixed text-label-sm font-label-sm">DSA Reviewer • L2</span><div class="flex items-center gap-2"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCehlFnwNTND9TDObBFQUilPQN4ntq1RjuLHyEFaKzDd2Bb6PJLpNEulFTonjuifQ7-tZsHlFFBIcciHC8kilaHaGLciRgR1YHBFAUGXk8kMZjiMloXBY8mSejV0N4A7xYEhGgz3AI4Ip5oIdQL25pONDI8ZcQlz5fzsXzJ9H5G50AdDtDtK0KVIycU-_vwB5QPQAGXApDNEABznJryQNXgU40_vhAKo5wv1rkQF5m5-JHyGKs902hfsQ"><div class="hidden lg:flex flex-col text-left"><span class="text-label-sm font-label-sm font-medium text-on-surface leading-tight">Dr. Elena Vance</span><span class="text-code-sm font-code-sm text-secondary leading-tight">Dean of Activities</span></div></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive Modals / Tooltips Anchors -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-space-lg bg-inverse-surface/40 backdrop-blur-sm" id="conflict-inspector-modal">
+<div class="relative w-full max-w-lg bg-surface-container-lowest rounded-xl shadow-xl overflow-hidden p-space-lg">
+<div class="flex items-center justify-between pb-space-sm mb-space-md">
+<div class="flex items-center gap-space-xs text-error">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">warning</span>
+<span class="font-headline-sm text-headline-sm text-error">Critical Venue Double-Booking</span>
+</div>
+<button class="p-1 rounded hover:bg-surface-container-high text-secondary" onclick="document.getElementById('conflict-inspector-modal').classList.add('hidden')">
+<span class="material-symbols-outlined text-base">close</span>
+</button>
+</div>
+<div class="bg-error-container/30 p-space-md rounded-lg mb-space-md">
+<div class="font-label-md text-label-md text-on-error-container font-semibold">Campus Amphitheater • Saturday, Oct 26</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant mt-0.5">Time Collision: 18:00 — 21:00 (180 mins direct overlap)</div>
+</div>
+<div class="space-y-space-sm mb-space-lg">
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-start justify-between">
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">1. Sonic Arts Gala (Sound Check &amp; Rigging)</div>
+<div class="font-body-sm text-body-sm text-secondary">Club: Audio Engineering Society • 120 Est. Attendees</div>
+</div>
+<span class="px-space-xs py-space-xxs bg-error/10 text-error font-label-sm text-label-sm rounded-full">Primary Clash</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-start justify-between">
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">2. Dean's Welcome Address &amp; Prep</div>
+<div class="font-body-sm text-body-sm text-secondary">Host: Student Affairs Division • 450 Est. Attendees</div>
+</div>
+<span class="px-space-xs py-space-xxs bg-error/10 text-error font-label-sm text-label-sm rounded-full">Priority Hold</span>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm">
+<button class="px-space-md py-space-xs rounded bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-variant transition-colors" onclick="document.getElementById('conflict-inspector-modal').classList.add('hidden')">
+          Dismiss
+        </button>
+<button class="px-space-md py-space-xs rounded bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-all shadow-sm" onclick="relocateBookingAction()">
+          Relocate Sonic Arts to Quad Stage
+        </button>
+</div>
+</div>
+</div>
+<!-- Header & Control Deck -->
+<section class="px-space-xl pt-space-xl pb-space-lg">
+<div class="flex flex-col xl:flex-row xl:items-end justify-between gap-space-md mb-space-lg">
+<div class="max-w-3xl">
+<div class="flex items-center gap-space-xs text-primary font-code-sm text-code-sm uppercase tracking-wider mb-space-xxs font-semibold">
+<span class="material-symbols-outlined text-sm">shield_with_heart</span>
+          Logistics Integrity &amp; Risk Guard
+        </div>
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">Conflict Detection &amp; Logistics Calendar</h1>
+<p class="font-body-lg text-body-lg text-secondary mt-1 max-w-2xl">
+          Automated real-time engine checking venue occupancy, equipment availability, sound limits, and campus quiet hours.
+        </p>
+</div>
+<!-- Live Engine Status Badge -->
+<div class="flex items-center gap-space-sm bg-surface-container-lowest p-space-sm rounded-xl shadow-sm self-start xl:self-auto">
+<div class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-error opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-error"></span>
+</div>
+<div class="text-left pr-space-xs">
+<div class="font-label-sm text-label-sm font-semibold text-on-surface leading-none">Automated Sync: 12s ago</div>
+<div class="font-code-sm text-code-sm text-error font-medium mt-0.5">1 Collision Flagged</div>
+</div>
+</div>
+</div>
+<!-- Alert Banner (High Priority) -->
+<div class="relative overflow-hidden bg-error-container/40 rounded-xl p-space-md mb-space-lg shadow-sm">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-error/10 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start md:items-center gap-space-md">
+<div class="p-space-xs bg-error text-on-error rounded-lg flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">error</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-error-container">1 Critical Conflict Detected in Amphitheater</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+              Sonic Arts Gala overlaps with Engineering Prep &amp; Dean Welcome Address on <span class="font-semibold text-on-surface">Oct 26 (18:00 – 21:00)</span>. Resolve before DSA clearance deadline.
+            </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="px-space-md py-space-xs bg-error text-on-error font-label-md text-label-md font-semibold rounded-lg hover:bg-on-error-container transition-colors shadow-sm flex items-center gap-1.5" onclick="document.getElementById('conflict-inspector-modal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-base">bolt</span>
+            Resolve Conflict
+          </button>
+</div>
+</div>
+</div>
+<!-- Calendar View Controls & Filters Toolbar -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Toggle Modes -->
+<div class="inline-flex p-1 bg-surface-container-low rounded-lg self-start">
+<button class="px-space-md py-1.5 rounded-md bg-surface-container-lowest text-primary font-label-sm text-label-sm font-semibold shadow-sm flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-base">grid_view</span>
+          Multi-Venue Grid
+        </button>
+<button class="px-space-md py-1.5 rounded-md text-secondary hover:text-on-surface font-label-sm text-label-sm font-medium flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-base">timeline</span>
+          Timeline Schedule
+        </button>
+<button class="px-space-md py-1.5 rounded-md text-secondary hover:text-on-surface font-label-sm text-label-sm font-medium flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-base">local_fire_department</span>
+          Conflict Heatmap
+        </button>
+</div>
+<!-- Center: Date Navigator -->
+<div class="flex items-center justify-between sm:justify-center gap-space-sm">
+<button class="p-1.5 rounded hover:bg-surface-container-high text-secondary hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-base">chevron_left</span>
+</button>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-base text-primary">calendar_today</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Oct 20 – Oct 26, 2025</span>
+</div>
+<button class="p-1.5 rounded hover:bg-surface-container-high text-secondary hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-base">chevron_right</span>
+</button>
+<button class="ml-space-xs px-space-sm py-1 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded hover:bg-surface-container-high transition-colors">
+          Today
+        </button>
+</div>
+<!-- Right: Venue Select Multi-Filter -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 lg:pb-0">
+<span class="font-label-sm text-label-sm text-secondary shrink-0 mr-1">Venues:</span>
+<button class="px-space-xs py-1 rounded bg-primary-container text-on-primary font-label-sm text-label-sm whitespace-nowrap">
+          All (5)
+        </button>
+<button class="px-space-xs py-1 rounded bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm whitespace-nowrap">
+          Auditorium
+        </button>
+<button class="px-space-xs py-1 rounded bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm whitespace-nowrap">
+          Atrium
+        </button>
+<button class="px-space-xs py-1 rounded bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm whitespace-nowrap">
+          Amphitheater
+        </button>
+<button class="px-space-xs py-1 rounded bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm whitespace-nowrap">
+          +2 More
+        </button>
+</div>
+</div>
+</section>
+<!-- Interactive Multi-Venue Schedule Matrix (Gantt SaaS View) -->
+<section class="px-space-xl pb-space-xl">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Grid Topbar / Subheader -->
+<div class="p-space-md bg-surface-container-low flex items-center justify-between text-body-sm font-body-sm text-secondary">
+<div class="flex items-center gap-space-md">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Campus Core Zone Master Matrix</span>
+<span class="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+<span class="hidden sm:inline-block font-code-sm text-code-sm">Showing Saturday, Oct 26 (High Frequency Inspection)</span>
+</div>
+<div class="flex items-center gap-space-md text-label-sm font-label-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-sm bg-primary-container"></span>
+<span>Confirmed</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-sm bg-secondary"></span>
+<span>Approved Setup</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-sm bg-error"></span>
+<span>Clash Detected</span>
+</div>
+</div>
+</div>
+<!-- Schedule Matrix Container with Horizontal Scroll -->
+<div class="overflow-x-auto w-full">
+<div class="min-w-[1080px] w-full">
+<!-- Timeline Header Axis (08:00 to 22:00) -->
+<div class="grid grid-cols-15 bg-surface-container text-secondary font-code-sm text-code-sm font-medium py-space-xs">
+<div class="col-span-3 px-space-md text-on-surface font-label-sm text-label-sm font-semibold uppercase tracking-wider">
+              Venue / Permitted Capacity
+            </div>
+<div class="text-center">08:00</div>
+<div class="text-center">09:00</div>
+<div class="text-center">10:00</div>
+<div class="text-center">11:00</div>
+<div class="text-center">12:00</div>
+<div class="text-center">13:00</div>
+<div class="text-center">14:00</div>
+<div class="text-center">15:00</div>
+<div class="text-center">16:00</div>
+<div class="text-center">17:00</div>
+<div class="text-center text-error font-semibold">18:00</div>
+<div class="text-center text-error font-semibold">20:00</div>
+</div>
+<!-- Venues Stack -->
+<div class="divide-y divide-surface-variant/40">
+<!-- Row 1: Main Auditorium -->
+<div class="grid grid-cols-15 items-center relative min-h-[76px] hover:bg-surface/50 transition-colors">
+<div class="col-span-3 px-space-md py-space-sm flex flex-col justify-center">
+<span class="font-headline-sm text-headline-sm text-on-surface">Main Auditorium</span>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="px-space-xs py-space-xxs bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded">Cap: 500</span>
+<span class="font-code-sm text-code-sm text-secondary">A/V Stage L3</span>
+</div>
+</div>
+<!-- 12-Hour Canvas (Col-span 12) -->
+<div class="col-span-12 h-full relative flex items-center">
+<!-- Hour Grid Background markers -->
+<div class="absolute inset-0 grid grid-cols-12 pointer-events-none opacity-30">
+<div class="bg-surface-variant/20 h-full"></div>
+<div class="bg-surface-variant/40 h-full"></div>
+<div class="bg-surface-variant/20 h-full"></div>
+<div class="bg-surface-variant/40 h-full"></div>
+<div class="bg-surface-variant/20 h-full"></div>
+<div class="bg-surface-variant/40 h-full"></div>
+<div class="bg-surface-variant/20 h-full"></div>
+<div class="bg-surface-variant/40 h-full"></div>
+<div class="bg-surface-variant/20 h-full"></div>
+<div class="bg-surface-variant/40 h-full"></div>
+<div class="bg-surface-variant/20 h-full"></div>
+<div class="bg-surface-variant/40 h-full"></div>
+</div>
+<!-- Event Block: Hackathon (09:00 - 18:00 -> starts 1/12th, spans 9/12ths) -->
+<div class="absolute left-[8.33%] w-[75%] h-[56px] bg-primary-container text-on-primary rounded-lg p-space-xs shadow-sm flex items-center justify-between z-10 hover:shadow-md transition-shadow cursor-pointer">
+<div class="flex items-center gap-space-sm pl-space-xs">
+<span class="p-1 rounded bg-on-primary/10">
+<span class="material-symbols-outlined text-sm">laptop_mac</span>
+</span>
+<div>
+<div class="font-label-md text-label-md font-semibold truncate leading-tight">Annual Hackathon Check-in &amp; Setup</div>
+<div class="font-code-sm text-code-sm text-on-primary-container leading-tight mt-0.5">09:00 — 18:00 • Tech Society</div>
+</div>
+</div>
+<div class="pr-space-xs flex items-center gap-1.5 shrink-0">
+<span class="inline-flex items-center px-space-xs py-space-xxs rounded bg-on-primary/20 text-on-primary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-1.5"></span>
+                      Verified No Conflict
+                    </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Row 2: Student Union Atrium -->
+<div class="grid grid-cols-15 items-center relative min-h-[76px] hover:bg-surface/50 transition-colors">
+<div class="col-span-3 px-space-md py-space-sm flex flex-col justify-center">
+<span class="font-headline-sm text-headline-sm text-on-surface">Student Union Atrium</span>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="px-space-xs py-space-xxs bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded">Cap: 250</span>
+<span class="font-code-sm text-code-sm text-secondary">Acoustic Zone</span>
+</div>
+</div>
+<!-- 12-Hour Canvas -->
+<div class="col-span-12 h-full relative flex items-center">
+<div class="absolute inset-0 grid grid-cols-12 pointer-events-none opacity-30">
+<div class="bg-surface-variant/20 h-full"></div>
+<div class="bg-surface-variant/40 h-full"></div>
+<div class="bg-surface-variant/20 h-full"></div>
+<div class="bg-surface-variant/40 h-full"></div>
+<div class="bg-surface-variant/20 h-full"></div>
+<div class="bg-surface-variant/40 h-full"></div>
+<div class="bg-surface-variant/20 h-full"></div>
+<div class="bg-surface-variant/40 h-full"></div>
+<div class="bg-surface-variant/20 h-full"></div>
+<div class="bg-surface-variant/40 h-full"></div>
+<div class="bg-surface-variant/20 h-full"></div>
+<div class="bg-surface-variant/40 h-full"></div>
+</div>
+<!-- Event Block: Career Fair Prep (10:00 - 14:00 -> starts 2/12th, spans 4/12ths) -->
+<div class="absolute left-[16.66%] w-[33.33%] h-[56px] bg-secondary text-on-secondary rounded-lg p-space-xs shadow-sm flex items-center justify-between z-10 hover:shadow-md transition-shadow cursor-pointer">
+<div class="flex items-center gap-space-sm pl-space-xs">
+<span class="p-1 rounded bg-white/10">
+<span class="material-symbols-outlined text-sm">badge</span>
+</span>
+<div>
+<div class="font-label-md text-label-md font-semibold truncate leading-tight">Career Fair Prep</div>
+<div class="font-code-sm text-code-sm text-surface-container-high leading-tight mt-0.5">10:00 — 14:00 • DSA Career Ops</div>
+</div>
+</div>
+<span class="px-space-xs py-space-xxs rounded bg-white/20 text-on-secondary font-label-sm text-label-sm mr-space-xs">
+                    Approved
+                  </span>
+</div>
+</div>
+</div>
+<!-- Row 3: Campus Amphitheater (Conflict Zone) -->
+<div class="grid grid-cols-15 items-center relative min-h-[76px] bg-error-container/10">
+<div class="col-span-3 px-space-md py-space-sm flex flex-col justify-center">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-error font-semibold">Campus Amphitheater</span>
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+</div>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="px-space-xs py-space-xxs bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold rounded">Cap: 700</span>
+<span class="font-code-sm text-code-sm text-error font-semibold">Decibel Capped</span>
+</div>
+</div>
+<!-- 12-Hour Canvas -->
+<div class="col-span-12 h-full relative flex items-center">
+<div class="absolute inset-0 grid grid-cols-12 pointer-events-none opacity-30">
+<div class="bg-surface-variant/20 h-full"></div>
+<div class="bg-surface-variant/40 h-full"></div>
+<div class="bg-surface-variant/20 h-full"></div>
+<div class="bg-surface-variant/40 h-full"></div>
+<div class="bg-surface-variant/20 h-full"></div>
+<div class="bg-surface-variant/40 h-full"></div>
+<div class="bg-surface-variant/20 h-full"></div>
+<div class="bg-surface-variant/40 h-full"></div>
+<div class="bg-surface-variant/20 h-full"></div>
+<div class="bg-surface-variant/40 h-full"></div>
+<div class="bg-surface-variant/20 h-full"></div>
+<div class="bg-surface-variant/40 h-full"></div>
+</div>
+<!-- Red Striped Alert Conflict Block: 18:00 - 21:00 (starts 10/12th, spans 2.5/12th ~ 25%) -->
+<button class="absolute left-[83.33%] w-[16.66%] h-[58px] bg-gradient-to-r from-error/90 to-error text-on-error rounded-lg p-space-xs shadow-md flex items-center justify-between z-20 hover:scale-[1.02] active:scale-[0.99] transition-all cursor-pointer text-left" onclick="document.getElementById('conflict-inspector-modal').classList.remove('hidden')">
+<div class="flex items-center gap-space-xs pl-space-xxs">
+<span class="material-symbols-outlined text-base animate-bounce" style="font-variation-settings: 'FILL' 1;">error</span>
+<div>
+<div class="font-label-sm text-label-sm font-bold truncate leading-tight">Dual Clash Zone</div>
+<div class="font-code-sm text-code-sm opacity-90 truncate leading-tight">Sound Check vs Dean</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-sm opacity-80 mr-1">info</span>
+</button>
+</div>
+</div>
+<!-- Row 4: Sports Hall A -->
+<div class="grid grid-cols-15 items-center relative min-h-[76px] hover:bg-surface/50 transition-colors">
+<div class="col-span-3 px-space-md py-space-sm flex flex-col justify-center">
+<span class="font-headline-sm text-headline-sm text-on-surface">Sports Hall A</span>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="px-space-xs py-space-xxs bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded">Cap: 400</span>
+<span class="font-code-sm text-code-sm text-secondary">Courts 1-3</span>
+</div>
+</div>
+<!-- 12-Hour Canvas (Empty / Maintenance status) -->
+<div class="col-span-12 h-full relative flex items-center">
+<div class="absolute inset-0 grid grid-cols-12 pointer-events-none opacity-30">
+<div class="bg-surface-variant/20 h-full"></div>
+<div class="bg-surface-variant/40 h-full"></div>
+<div class="bg-surface-variant/20 h-full"></div>
+<div class="bg-surface-variant/40 h-full"></div>
+<div class="bg-surface-variant/20 h-full"></div>
+<div class="bg-surface-variant/40 h-full"></div>
+<div class="bg-surface-variant/20 h-full"></div>
+<div class="bg-surface-variant/40 h-full"></div>
+<div class="bg-surface-variant/20 h-full"></div>
+<div class="bg-surface-variant/40 h-full"></div>
+<div class="bg-surface-variant/20 h-full"></div>
+<div class="bg-surface-variant/40 h-full"></div>
+</div>
+<div class="absolute left-[33.33%] w-[16.66%] h-[40px] bg-surface-container-high text-on-surface-variant rounded-md px-space-sm flex items-center justify-between text-body-sm font-body-sm opacity-70">
+<span class="font-code-sm text-code-sm">Floor Refinishing</span>
+<span class="material-symbols-outlined text-xs">build</span>
+</div>
+</div>
+</div>
+<!-- Row 5: Makerspace Lab -->
+<div class="grid grid-cols-15 items-center relative min-h-[76px] hover:bg-surface/50 transition-colors">
+<div class="col-span-3 px-space-md py-space-sm flex flex-col justify-center">
+<span class="font-headline-sm text-headline-sm text-on-surface">Makerspace Lab</span>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="px-space-xs py-space-xxs bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded">Cap: 60</span>
+<span class="font-code-sm text-code-sm text-secondary">Laser / Fab</span>
+</div>
+</div>
+<!-- 12-Hour Canvas -->
+<div class="col-span-12 h-full relative flex items-center">
+<div class="absolute inset-0 grid grid-cols-12 pointer-events-none opacity-30">
+<div class="bg-surface-variant/20 h-full"></div>
+<div class="bg-surface-variant/40 h-full"></div>
+<div class="bg-surface-variant/20 h-full"></div>
+<div class="bg-surface-variant/40 h-full"></div>
+<div class="bg-surface-variant/20 h-full"></div>
+<div class="bg-surface-variant/40 h-full"></div>
+<div class="bg-surface-variant/20 h-full"></div>
+<div class="bg-surface-variant/40 h-full"></div>
+<div class="bg-surface-variant/20 h-full"></div>
+<div class="bg-surface-variant/40 h-full"></div>
+<div class="bg-surface-variant/20 h-full"></div>
+<div class="bg-surface-variant/40 h-full"></div>
+</div>
+<!-- Event Block: Robotics Demo (14:00 - 17:00 -> starts 6/12th, spans 3/12ths) -->
+<div class="absolute left-[50%] w-[25%] h-[56px] bg-surface-container-lowest text-on-surface rounded-lg p-space-xs shadow-sm flex items-center justify-between z-10 hover:shadow-md transition-shadow cursor-pointer bg-emerald-50">
+<div class="flex items-center gap-space-sm pl-space-xs">
+<span class="p-1 rounded bg-emerald-100 text-emerald-800">
+<span class="material-symbols-outlined text-sm">precision_manufacturing</span>
+</span>
+<div>
+<div class="font-label-md text-label-md font-semibold truncate leading-tight text-emerald-950">Robotics Demo Day</div>
+<div class="font-code-sm text-code-sm text-emerald-700 leading-tight mt-0.5">14:00 — 17:00 • IEEE Student Branch</div>
+</div>
+</div>
+<span class="px-space-xs py-space-xxs rounded bg-emerald-200/60 text-emerald-900 font-label-sm text-label-sm font-semibold mr-space-xs">
+                    Approved
+                  </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Timeline Footer Note -->
+<div class="p-space-sm px-space-md bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between text-body-sm font-body-sm text-secondary gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>Buffer Protocol: Compulsory 45-minute turnover automatically applied to room reservations.</span>
+</div>
+<button class="text-primary hover:underline font-label-sm text-label-sm font-medium self-start sm:self-auto">
+          Export Master Timeline (.iCal / CSV)
+        </button>
+</div>
+</div>
+</section>
+<!-- Visual Asset Feature: Venue Context Showcase -->
+<section class="px-space-xl pb-space-lg">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm h-36 flex flex-col justify-end p-space-md">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Wide angle interior photography of an expansive campus auditorium with tiered modern wooden seating, architectural acoustic ceiling panels, stage lighting fixtures, and empty presentation podium bathed in warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA5URrtPB66jX3aOLnYR9kH8CxBV6LbIUtDEg8tXhjo5C-80dfF335xHqTAPOLZL4JiVok6TmhPMUwamapMIIpvjMzbhI1QdsOkQXZCxdiDknrokI7BiGNBdC4WV3o2tgIUVC7OfaMilgETuAKEr7XqJVNeaWc2c0MTOdEJzIfad6uyIh8x17YqXQfuLIFPRfwsxlQOG3PhXoT1lW1morG9syu7sREGhJAMeuvNsKyNSQkw7dVg7ObvA">
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/85 via-inverse-surface/40 to-transparent"></div>
+<div class="relative z-10 text-on-primary">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-surface-tint">Occupied • High Load</span>
+<div class="font-headline-sm text-headline-sm">Main Auditorium</div>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm h-36 flex flex-col justify-end p-space-md">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Modern high-ceiling glass student union atrium bathed in natural afternoon sunlight with indoor greenery planters, scattered collaborative tables, and ambient architectural concrete columns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCM7hQvZ-WpfALjFEwoXtSKXhAUGuYlgOl-BPomfblIhXfudhMhsphgQNwbyArD_eLkho4LJruy_oje4UGpJvwkGEHqA-DXEHedGn7lvY72dZNigzivr1997eGJ6YRk0K1dEb9pPAYwL_SCWEmJhlTEFJw8HCUyiTj2B5a3bnFttogWxOB8aq99PEQMkee_Jv6fuLm1hsVebyYM7vV6IuewSOZJwjovENBMmO2yw2bJlKa9lSvNMfcg_g">
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/85 via-inverse-surface/40 to-transparent"></div>
+<div class="relative z-10 text-on-primary">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-emerald-400">Normal Operations</span>
+<div class="font-headline-sm text-headline-sm">Student Union Atrium</div>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm h-36 flex flex-col justify-end p-space-md">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Outdoor open-air campus amphitheater with circular brick steps, green lawn surroundings, sound rigging trusses, and evening stage twilight mood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5Dcyvo7097WnTdRPK6U-PwK4aK9MXlPzKxQQnFqmZAcawx1KwFjQtwl0ZQUXlxGamYPT7uL_gEQJLi4hTnysi5bWGB1V4Y7LL4dh81H-ttuOvvw_o3nbhaEg6m5sxxO_D-daoFy8B18RH1gZH8XGJgGNsYfrS-FzWV3yyVallwxCTlgSe_dABfLdCb1gSTGUXU4p3KZ5Mia4H0oWgeJeUne-xG7fD8oDm6Xut7tQPlimdGvOwdvjb5w">
+<div class="absolute inset-0 bg-gradient-to-t from-error/90 via-inverse-surface/50 to-transparent"></div>
+<div class="relative z-10 text-on-primary">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-error-container">Attention Required</span>
+<div class="font-headline-sm text-headline-sm">Outdoor Amphitheater</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom Operational Insight Section (Strictly 1 Clean SVG Chart + Compliance Engine Card) -->
+<section class="px-space-xl pb-space-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- 1 Clean Minimalist SVG Chart: Venue Utilization & Peak Congestion -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface">Venue Utilization &amp; Peak Congestion</h2>
+<span class="font-code-sm text-code-sm text-secondary bg-surface-container px-space-xs py-space-xxs rounded">Target: &lt;80% Cap</span>
+</div>
+<p class="font-body-md text-body-md text-secondary mb-space-md">
+            Hours Booked vs Free Operating Capacity across campus facilities for the active scheduling window.
+          </p>
+</div>
+<!-- Clean SVG Bar Chart with Theme Tokens -->
+<div class="w-full">
+<svg aria-label="Venue utilization bar chart" class="w-full h-44 overflow-visible" viewBox="0 0 540 180">
+<!-- Grid Lines -->
+<line class="text-surface-variant" stroke="currentColor" stroke-dasharray="4 4" stroke-width="1" x1="120" x2="520" y1="20" y2="20"></line>
+<line class="text-surface-variant" stroke="currentColor" stroke-dasharray="4 4" stroke-width="1" x1="120" x2="520" y1="60" y2="60"></line>
+<line class="text-surface-variant" stroke="currentColor" stroke-dasharray="4 4" stroke-width="1" x1="120" x2="520" y1="100" y2="100"></line>
+<line class="text-surface-variant" stroke="currentColor" stroke-dasharray="4 4" stroke-width="1" x1="120" x2="520" y1="140" y2="140"></line>
+<!-- Labels Column -->
+<text class="font-code-sm text-xs fill-secondary" font-size="11" x="0" y="28">Auditorium</text>
+<text class="font-code-sm text-xs fill-secondary" font-size="11" x="0" y="68">Atrium</text>
+<text class="font-code-sm text-xs fill-error font-semibold" font-size="11" x="0" y="108">Amphitheater</text>
+<text class="font-code-sm text-xs fill-secondary" font-size="11" x="0" y="148">Makerspace</text>
+<!-- Background Track Bars (Max 14 hrs = 400px width) -->
+<rect class="fill-surface-container" height="18" rx="4" width="380" x="120" y="16"></rect>
+<rect class="fill-surface-container" height="18" rx="4" width="380" x="120" y="56"></rect>
+<rect class="fill-surface-container" height="18" rx="4" width="380" x="120" y="96"></rect>
+<rect class="fill-surface-container" height="18" rx="4" width="380" x="120" y="136"></rect>
+<!-- Value Bars (Hours Booked) -->
+<!-- Auditorium: 9 hrs = 244px -->
+<rect class="fill-primary-container" height="18" rx="4" width="244" x="120" y="16"></rect>
+<text class="font-label-sm text-xs fill-on-surface font-semibold" font-size="11" x="370" y="29">9.0h (64%)</text>
+<!-- Atrium: 4 hrs = 108px -->
+<rect class="fill-secondary" height="18" rx="4" width="108" x="120" y="56"></rect>
+<text class="font-label-sm text-xs fill-on-surface font-semibold" font-size="11" x="235" y="69">4.0h (28%)</text>
+<!-- Amphitheater (Overbooked conflict): 360px (~95% stress) -->
+<rect class="fill-error" height="18" rx="4" width="360" x="120" y="96"></rect>
+<text class="font-label-sm text-xs fill-error font-bold" font-size="11" x="486" y="109">Overbook</text>
+<!-- Makerspace: 3 hrs = 81px -->
+<rect class="fill-emerald-600" height="18" rx="4" width="81" x="120" y="136"></rect>
+<text class="font-label-sm text-xs fill-on-surface font-semibold" font-size="11" x="208" y="149">3.0h (21%)</text>
+</svg>
+</div>
+<div class="flex items-center justify-between pt-space-sm border-t border-surface-variant/40 mt-space-sm text-body-sm font-body-sm text-secondary">
+<span>Operating baseline: 14 schedulable hours/day</span>
+<span class="font-code-sm text-code-sm text-on-surface font-semibold">Campus Load Index: Moderate (52%)</span>
+</div>
+</div>
+<!-- Card: Campus Rule Compliance Engine -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface">Campus Rule Compliance Engine</h2>
+<span class="flex items-center gap-1 text-emerald-600 font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-sm">verified</span> Active Policy
+            </span>
+</div>
+<p class="font-body-md text-body-md text-secondary mb-space-md">
+            Deterministic validation running on every booking intent prior to DSA signature lock.
+          </p>
+</div>
+<!-- Rules Stack -->
+<div class="space-y-space-sm">
+<!-- Rule 1 -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm">
+<div class="p-1 rounded bg-emerald-100 text-emerald-700 shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-base">volume_off</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Decibel curfew check (Post-20:00)</span>
+<span class="font-code-sm text-code-sm text-emerald-700 font-bold bg-emerald-50 px-space-xs py-space-xxs rounded">94% Passed</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">
+                Sound levels capped at 65dB near East Dormitory zone.
+              </p>
+</div>
+</div>
+<!-- Rule 2 -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm">
+<div class="p-1 rounded bg-emerald-100 text-emerald-700 shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-base">cleaning_services</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Min 45min sanitation buffer</span>
+<span class="font-code-sm text-code-sm text-primary font-bold bg-primary-fixed px-space-xs py-space-xxs rounded">Enforced</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">
+                Janitorial teams receive automated notifications between slots.
+              </p>
+</div>
+</div>
+<!-- Rule 3 -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm">
+<div class="p-1 rounded bg-tertiary-fixed text-on-tertiary-fixed shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-base">supervisor_account</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Faculty advisor presence verified</span>
+<span class="font-code-sm text-code-sm text-tertiary font-bold bg-tertiary-fixed/60 px-space-xs py-space-xxs rounded">18 Pending</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">
+                Staff signatures required for high-occupancy extracurriculars.
+              </p>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between">
+<button class="font-label-sm text-label-sm text-primary hover:underline font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">settings_suggest</span>
+            Configure Policy Triggers
+          </button>
+<span class="font-code-sm text-code-sm text-secondary">Policy Rev: 2025.10</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive JavaScript Hook for UI Feedback -->
+<script>
+    function relocateBookingAction() {
+      const modal = document.getElementById('conflict-inspector-modal');
+      if (modal) {
+        modal.classList.add('hidden');
+      }
+      alert('Event "Sonic Arts Gala" scheduled for reassignment to Quad Stage. Conflict resolved and notifications queued.');
+    }
+  </script>
+</div></main></div></body></html>

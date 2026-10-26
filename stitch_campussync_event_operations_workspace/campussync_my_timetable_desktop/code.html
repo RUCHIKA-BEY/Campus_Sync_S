@@ -1,0 +1,848 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-fixed-dim":"#bec7d7","error":"#ba1a1a","on-tertiary-fixed-variant":"#6e3900","on-secondary-fixed-variant":"#3e4755","inverse-surface":"#2b303d","surface-container-lowest":"#ffffff","secondary":"#565f6d","primary":"#4241bc","on-primary":"#ffffff","surface-dim":"#d5d9ea","surface":"#faf9ff","on-primary-fixed-variant":"#3533b0","tertiary-container":"#a35700","surface-tint":"#4e4ec9","secondary-container":"#dae3f4","tertiary":"#804300","surface-container-low":"#f1f3ff","inverse-primary":"#c1c1ff","on-error-container":"#93000a","surface-container-high":"#e4e8f8","primary-fixed":"#e2dfff","on-error":"#ffffff","on-primary-container":"#edeaff","surface-container-highest":"#dee2f3","on-surface":"#161b27","surface-bright":"#faf9ff","background":"#faf9ff","on-tertiary":"#ffffff","on-secondary":"#ffffff","on-tertiary-fixed":"#2f1500","on-surface-variant":"#464553","on-tertiary-container":"#ffe8d9","primary-container":"#5b5bd6","outline-variant":"#c7c4d6","outline":"#777585","secondary-fixed":"#dae3f4","inverse-on-surface":"#edf0ff","error-container":"#ffdad6","tertiary-fixed":"#ffdcc3","on-primary-fixed":"#0a006b","on-secondary-fixed":"#131c28","on-secondary-container":"#5c6573","surface-variant":"#dee2f3","on-background":"#161b27","surface-container":"#e9edfe","tertiary-fixed-dim":"#ffb77e","primary-fixed-dim":"#c1c1ff"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-sm":"0.5rem","gutter-lg":"1.5rem","space-xs":"0.25rem","space-lg":"1rem","margin-lg":"2rem","margin-md":"1.5rem","space-xxs":"0.125rem",gutter:"1rem","space-md":"0.75rem",margin:"1rem","space-2xl":"2rem","space-xl":"1.5rem"},fontFamily:{"display-lg":["Inter"],"body-md":["Inter"],"label-sm":["Inter"],"body-sm":["Inter"],"headline-md":["Inter"],"headline-sm":["Inter"],"headline-lg":["Inter"],"label-md":["Inter"],"code-sm":["Inter"],"body-lg":["Inter"]},fontSize:{"display-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"label-sm":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"500"}],"body-sm":["13px",{lineHeight:"18px",letterSpacing:"0em",fontWeight:"400"}],"headline-md":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-sm":["16px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"600"}],"headline-lg":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"label-md":["13px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"500"}],"code-sm":["12px",{lineHeight:"16px",letterSpacing:"0em",fontWeight:"400"}],"body-lg":["15px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"400"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-60 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-space-lg"><div class="flex flex-col"><div class="px-space-lg pb-space-lg flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">grid_view</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">CampusSync</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none mt-space-xxs">Student Workspace</span></div></div><div class="px-space-md py-space-xs"><div class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Navigation</div><nav class="flex flex-col gap-space-xxs mt-space-xs" data-active-classes="bg-primary-container text-on-primary font-label-md rounded-lg shadow-sm"><a class="flex items-center gap-space-md px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[20px]">home</span><span class="font-label-md text-label-md">Home</span></a><a class="flex items-center gap-space-md px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="discover" href="#"><span class="material-symbols-outlined text-[20px]">explore</span><span class="font-label-md text-label-md">Discover</span></a><a class="flex items-center gap-space-md px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="my-events" href="#"><span class="material-symbols-outlined text-[20px]">event_available</span><span class="font-label-md text-label-md">My Events</span></a><a aria-current="page" class="flex items-center gap-space-md px-space-sm py-space-sm transition-colors bg-primary-container text-on-primary font-label-md rounded-lg shadow-sm" data-path="timetable" href="#"><span class="material-symbols-outlined text-[20px]">calendar_today</span><span class="font-label-md text-label-md">Timetable</span></a><a class="flex items-center gap-space-md px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined text-[20px]">account_circle</span><span class="font-label-md text-label-md">Profile</span></a></nav></div></div><div class="px-space-md"><div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">Academic Term</span><span class="inline-flex items-center px-space-xs py-space-xxs rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container">Fall 2024</span></div><div class="flex items-center justify-between mt-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant">Status</span><div class="flex items-center gap-space-xxs"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span><span class="font-label-sm text-label-sm text-on-surface">Enrolled</span></div></div></div></div></aside><div class="pl-60 min-h-screen flex flex-col"><header class="fixed top-0 left-60 right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-lg"><div class="flex-1 max-w-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-md text-outline text-[18px] pointer-events-none">search</span><input class="w-full h-9 pl-10 pr-space-md bg-surface-container-lowest text-on-surface placeholder:text-outline text-body-sm font-body-sm rounded-lg border-none shadow-[0_1px_4px_rgba(0,0,0,0.04)] focus:outline-none focus:ring-2 focus:ring-primary-container" placeholder="Search courses, rooms, faculty, or exam dates..." type="text"></div></div><div class="flex items-center gap-gutter"><button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-md pl-space-sm"><div class="flex flex-col text-right hidden sm:flex"><span class="font-label-md text-label-md text-on-surface leading-tight">Alex Morgan</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">B.S. Comp Sci</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 px-gutter-lg pb-margin-lg bg-background flex-1"><div class="flex flex-col w-full">
+<!-- Top Context & Header Row -->
+<div class="flex flex-col gap-space-sm mb-space-lg">
+<!-- Breadcrumb & Term Chip -->
+<div class="flex items-center justify-between">
+<nav class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>Student Registry</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-medium">Academic Schedule</span>
+</nav>
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-space-xs px-space-sm py-space-xxs rounded-full font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+          Term 2024-25 • CS-SEC-B
+        </span>
+<span class="inline-flex items-center gap-space-xxs px-space-sm py-space-xxs rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-tertiary">sync</span>
+          7 Weekly Classes • 2 Breaks • All Synced
+        </span>
+</div>
+</div>
+<!-- Title & Action Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pt-space-xs">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">My Timetable</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xxs">
+          Used to evaluate real-time booking and event compatibility—not an official registrar transcript.
+        </p>
+</div>
+<!-- Action Toolbar -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<!-- View Mode Switcher -->
+<div class="inline-flex p-space-xxs bg-surface-container-high rounded-lg shadow-sm" id="viewModeGroup">
+<button class="px-space-md py-space-xs rounded-DEFAULT font-label-sm text-label-sm transition-all bg-surface-container-lowest text-on-surface shadow-sm font-semibold flex items-center gap-space-xs" id="viewGridBtn" onclick="switchView('grid')">
+<span class="material-symbols-outlined text-[16px]">calendar_view_week</span>
+            Weekly Grid
+          </button>
+<button class="px-space-md py-space-xs rounded-DEFAULT font-label-sm text-label-sm transition-all text-on-surface-variant hover:text-on-surface flex items-center gap-space-xs" id="viewListBtn" onclick="switchView('list')">
+<span class="material-symbols-outlined text-[16px]">format_list_bulleted</span>
+            List View
+          </button>
+<button class="px-space-md py-space-xs rounded-DEFAULT font-label-sm text-label-sm transition-all text-on-surface-variant hover:text-on-surface flex items-center gap-space-xs" id="viewEmptyBtn" onclick="switchView('empty')">
+<span class="material-symbols-outlined text-[16px]">hourglass_empty</span>
+            First-Use Preview
+          </button>
+</div>
+<button class="h-9 px-space-md bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded-lg shadow-sm hover:bg-surface-container transition-colors flex items-center gap-space-xs" onclick="toggleCalendarExportModal()">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+          Export to Calendar
+        </button>
+<button class="h-9 px-space-md bg-primary-container text-on-primary font-label-md text-label-md rounded-lg shadow-sm hover:opacity-95 transition-opacity flex items-center gap-space-xs" onclick="openDrawer('new')">
+<span class="material-symbols-outlined text-[18px]">add</span>
+          Add Entry
+        </button>
+</div>
+</div>
+<!-- Live Sync / Notice Banner -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]">format_image_left</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+<span class="font-medium text-on-surface">Automatic Event Conflict Detection Active:</span>
+          CampusSync checks your student club RSVPs, lab workshop invites, and seminar passes against these hours.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Last checked: 4m ago</span>
+</div>
+</div>
+</div>
+<!-- Main Viewport Area (Grid / Empty / List) + Slide-Over Drawer Container -->
+<div class="relative flex items-start gap-space-lg w-full">
+<!-- Primary Schedule Container -->
+<div class="flex-1 w-full min-w-0 transition-all duration-300" id="scheduleMainCanvas">
+<!-- 1. WEEKLY GRID VIEW -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col" id="weeklyGridView">
+<!-- Week Navigator & Header Controls -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<span class="font-headline-sm text-headline-sm text-on-surface">Week 8 • Oct 14 - Oct 18</span>
+<span class="px-space-xs py-space-xxs rounded font-label-sm text-label-sm bg-surface-container-highest text-on-surface-variant">Current Week</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-space-xxs mr-space-md">
+<span class="w-2.5 h-2.5 rounded-sm bg-primary-container"></span>
+              Class / Lecture
+            </span>
+<span class="flex items-center gap-space-xxs mr-space-md">
+<span class="w-2.5 h-2.5 rounded-sm bg-surface-container-high"></span>
+              Break / Lunch
+            </span>
+<span class="flex items-center gap-space-xxs">
+<span class="w-2.5 h-2.5 rounded-sm bg-error"></span>
+              Registered Event Conflict
+            </span>
+</div>
+</div>
+<!-- Timetable Scroll Wrapper -->
+<div class="overflow-x-auto w-full">
+<div class="min-w-[1020px] select-none">
+<!-- Day Column Headers -->
+<div class="grid grid-cols-[88px_repeat(5,minmax(186px,1fr))] bg-surface-container-low font-label-md text-label-md text-on-surface">
+<div class="py-space-sm px-space-md text-center text-on-surface-variant uppercase tracking-wider text-[11px] font-semibold">Time</div>
+<div class="py-space-sm px-space-md flex flex-col items-center">
+<span class="font-semibold text-on-surface">Monday</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Oct 14</span>
+</div>
+<div class="py-space-sm px-space-md flex flex-col items-center">
+<span class="font-semibold text-on-surface">Tuesday</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Oct 15</span>
+</div>
+<div class="py-space-sm px-space-md flex flex-col items-center">
+<span class="font-semibold text-on-surface">Wednesday</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Oct 16</span>
+</div>
+<div class="py-space-sm px-space-md flex flex-col items-center">
+<span class="font-semibold text-on-surface">Thursday</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Oct 17</span>
+</div>
+<div class="py-space-sm px-space-md flex flex-col items-center">
+<span class="font-semibold text-on-surface">Friday</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Oct 18</span>
+</div>
+</div>
+<!-- Timetable Body: 9 slots (8 AM to 5 PM) = 9 rows x 72px = 648px total height -->
+<div class="relative grid grid-cols-[88px_repeat(5,minmax(186px,1fr))] bg-surface-container-lowest" style="height: 648px;">
+<!-- Time Labels Column (8:00 AM - 5:00 PM) -->
+<div class="relative flex flex-col text-right pr-space-md select-none">
+<!-- 8:00 AM -->
+<div class="absolute top-[0px] right-space-md font-code-sm text-code-sm text-on-surface-variant -translate-y-1/2">08:00 AM</div>
+<!-- 9:00 AM -->
+<div class="absolute top-[72px] right-space-md font-code-sm text-code-sm text-on-surface-variant -translate-y-1/2">09:00 AM</div>
+<!-- 10:00 AM -->
+<div class="absolute top-[144px] right-space-md font-code-sm text-code-sm text-on-surface-variant -translate-y-1/2">10:00 AM</div>
+<!-- 11:00 AM -->
+<div class="absolute top-[216px] right-space-md font-code-sm text-code-sm text-on-surface-variant -translate-y-1/2">11:00 AM</div>
+<!-- 12:00 PM -->
+<div class="absolute top-[288px] right-space-md font-code-sm text-code-sm text-on-surface-variant -translate-y-1/2">12:00 PM</div>
+<!-- 1:00 PM -->
+<div class="absolute top-[360px] right-space-md font-code-sm text-code-sm text-on-surface-variant -translate-y-1/2">01:00 PM</div>
+<!-- 2:00 PM -->
+<div class="absolute top-[432px] right-space-md font-code-sm text-code-sm text-on-surface-variant -translate-y-1/2">02:00 PM</div>
+<!-- 3:00 PM -->
+<div class="absolute top-[504px] right-space-md font-code-sm text-code-sm text-on-surface-variant -translate-y-1/2">03:00 PM</div>
+<!-- 4:00 PM -->
+<div class="absolute top-[576px] right-space-md font-code-sm text-code-sm text-on-surface-variant -translate-y-1/2">04:00 PM</div>
+<!-- 5:00 PM -->
+<div class="absolute top-[648px] right-space-md font-code-sm text-code-sm text-on-surface-variant -translate-y-1/2">05:00 PM</div>
+</div>
+<!-- Background Grid Rulers (Horizontal Guideline Tints) -->
+<div class="absolute inset-0 pointer-events-none grid grid-cols-[88px_repeat(5,minmax(186px,1fr))]">
+<div class="h-full"></div>
+<div class="h-full bg-surface-container-low/20"></div>
+<div class="h-full bg-transparent"></div>
+<div class="h-full bg-surface-container-low/20"></div>
+<div class="h-full bg-transparent"></div>
+<div class="h-full bg-surface-container-low/20"></div>
+</div>
+<!-- Horizontal Grid Lines (72px per hour) -->
+<div class="absolute inset-0 pointer-events-none flex flex-col justify-between">
+<div class="w-full h-px bg-surface-container"></div>
+<div class="w-full h-px bg-surface-container"></div>
+<div class="w-full h-px bg-surface-container"></div>
+<div class="w-full h-px bg-surface-container"></div>
+<div class="w-full h-px bg-surface-container"></div>
+<div class="w-full h-px bg-surface-container"></div>
+<div class="w-full h-px bg-surface-container"></div>
+<div class="w-full h-px bg-surface-container"></div>
+<div class="w-full h-px bg-surface-container"></div>
+<div class="w-full h-px bg-surface-container"></div>
+</div>
+<!-- Day 1: MONDAY Column Content -->
+<div class="relative h-full px-space-xs">
+<!-- 9:00 AM - 10:30 AM (top: 72px, height: 108px) -->
+<div class="absolute left-1 right-1 top-[72px] h-[108px] bg-primary-fixed/80 hover:bg-primary-fixed rounded-lg p-space-sm cursor-pointer shadow-sm hover:shadow-md transition-all flex flex-col justify-between" onclick="openDrawer('edit', 'CS-301 Data Structures &amp; Algorithms', 'Monday', '09:00 AM', '10:30 AM', 'Hall B-102', 'class')">
+<div>
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center px-1.5 py-0.5 rounded font-label-sm text-[10px] bg-primary text-on-primary font-medium tracking-tight">LECTURE</span>
+<span class="font-code-sm text-[11px] text-on-primary-fixed-variant font-medium">9:00 - 10:30</span>
+</div>
+<div class="font-headline-sm text-[13px] leading-snug text-on-surface font-semibold mt-1">CS-301 Data Structures</div>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[13px]">location_on</span>
+<span>Hall B-102</span>
+</div>
+</div>
+<!-- 12:00 PM - 1:00 PM: Lunch (top: 288px, height: 72px) -->
+<div class="absolute left-1 right-1 top-[288px] h-[72px] bg-surface-container-high/60 hover:bg-surface-container-high rounded-lg p-space-sm cursor-pointer shadow-none hover:shadow-sm transition-all flex flex-col justify-between" onclick="openDrawer('edit', 'Lunch Break', 'Monday', '12:00 PM', '01:00 PM', 'Student Mess / Quad', 'lunch')">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded font-label-sm text-[10px] bg-surface-container-highest text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-[12px]">restaurant</span> Lunch Break
+                    </span>
+<span class="font-code-sm text-[10px] text-on-surface-variant">No Conflict</span>
+</div>
+<div class="font-label-sm text-[11px] text-on-surface-variant">Student Mess / Quad</div>
+</div>
+<!-- 2:00 PM - 3:30 PM: CS-302 Web Technology (top: 432px, height: 108px) -->
+<div class="absolute left-1 right-1 top-[432px] h-[108px] bg-primary-fixed/80 hover:bg-primary-fixed rounded-lg p-space-sm cursor-pointer shadow-sm hover:shadow-md transition-all flex flex-col justify-between" onclick="openDrawer('edit', 'CS-302 Web Technology', 'Monday', '02:00 PM', '03:30 PM', 'Lab 4', 'class')">
+<div>
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center px-1.5 py-0.5 rounded font-label-sm text-[10px] bg-primary text-on-primary font-medium tracking-tight">PRACTICAL</span>
+<span class="font-code-sm text-[11px] text-on-primary-fixed-variant font-medium">2:00 - 3:30</span>
+</div>
+<div class="font-headline-sm text-[13px] leading-snug text-on-surface font-semibold mt-1">CS-302 Web Technology</div>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[13px]">location_on</span>
+<span>Lab 4</span>
+</div>
+</div>
+</div>
+<!-- Day 2: TUESDAY Column Content -->
+<div class="relative h-full px-space-xs">
+<!-- 10:00 AM - 11:30 AM: CS-304 Computer Networks (top: 144px, height: 108px) -->
+<div class="absolute left-1 right-1 top-[144px] h-[108px] bg-primary-fixed/80 hover:bg-primary-fixed rounded-lg p-space-sm cursor-pointer shadow-sm hover:shadow-md transition-all flex flex-col justify-between" onclick="openDrawer('edit', 'CS-304 Computer Networks', 'Tuesday', '10:00 AM', '11:30 AM', 'Turing Hall A', 'class')">
+<div>
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center px-1.5 py-0.5 rounded font-label-sm text-[10px] bg-primary text-on-primary font-medium tracking-tight">LECTURE</span>
+<span class="font-code-sm text-[11px] text-on-primary-fixed-variant font-medium">10:00 - 11:30</span>
+</div>
+<div class="font-headline-sm text-[13px] leading-snug text-on-surface font-semibold mt-1">CS-304 Computer Networks</div>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[13px]">location_on</span>
+<span>Turing Hall A</span>
+</div>
+</div>
+<!-- 11:30 AM - 12:00 PM: Coffee Break (top: 252px, height: 36px) -->
+<div class="absolute left-1 right-1 top-[252px] h-[36px] bg-surface-container-high/70 hover:bg-surface-container-high rounded p-1.5 cursor-pointer flex items-center justify-between" onclick="openDrawer('edit', 'Coffee Break', 'Tuesday', '11:30 AM', '12:00 PM', 'Faculty Lawn Cafe', 'break')">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">coffee</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant font-medium">Coffee Break</span>
+</div>
+<span class="font-code-sm text-[10px] text-on-surface-variant">30m</span>
+</div>
+<!-- 1:00 PM - 3:00 PM: CS-308 Systems Programming Lab (top: 360px, height: 144px) -->
+<div class="absolute left-1 right-1 top-[360px] h-[144px] bg-primary-fixed/80 hover:bg-primary-fixed rounded-lg p-space-sm cursor-pointer shadow-sm hover:shadow-md transition-all flex flex-col justify-between" onclick="openDrawer('edit', 'CS-308 Systems Programming Lab', 'Tuesday', '01:00 PM', '03:00 PM', 'Software Lab 2', 'class')">
+<div>
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center px-1.5 py-0.5 rounded font-label-sm text-[10px] bg-primary text-on-primary font-medium tracking-tight">LAB SESSION</span>
+<span class="font-code-sm text-[11px] text-on-primary-fixed-variant font-medium">1:00 - 3:00</span>
+</div>
+<div class="font-headline-sm text-[13px] leading-snug text-on-surface font-semibold mt-1">CS-308 Systems Prog Lab</div>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-1">Kernel modules &amp; multi-threading</p>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[13px]">location_on</span>
+<span>Software Lab 2</span>
+</div>
+</div>
+</div>
+<!-- Day 3: WEDNESDAY Column Content -->
+<div class="relative h-full px-space-xs">
+<!-- 9:00 AM - 10:30 AM: CS-301 Data Structures (top: 72px, height: 108px) -->
+<div class="absolute left-1 right-1 top-[72px] h-[108px] bg-primary-fixed/80 hover:bg-primary-fixed rounded-lg p-space-sm cursor-pointer shadow-sm hover:shadow-md transition-all flex flex-col justify-between" onclick="openDrawer('edit', 'CS-301 Data Structures &amp; Algorithms', 'Wednesday', '09:00 AM', '10:30 AM', 'Hall B-102', 'class')">
+<div>
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center px-1.5 py-0.5 rounded font-label-sm text-[10px] bg-primary text-on-primary font-medium tracking-tight">LECTURE</span>
+<span class="font-code-sm text-[11px] text-on-primary-fixed-variant font-medium">9:00 - 10:30</span>
+</div>
+<div class="font-headline-sm text-[13px] leading-snug text-on-surface font-semibold mt-1">CS-301 Data Structures</div>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[13px]">location_on</span>
+<span>Hall B-102</span>
+</div>
+</div>
+<!-- 12:00 PM - 1:00 PM: Lunch (top: 288px, height: 72px) -->
+<div class="absolute left-1 right-1 top-[288px] h-[72px] bg-surface-container-high/60 hover:bg-surface-container-high rounded-lg p-space-sm cursor-pointer transition-all flex flex-col justify-between" onclick="openDrawer('edit', 'Lunch Break', 'Wednesday', '12:00 PM', '01:00 PM', 'Campus Commons', 'lunch')">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded font-label-sm text-[10px] bg-surface-container-highest text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-[12px]">restaurant</span> Lunch Break
+                    </span>
+<span class="font-code-sm text-[10px] text-on-surface-variant">No Conflict</span>
+</div>
+<div class="font-label-sm text-[11px] text-on-surface-variant">Campus Commons</div>
+</div>
+<!-- 2:00 PM - 4:00 PM: CS-310 AI & Machine Learning (top: 432px, height: 144px) -->
+<div class="absolute left-1 right-1 top-[432px] h-[144px] bg-primary-fixed/80 hover:bg-primary-fixed rounded-lg p-space-sm cursor-pointer shadow-sm hover:shadow-md transition-all flex flex-col justify-between" onclick="openDrawer('edit', 'CS-310 AI &amp; Machine Learning', 'Wednesday', '02:00 PM', '04:00 PM', 'Seminar Hall B', 'class')">
+<div>
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center px-1.5 py-0.5 rounded font-label-sm text-[10px] bg-primary text-on-primary font-medium tracking-tight">LECTURE</span>
+<span class="font-code-sm text-[11px] text-on-primary-fixed-variant font-medium">2:00 - 4:00</span>
+</div>
+<div class="font-headline-sm text-[13px] leading-snug text-on-surface font-semibold mt-1">CS-310 AI &amp; Machine Learning</div>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-1">Backpropagation &amp; Gradient descent</p>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[13px]">location_on</span>
+<span>Seminar Hall B</span>
+</div>
+</div>
+</div>
+<!-- Day 4: THURSDAY Column Content (Features Overlap Warning Demo) -->
+<div class="relative h-full px-space-xs">
+<!-- 11:00 AM - 12:30 PM: CS-304 Computer Networks (top: 216px, height: 108px) -->
+<div class="absolute left-1 right-1 top-[216px] h-[108px] bg-primary-fixed/80 hover:bg-primary-fixed rounded-lg p-space-sm cursor-pointer shadow-sm hover:shadow-md transition-all flex flex-col justify-between" onclick="openDrawer('edit', 'CS-304 Computer Networks', 'Thursday', '11:00 AM', '12:30 PM', 'Turing Hall A', 'class')">
+<div>
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center px-1.5 py-0.5 rounded font-label-sm text-[10px] bg-primary text-on-primary font-medium tracking-tight">LECTURE</span>
+<span class="font-code-sm text-[11px] text-on-primary-fixed-variant font-medium">11:00 - 12:30</span>
+</div>
+<div class="font-headline-sm text-[13px] leading-snug text-on-surface font-semibold mt-1">CS-304 Computer Networks</div>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[13px]">location_on</span>
+<span>Turing Hall A</span>
+</div>
+</div>
+<!-- 12:30 PM - 1:30 PM: Lunch (top: 324px, height: 72px) -->
+<div class="absolute left-1 right-1 top-[324px] h-[72px] bg-surface-container-high/60 hover:bg-surface-container-high rounded-lg p-space-sm cursor-pointer transition-all flex flex-col justify-between" onclick="openDrawer('edit', 'Lunch Break', 'Thursday', '12:30 PM', '01:30 PM', 'Student Mess', 'lunch')">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded font-label-sm text-[10px] bg-surface-container-highest text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-[12px]">restaurant</span> Lunch Break
+                    </span>
+<span class="font-code-sm text-[10px] text-on-surface-variant">No Conflict</span>
+</div>
+<div class="font-label-sm text-[11px] text-on-surface-variant">Student Mess</div>
+</div>
+<!-- 2:00 PM - 3:00 PM: CS-302 Web Technology [WITH ACTIVE CONFLICT WARNING] (top: 432px, height: 72px) -->
+<div class="absolute left-1 right-1 top-[432px] h-[72px] bg-error-container/80 hover:bg-error-container rounded-lg p-space-sm cursor-pointer shadow-sm hover:shadow-md transition-all flex flex-col justify-between" onclick="openDrawer('edit', 'CS-302 Web Technology', 'Thursday', '02:00 PM', '03:00 PM', 'Seminar Hall B', 'class', true)">
+<div>
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded font-label-sm text-[10px] bg-error text-on-error font-semibold">
+<span class="material-symbols-outlined text-[12px]">warning</span> EVENT CONFLICT
+                      </span>
+<span class="font-code-sm text-[11px] text-on-error-container font-semibold">2:00 - 3:00</span>
+</div>
+<div class="font-headline-sm text-[13px] leading-snug text-on-error-container font-semibold mt-1">CS-302 Web Technology</div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-[11px] text-error font-medium truncate">
+<span>Overlaps: AI Builders Club</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Day 5: FRIDAY Column Content -->
+<div class="relative h-full px-space-xs">
+<!-- 9:30 AM - 11:00 AM: MATH-204 Discrete Math (top: 108px, height: 108px) -->
+<div class="absolute left-1 right-1 top-[108px] h-[108px] bg-primary-fixed/80 hover:bg-primary-fixed rounded-lg p-space-sm cursor-pointer shadow-sm hover:shadow-md transition-all flex flex-col justify-between" onclick="openDrawer('edit', 'MATH-204 Discrete Mathematics', 'Friday', '09:30 AM', '11:00 AM', 'Euler Hall 101', 'class')">
+<div>
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center px-1.5 py-0.5 rounded font-label-sm text-[10px] bg-primary text-on-primary font-medium tracking-tight">LECTURE</span>
+<span class="font-code-sm text-[11px] text-on-primary-fixed-variant font-medium">9:30 - 11:00</span>
+</div>
+<div class="font-headline-sm text-[13px] leading-snug text-on-surface font-semibold mt-1">MATH-204 Discrete Math</div>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[13px]">location_on</span>
+<span>Euler Hall 101</span>
+</div>
+</div>
+<!-- 12:00 PM - 1:00 PM: Lunch (top: 288px, height: 72px) -->
+<div class="absolute left-1 right-1 top-[288px] h-[72px] bg-surface-container-high/60 hover:bg-surface-container-high rounded-lg p-space-sm cursor-pointer transition-all flex flex-col justify-between" onclick="openDrawer('edit', 'Lunch Break', 'Friday', '12:00 PM', '01:00 PM', 'Student Mess', 'lunch')">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded font-label-sm text-[10px] bg-surface-container-highest text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-[12px]">restaurant</span> Lunch Break
+                    </span>
+<span class="font-code-sm text-[10px] text-on-surface-variant">No Conflict</span>
+</div>
+<div class="font-label-sm text-[11px] text-on-surface-variant">Student Mess</div>
+</div>
+<!-- 3:00 PM - 4:30 PM: Project Review (top: 504px, height: 108px) -->
+<div class="absolute left-1 right-1 top-[504px] h-[108px] bg-primary-fixed/80 hover:bg-primary-fixed rounded-lg p-space-sm cursor-pointer shadow-sm hover:shadow-md transition-all flex flex-col justify-between" onclick="openDrawer('edit', 'Project Review &amp; Mentorship', 'Friday', '03:00 PM', '04:30 PM', 'Innovation Hub', 'class')">
+<div>
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center px-1.5 py-0.5 rounded font-label-sm text-[10px] bg-primary text-on-primary font-medium tracking-tight">MENTORSHIP</span>
+<span class="font-code-sm text-[11px] text-on-primary-fixed-variant font-medium">3:00 - 4:30</span>
+</div>
+<div class="font-headline-sm text-[13px] leading-snug text-on-surface font-semibold mt-1">Project Mentorship</div>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[13px]">location_on</span>
+<span>Innovation Hub</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Audit Meta -->
+<div class="px-space-lg py-space-sm bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary">info</span>
+<span>Click any class or quiet block to edit times, room credentials, or inspect active event overlaps.</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span>Weekly Workload: 14.5 Academic Hours</span>
+</div>
+</div>
+</div>
+<!-- 2. FIRST-USE EMPTY STATE VIEW (Hidden initially or toggled via top mode selector) -->
+<div class="hidden bg-surface-container-lowest rounded-xl shadow-sm p-space-2xl flex-col items-center justify-center text-center" id="firstUseEmptyView">
+<!-- SVG Graphic Representation (No Photography) -->
+<div class="w-32 h-32 mb-space-lg flex items-center justify-center rounded-2xl bg-surface-container-low text-primary">
+<svg class="text-primary-container" fill="none" height="68" viewBox="0 0 68 68" width="68" xmlns="http://www.w3.org/2000/svg">
+<rect fill="currentColor" fill-opacity="0.12" height="44" rx="8" width="48" x="10" y="14"></rect>
+<rect fill="currentColor" fill-opacity="0.8" height="12" rx="4" width="48" x="10" y="14"></rect>
+<circle cx="22" cy="10" fill="currentColor" r="3"></circle>
+<circle cx="46" cy="10" fill="currentColor" r="3"></circle>
+<!-- Grid Lines in illustration -->
+<rect fill="currentColor" fill-opacity="0.6" height="8" rx="2" width="10" x="18" y="34"></rect>
+<rect fill="currentColor" fill-opacity="0.3" height="8" rx="2" width="18" x="32" y="34"></rect>
+<rect fill="currentColor" fill-opacity="0.3" height="8" rx="2" width="18" x="18" y="46"></rect>
+<rect fill="currentColor" fill-opacity="0.6" height="8" rx="2" width="10" x="40" y="46"></rect>
+</svg>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">No schedule added yet</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-space-xs">
+          Add your weekly classes and recurring sessions to automatically detect conflicts whenever you RSVP for campus workshops, guest lectures, or student club events.
+        </p>
+<div class="flex items-center gap-space-md mt-space-xl">
+<button class="h-10 px-space-lg bg-primary-container text-on-primary font-label-md text-label-md rounded-lg shadow-sm hover:opacity-95 transition-opacity flex items-center gap-space-xs" onclick="openDrawer('new')">
+<span class="material-symbols-outlined text-[18px]">add</span>
+            Add Your First Class
+          </button>
+<button class="h-10 px-space-lg bg-surface-container-high text-on-surface font-label-md text-label-md rounded-lg hover:bg-surface-container-highest transition-colors" onclick="switchView('grid')">
+            Return to Sample Schedule
+          </button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md w-full max-w-2xl mt-space-2xl pt-space-lg">
+<div class="bg-surface-container-low p-space-md rounded-lg text-left">
+<span class="material-symbols-outlined text-primary text-[20px] mb-1">bolt</span>
+<div class="font-headline-sm text-[14px] text-on-surface font-semibold">Automatic Conflict Flags</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-1">Prevents accidental registration when you have mandatory laboratory courses.</p>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg text-left">
+<span class="material-symbols-outlined text-primary text-[20px] mb-1">shield</span>
+<div class="font-headline-sm text-[14px] text-on-surface font-semibold">Quiet Hours Protection</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-1">Mark lunch and study breaks so team invites don't overrun personal time.</p>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg text-left">
+<span class="material-symbols-outlined text-primary text-[20px] mb-1">sync_saved_locally</span>
+<div class="font-headline-sm text-[14px] text-on-surface font-semibold">Calendar Sync</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-1">Easily push your combined timetable to Google Calendar or Apple iCal.</p>
+</div>
+</div>
+</div>
+<!-- 3. LIST VIEW (Alternative Structured Table Representation) -->
+<div class="hidden bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col" id="listView">
+<div class="p-space-lg bg-surface-container-low flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Tabular Agenda by Weekday</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sorted chronologically across all enrolled modules</p>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Showing 9 blocks</span>
+</div>
+<div class="divide-y divide-surface-container">
+<!-- Row 1 -->
+<div class="p-space-md flex items-center justify-between hover:bg-surface-container-low/50 transition-colors">
+<div class="flex items-center gap-space-lg">
+<span class="w-24 font-label-md text-label-md font-semibold text-primary">Monday</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[14px] text-on-surface font-semibold">CS-301 Data Structures &amp; Algorithms</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Hall B-102 • 09:00 AM - 10:30 AM</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="inline-flex items-center px-space-xs py-space-xxs rounded-full font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed">Lecture</span>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant" onclick="openDrawer('edit', 'CS-301 Data Structures &amp; Algorithms', 'Monday', '09:00 AM', '10:30 AM', 'Hall B-102', 'class')">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="p-space-md flex items-center justify-between hover:bg-surface-container-low/50 transition-colors">
+<div class="flex items-center gap-space-lg">
+<span class="w-24 font-label-md text-label-md font-semibold text-primary">Monday</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[14px] text-on-surface font-semibold">CS-302 Web Technology</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Lab 4 • 02:00 PM - 03:30 PM</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="inline-flex items-center px-space-xs py-space-xxs rounded-full font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed">Practical</span>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant" onclick="openDrawer('edit', 'CS-302 Web Technology', 'Monday', '02:00 PM', '03:30 PM', 'Lab 4', 'class')">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="p-space-md flex items-center justify-between hover:bg-surface-container-low/50 transition-colors">
+<div class="flex items-center gap-space-lg">
+<span class="w-24 font-label-md text-label-md font-semibold text-primary">Tuesday</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[14px] text-on-surface font-semibold">CS-304 Computer Networks</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Turing Hall A • 10:00 AM - 11:30 AM</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="inline-flex items-center px-space-xs py-space-xxs rounded-full font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed">Lecture</span>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant" onclick="openDrawer('edit', 'CS-304 Computer Networks', 'Tuesday', '10:00 AM', '11:30 AM', 'Turing Hall A', 'class')">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</div>
+<!-- Row 4 -->
+<div class="p-space-md flex items-center justify-between hover:bg-surface-container-low/50 transition-colors">
+<div class="flex items-center gap-space-lg">
+<span class="w-24 font-label-md text-label-md font-semibold text-primary">Tuesday</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[14px] text-on-surface font-semibold">CS-308 Systems Programming Lab</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Software Lab 2 • 01:00 PM - 03:00 PM</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="inline-flex items-center px-space-xs py-space-xxs rounded-full font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed">Lab</span>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant" onclick="openDrawer('edit', 'CS-308 Systems Programming Lab', 'Tuesday', '01:00 PM', '03:00 PM', 'Software Lab 2', 'class')">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</div>
+<!-- Row 5 (With conflict marker) -->
+<div class="p-space-md flex items-center justify-between bg-error-container/20 hover:bg-error-container/30 transition-colors">
+<div class="flex items-center gap-space-lg">
+<span class="w-24 font-label-md text-label-md font-semibold text-error">Thursday</span>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-[14px] text-on-surface font-semibold">CS-302 Web Technology</span>
+<span class="px-1.5 py-0.5 rounded font-label-sm text-[10px] bg-error text-on-error font-medium">CONFLICT</span>
+</div>
+<span class="font-body-sm text-body-sm text-error font-medium">Seminar Hall B • 02:00 PM - 03:00 PM (Overlaps: AI Builders Workshop)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<button class="h-8 px-space-md bg-error text-on-error rounded font-label-sm text-label-sm shadow-sm hover:opacity-95" onclick="openDrawer('edit', 'CS-302 Web Technology', 'Thursday', '02:00 PM', '03:00 PM', 'Seminar Hall B', 'class', true)">
+                Resolve
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 4. RIGHT SLIDE-OVER INSPECTOR / ADD & EDIT DRAWER (Fixed width ~360px) -->
+<div class="w-[360px] shrink-0 bg-surface-container-lowest rounded-xl shadow-lg flex flex-col transition-all duration-300" id="sideDrawer">
+<!-- Drawer Header -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold" id="drawerTitle">Edit Entry</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="drawerSubTitle">Update schedule &amp; conflict parameters</span>
+</div>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" onclick="closeDrawer()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Drawer Form Body -->
+<div class="p-space-lg flex flex-col gap-space-md max-h-[calc(100vh-220px)] overflow-y-auto">
+<!-- Validation Banner Status 1: Successful Sequence Verification -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-xs" id="validationSuccessBanner">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Validation Passed</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">End time (03:00 PM) correctly follows start time (02:00 PM).</span>
+</div>
+</div>
+<!-- Validation Banner Status 2: Active Overlap Warning with Campus Event -->
+<div class="p-space-sm bg-error-container text-on-error-container rounded-lg flex items-start gap-space-xs" id="validationConflictBanner">
+<span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">warning</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-error font-semibold">Overlap Warning Flagged</span>
+<span class="font-body-sm text-[12px] text-on-error-container leading-tight mt-0.5">
+              Overlaps with <strong>AI Builders Workshop</strong> (2:00 PM - 4:00 PM) registered in My Events. CampusSync will mark this conflicting block.
+            </span>
+</div>
+</div>
+<!-- Subject / Entry Title -->
+<div class="flex flex-col gap-space-xxs">
+<label class="font-label-sm text-label-sm text-on-surface font-medium" for="formTitle">Subject / Activity Title</label>
+<div class="relative">
+<input class="w-full h-9 px-space-sm bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-primary-container" id="formTitle" placeholder="e.g. CS-301 Data Structures" type="text" value="CS-302 Web Technology">
+</div>
+</div>
+<!-- Day Selector (Chips) -->
+<div class="flex flex-col gap-space-xxs">
+<label class="font-label-sm text-label-sm text-on-surface font-medium">Day of Week</label>
+<div class="grid grid-cols-5 gap-space-xs">
+<button class="day-chip py-1 rounded text-center font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:bg-surface-container-high" onclick="selectDay(this)" type="button">Mon</button>
+<button class="day-chip py-1 rounded text-center font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:bg-surface-container-high" onclick="selectDay(this)" type="button">Tue</button>
+<button class="day-chip py-1 rounded text-center font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:bg-surface-container-high" onclick="selectDay(this)" type="button">Wed</button>
+<button class="day-chip py-1 rounded text-center font-label-sm text-label-sm bg-primary-container text-on-primary font-semibold" onclick="selectDay(this)" type="button">Thu</button>
+<button class="day-chip py-1 rounded text-center font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:bg-surface-container-high" onclick="selectDay(this)" type="button">Fri</button>
+</div>
+</div>
+<!-- Time Range Selection -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="flex flex-col gap-space-xxs">
+<label class="font-label-sm text-label-sm text-on-surface font-medium" for="formStart">Start Time</label>
+<select class="h-9 px-space-xs bg-surface-container-low text-on-surface font-code-sm text-code-sm rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-primary-container" id="formStart" onchange="runValidation()">
+<option value="08:00 AM">08:00 AM</option>
+<option value="09:00 AM">09:00 AM</option>
+<option value="10:00 AM">10:00 AM</option>
+<option value="11:00 AM">11:00 AM</option>
+<option value="12:00 PM">12:00 PM</option>
+<option value="01:00 PM">01:00 PM</option>
+<option selected="" value="02:00 PM">02:00 PM</option>
+<option value="03:00 PM">03:00 PM</option>
+<option value="04:00 PM">04:00 PM</option>
+</select>
+</div>
+<div class="flex flex-col gap-space-xxs">
+<label class="font-label-sm text-label-sm text-on-surface font-medium" for="formEnd">End Time</label>
+<select class="h-9 px-space-xs bg-surface-container-low text-on-surface font-code-sm text-code-sm rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-primary-container" id="formEnd" onchange="runValidation()">
+<option value="09:00 AM">09:00 AM</option>
+<option value="10:00 AM">10:00 AM</option>
+<option value="11:00 AM">11:00 AM</option>
+<option value="12:00 PM">12:00 PM</option>
+<option value="01:00 PM">01:00 PM</option>
+<option value="02:00 PM">02:00 PM</option>
+<option selected="" value="03:00 PM">03:00 PM</option>
+<option value="04:00 PM">04:00 PM</option>
+<option value="05:00 PM">05:00 PM</option>
+</select>
+</div>
+</div>
+<!-- Optional Room / Location -->
+<div class="flex flex-col gap-space-xxs">
+<label class="font-label-sm text-label-sm text-on-surface font-medium" for="formRoom">Room / Venue (Optional)</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-2 text-outline text-[16px] pointer-events-none">room</span>
+<input class="w-full h-9 pl-7 pr-space-sm bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-primary-container" id="formRoom" placeholder="e.g. Hall B-102" type="text" value="Seminar Hall B">
+</div>
+</div>
+<!-- Block Classification / Type Selector -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface font-medium">Activity Classification</label>
+<div class="flex flex-col gap-space-xs">
+<!-- Option 1: Academic Class -->
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg bg-primary-fixed/50 hover:bg-primary-fixed cursor-pointer transition-colors">
+<input checked="" class="mt-0.5 accent-primary-container" name="entryType" type="radio" value="class">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1">
+                  Class / Mandatory Course
+                </span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Actively evaluated during campus club RSVPs and room bookings.</span>
+</div>
+</label>
+<!-- Option 2: Break -->
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<input class="mt-0.5 accent-primary-container" name="entryType" type="radio" value="break">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">Quiet Break</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Quiet block • Does not trigger academic conflict penalties.</span>
+</div>
+</label>
+<!-- Option 3: Lunch -->
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<input class="mt-0.5 accent-primary-container" name="entryType" type="radio" value="lunch">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">Lunch Block</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Reserved meal interval • Informational display only.</span>
+</div>
+</label>
+</div>
+</div>
+</div>
+<!-- Drawer Actions Footer -->
+<div class="p-space-lg bg-surface-container-low flex flex-col gap-space-xs mt-auto">
+<button class="w-full h-10 bg-primary-container text-on-primary font-label-md text-label-md rounded-lg shadow-sm hover:opacity-95 transition-opacity flex items-center justify-center gap-space-xs font-semibold" onclick="saveEntryMock()">
+<span class="material-symbols-outlined text-[18px]">check</span>
+          Save Changes
+        </button>
+<div class="flex items-center justify-between pt-space-xs">
+<button class="font-label-sm text-label-sm text-error hover:underline flex items-center gap-1" onclick="deleteEntryMock()">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+            Delete Entry
+          </button>
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface" onclick="closeDrawer()">
+            Cancel
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal: Calendar Export Dialog (Muted overlay micro-interaction) -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center bg-inverse-surface/40 backdrop-blur-sm" id="exportModal">
+<div class="w-full max-w-md bg-surface-container-lowest rounded-xl shadow-xl p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">calendar_today</span>
+</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Export Timetable</span>
+</div>
+<button class="w-7 h-7 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container" onclick="toggleCalendarExportModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Export your synced schedule including lectures and quiet times into standard .ics format for external calendar apps.
+      </p>
+<div class="flex flex-col gap-space-xs">
+<label class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">event_repeat</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">iCalendar (.ics feed)</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Compatible with Google, Apple, and Outlook Calendar</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[18px]">download</span>
+</label>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="h-9 px-space-md rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container transition-colors" onclick="toggleCalendarExportModal()">
+          Dismiss
+        </button>
+<button class="h-9 px-space-md bg-primary-container text-on-primary rounded-lg font-label-md text-label-md shadow-sm hover:opacity-95 transition-opacity" onclick="triggerDownloadMock()">
+          Download .ICS File
+        </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Inline Interactive Micro-Interactions Script -->
+<script>
+  function switchView(mode) {
+    const gridView = document.getElementById('weeklyGridView');
+    const emptyView = document.getElementById('firstUseEmptyView');
+    const listView = document.getElementById('listView');
+
+    const btnGrid = document.getElementById('viewGridBtn');
+    const btnList = document.getElementById('viewListBtn');
+    const btnEmpty = document.getElementById('viewEmptyBtn');
+
+    // Reset button states
+    [btnGrid, btnList, btnEmpty].forEach(btn => {
+      btn.className = "px-space-md py-space-xs rounded-DEFAULT font-label-sm text-label-sm transition-all text-on-surface-variant hover:text-on-surface flex items-center gap-space-xs";
+    });
+
+    const activeClasses = "px-space-md py-space-xs rounded-DEFAULT font-label-sm text-label-sm transition-all bg-surface-container-lowest text-on-surface shadow-sm font-semibold flex items-center gap-space-xs";
+
+    if (mode === 'grid') {
+      gridView.classList.remove('hidden');
+      emptyView.classList.add('hidden');
+      listView.classList.add('hidden');
+      btnGrid.className = activeClasses;
+    } else if (mode === 'empty') {
+      gridView.classList.add('hidden');
+      emptyView.classList.remove('hidden');
+      listView.classList.add('hidden');
+      btnEmpty.className = activeClasses;
+    } else if (mode === 'list') {
+      gridView.classList.add('hidden');
+      emptyView.classList.add('hidden');
+      listView.classList.remove('hidden');
+      btnList.className = activeClasses;
+    }
+  }
+
+  function openDrawer(mode, title, day, start, end, room, type, hasConflict) {
+    const drawer = document.getElementById('sideDrawer');
+    const drawerTitle = document.getElementById('drawerTitle');
+    const drawerSubTitle = document.getElementById('drawerSubTitle');
+    const titleInput = document.getElementById('formTitle');
+    const roomInput = document.getElementById('formRoom');
+    const conflictBanner = document.getElementById('validationConflictBanner');
+    const successBanner = document.getElementById('validationSuccessBanner');
+
+    drawer.classList.remove('hidden');
+
+    if (mode === 'new') {
+      drawerTitle.textContent = "Add Class Entry";
+      drawerSubTitle.textContent = "Insert a new academic or quiet interval";
+      titleInput.value = "";
+      roomInput.value = "";
+      conflictBanner.classList.add('hidden');
+      successBanner.classList.remove('hidden');
+    } else {
+      drawerTitle.textContent = "Edit Entry";
+      drawerSubTitle.textContent = "Update schedule & conflict parameters";
+      if (title) titleInput.value = title;
+      if (room) roomInput.value = room;
+
+      if (hasConflict) {
+        conflictBanner.classList.remove('hidden');
+        successBanner.classList.add('hidden');
+      } else {
+        conflictBanner.classList.add('hidden');
+        successBanner.classList.remove('hidden');
+      }
+    }
+  }
+
+  function closeDrawer() {
+    document.getElementById('sideDrawer').classList.add('hidden');
+  }
+
+  function selectDay(button) {
+    document.querySelectorAll('.day-chip').forEach(btn => {
+      btn.className = "day-chip py-1 rounded text-center font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:bg-surface-container-high";
+    });
+    button.className = "day-chip py-1 rounded text-center font-label-sm text-label-sm bg-primary-container text-on-primary font-semibold";
+  }
+
+  function runValidation() {
+    const start = document.getElementById('formStart').value;
+    const end = document.getElementById('formEnd').value;
+    const successBanner = document.getElementById('validationSuccessBanner');
+    const conflictBanner = document.getElementById('validationConflictBanner');
+
+    if (start === '02:00 PM' && end === '03:00 PM') {
+      conflictBanner.classList.remove('hidden');
+      successBanner.classList.add('hidden');
+    } else {
+      conflictBanner.classList.add('hidden');
+      successBanner.classList.remove('hidden');
+    }
+  }
+
+  function saveEntryMock() {
+    const title = document.getElementById('formTitle').value || "Schedule Item";
+    const notification = document.createElement('div');
+    notification.className = "fixed bottom-6 right-6 z-50 bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-lg shadow-lg font-label-md text-label-md flex items-center gap-space-xs transition-opacity duration-300";
+    notification.innerHTML = '<span class="material-symbols-outlined text-[18px] text-green-400">check_circle</span> Saved "' + title + '" to timetable successfully.';
+    document.body.appendChild(notification);
+    setTimeout(() => {
+      notification.style.opacity = '0';
+      setTimeout(() => notification.remove(), 300);
+    }, 2400);
+    closeDrawer();
+  }
+
+  function deleteEntryMock() {
+    closeDrawer();
+  }
+
+  function toggleCalendarExportModal() {
+    const modal = document.getElementById('exportModal');
+    modal.classList.toggle('hidden');
+  }
+
+  function triggerDownloadMock() {
+    toggleCalendarExportModal();
+    const notification = document.createElement('div');
+    notification.className = "fixed bottom-6 right-6 z-50 bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-lg shadow-lg font-label-md text-label-md flex items-center gap-space-xs transition-opacity duration-300";
+    notification.innerHTML = '<span class="material-symbols-outlined text-[18px] text-primary-fixed">download_done</span> Exported "CampusSync_Schedule_2024.ics"';
+    document.body.appendChild(notification);
+    setTimeout(() => {
+      notification.style.opacity = '0';
+      setTimeout(() => notification.remove(), 300);
+    }, 2400);
+  }
+</script></main></div></body></html>

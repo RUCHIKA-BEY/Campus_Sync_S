@@ -1,0 +1,488 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary":"#804300","on-secondary-fixed-variant":"#3e4755","surface-bright":"#faf9ff","secondary":"#565f6d","tertiary-fixed-dim":"#ffb77e","on-primary-container":"#edeaff","surface-container-lowest":"#ffffff","primary-container":"#5b5bd6","on-tertiary-fixed":"#2f1500","background":"#faf9ff","tertiary-container":"#a35700","surface-tint":"#4e4ec9","secondary-fixed-dim":"#bec7d7","inverse-surface":"#2b303d","surface-dim":"#d5d9ea","surface-container-low":"#f1f3ff","on-secondary-container":"#5c6573","inverse-on-surface":"#edf0ff","on-error":"#ffffff","on-tertiary-fixed-variant":"#6e3900","surface-container":"#e9edfe","surface":"#faf9ff","primary":"#4241bc","surface-container-highest":"#dee2f3","on-secondary-fixed":"#131c28","error":"#ba1a1a","on-surface":"#161b27","outline-variant":"#c7c4d6","secondary-container":"#dae3f4","primary-fixed-dim":"#c1c1ff","on-tertiary-container":"#ffe8d9","on-error-container":"#93000a","outline":"#777585","on-background":"#161b27","surface-container-high":"#e4e8f8","tertiary-fixed":"#ffdcc3","primary-fixed":"#e2dfff","inverse-primary":"#c1c1ff","on-primary-fixed-variant":"#3533b0","on-primary-fixed":"#0a006b","error-container":"#ffdad6","surface-variant":"#dee2f3","on-tertiary":"#ffffff","on-primary":"#ffffff","secondary-fixed":"#dae3f4","on-secondary":"#ffffff","on-surface-variant":"#464553"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"gutter-lg":"1.5rem","space-xxs":"0.125rem","space-md":"0.75rem","space-xs":"0.25rem","space-2xl":"2rem","gutter":"1rem","space-sm":"0.5rem","margin-lg":"2rem","space-xl":"1.5rem","space-lg":"1rem","margin-md":"1.5rem","margin":"1rem"},fontFamily:{"label-md":["Inter"],"body-sm":["Inter"],"display-lg":["Inter"],"code-sm":["Inter"],"label-sm":["Inter"],"body-lg":["Inter"],"headline-lg":["Inter"],"headline-md":["Inter"],"body-md":["Inter"],"headline-sm":["Inter"]},fontSize:{"label-md":["13px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"500"}],"body-sm":["13px",{lineHeight:"18px",letterSpacing:"0em",fontWeight:"400"}],"display-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"600"}],"code-sm":["12px",{lineHeight:"16px",letterSpacing:"0em",fontWeight:"400"}],"label-sm":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"500"}],"body-lg":["15px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"400"}],"headline-lg":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-md":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"headline-sm":["16px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"600"}]}}}};</script></head><body class="bg-surface text-on-surface font-body-md text-body-md"><aside class="fixed left-0 top-0 h-screen w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">verified</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-tight">CampusSync</span><span class="font-code-sm text-code-sm text-secondary tracking-wider uppercase text-[10px]">DSA Operations</span></div></div><div class="px-space-md py-space-xs"><div class="px-space-sm py-space-xs text-[11px] font-label-sm uppercase tracking-wider text-secondary">Portal Workspaces</div></div><nav class="flex flex-col gap-space-xxs px-space-md" data-active-classes="bg-primary-container text-on-primary-container font-label-md"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="event-proposals" href="#"><span class="material-symbols-outlined text-[20px]">event_available</span><span>Event Proposals</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="venue-timetable" href="#"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span>Venue Timetable</span></a><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg transition-colors bg-primary-container text-on-primary-container font-label-md" data-path="on-duty-clearance" href="#"><span class="material-symbols-outlined text-[20px]">assignment_turned_in</span><span>On-Duty Clearance</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="audit-logs" href="#"><span class="material-symbols-outlined text-[20px]">history_edu</span><span>Audit Logs</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span>Settings</span></a></nav></div><div class="p-space-md"><div class="bg-surface-container-low rounded-lg p-space-md flex items-center justify-between"><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface">Session Security</span><span class="font-code-sm text-code-sm text-secondary">2FA Active</span></div><span class="material-symbols-outlined text-primary text-[18px]">shield</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-xl flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs text-secondary font-body-sm text-body-sm"><span class="material-symbols-outlined text-[18px]">home_work</span><span>Dean of Student Affairs</span><span class="text-outline-variant">/</span><span class="text-on-surface font-label-md text-label-md">Review Queue</span></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs"><button aria-label="Search" class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">search</span></button><button aria-label="Notifications" class="w-9 h-9 rounded-lg relative flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span></button></div><div class="h-6 w-px bg-surface-container-highest"></div><div class="flex items-center gap-space-md"><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface leading-tight">Dr. Eleanor Vance</span><span class="font-code-sm text-code-sm text-secondary">DSA Admin</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative w-full pt-16 bg-surface px-space-xl"><div class="flex flex-col w-full">
+<div class="py-space-md mb-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary-container/20 text-primary">
+<span class="material-symbols-outlined text-[15px]">badge</span>
+</span>
+<span class="font-code-sm text-code-sm text-secondary">
+        Reviewer assignment: <strong class="text-on-surface font-label-sm">Office of the Dean of Student Affairs</strong> (configured reviewer for this term’s student society events). Prototype deployment profile active.
+      </span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-code-sm text-code-sm text-secondary tracking-wider uppercase">Ledger Node: SYNC-PROV-04</span>
+</div>
+</div>
+<div class="mb-space-lg rounded-xl bg-surface-container-low p-space-lg shadow-sm">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[22px]">gavel</span>
+</div>
+<div class="flex flex-col gap-space-xxs flex-1">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface">Legal &amp; Attendance Architecture Notice</span>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-highest text-secondary font-code-sm text-code-sm uppercase tracking-wide">Statutory Policy</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-medium">
+          “CampusSync stores this decision internally. It does not update university attendance systems.”
+        </p>
+<p class="font-body-sm text-body-sm text-secondary">
+          OD approval grants institutional permission to participate; it does <span class="font-semibold text-on-surface">NOT</span> automatically mark or guarantee course attendance, nor does it override course professors’ attendance ledgers or ERP records.
+        </p>
+</div>
+<div class="shrink-0 self-center hidden lg:flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">info</span>
+<span class="font-label-sm text-label-sm text-secondary">Reg. Circular §4.12-B</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-12 gap-space-lg items-start pb-space-2xl">
+<div class="col-span-12 xl:col-span-7 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<h1 class="font-headline-md text-headline-md text-on-surface tracking-tight">On-Duty Requests</h1>
+<p class="font-body-sm text-body-sm text-secondary">Review student requests for curricular absence exemption</p>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container p-1 rounded-lg">
+<button class="px-space-md py-1 rounded-md bg-surface-container-lowest shadow-sm text-on-surface font-label-sm text-label-sm flex items-center gap-space-xs">
+<span>Pending</span>
+<span class="px-1.5 py-0.2 bg-primary text-on-primary rounded-full text-[10px] font-bold">14</span>
+</button>
+<button class="px-space-md py-1 rounded-md text-secondary hover:text-on-surface font-label-sm text-label-sm flex items-center gap-space-xs">
+<span>Approved</span>
+<span class="px-1.5 py-0.2 bg-surface-container-highest text-secondary rounded-full text-[10px]">62</span>
+</button>
+<button class="px-space-md py-1 rounded-md text-secondary hover:text-on-surface font-label-sm text-label-sm flex items-center gap-space-xs">
+<span>Rejected</span>
+<span class="px-1.5 py-0.2 bg-surface-container-highest text-secondary rounded-full text-[10px]">8</span>
+</button>
+</div>
+</div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-code-sm text-code-sm text-secondary uppercase tracking-wider mr-space-xs">Filters:</span>
+<button class="px-space-sm py-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm flex items-center gap-1">
+<span>All Departments</span>
+<span class="material-symbols-outlined text-[14px]">check</span>
+</button>
+<button class="px-space-sm py-1 rounded-full bg-surface-container text-secondary hover:text-on-surface font-label-sm text-label-sm">
+            Today's Events (3)
+          </button>
+<button class="px-space-sm py-1 rounded-full bg-surface-container text-secondary hover:text-on-surface font-label-sm text-label-sm">
+            Upcoming (11)
+          </button>
+<button class="px-space-sm py-1 rounded-full bg-surface-container text-secondary hover:text-on-surface font-label-sm text-label-sm">
+            Lab Overlaps Only
+          </button>
+</div>
+<div class="overflow-x-auto -mx-space-lg px-space-lg">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm px-space-md rounded-l-lg">Student</th>
+<th class="py-space-sm px-space-sm">Event</th>
+<th class="py-space-sm px-space-sm">Affected Class Interval</th>
+<th class="py-space-sm px-space-sm">Requested</th>
+<th class="py-space-sm px-space-sm">Status</th>
+<th class="py-space-sm px-space-md rounded-r-lg text-right">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<tr class="bg-primary/5 hover:bg-primary/10 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center shrink-0">
+                      AS
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Aarav Sharma</span>
+<span class="font-code-sm text-code-sm text-secondary truncate">EC2022-118</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="p-1 rounded bg-surface-container text-primary material-symbols-outlined text-[16px]">smart_toy</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium truncate max-w-[120px]">AI Builders Workshop</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface">Thu Nov 14</span>
+<span class="font-code-sm text-code-sm text-secondary">2:00 PM – 4:00 PM (2h)</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<span class="font-code-sm text-code-sm text-secondary">Nov 11, 2024</span>
+</td>
+<td class="py-space-md px-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                    Pending
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm shadow-sm">
+<span>Reviewing</span>
+<span class="material-symbols-outlined text-[14px]">visibility</span>
+</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container text-secondary font-label-md text-label-md flex items-center justify-center shrink-0">
+                      MK
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Maya Kulkarni</span>
+<span class="font-code-sm text-code-sm text-secondary truncate">CS2023-042</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="p-1 rounded bg-surface-container text-secondary material-symbols-outlined text-[16px]">terminal</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate max-w-[120px]">Winter Hackathon</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface">Fri Nov 15</span>
+<span class="font-code-sm text-code-sm text-secondary">10:00 AM – 1:00 PM (3h)</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<span class="font-code-sm text-code-sm text-secondary">Nov 11, 2024</span>
+</td>
+<td class="py-space-md px-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                    Pending
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-space-sm py-1 rounded text-secondary hover:text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-colors">
+                    Review
+                  </button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container text-secondary font-label-md text-label-md flex items-center justify-center shrink-0">
+                      RP
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Rohan Patel</span>
+<span class="font-code-sm text-code-sm text-secondary truncate">ME2021-209</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="p-1 rounded bg-surface-container text-secondary material-symbols-outlined text-[16px]">precision_manufacturing</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate max-w-[120px]">Robotics Expo Regatta</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface">Thu Nov 14</span>
+<span class="font-code-sm text-code-sm text-secondary">03:00 PM – 05:00 PM (2h)</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<span class="font-code-sm text-code-sm text-secondary">Nov 10, 2024</span>
+</td>
+<td class="py-space-md px-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                    Pending
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-space-sm py-1 rounded text-secondary hover:text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-colors">
+                    Review
+                  </button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container text-secondary font-label-md text-label-md flex items-center justify-center shrink-0">
+                      TL
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Tanya Lobo</span>
+<span class="font-code-sm text-code-sm text-secondary truncate">DS2022-094</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="p-1 rounded bg-surface-container text-secondary material-symbols-outlined text-[16px]">database</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate max-w-[120px]">DataSummit Symposium</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface">Wed Nov 13</span>
+<span class="font-code-sm text-code-sm text-secondary">09:00 AM – 11:30 AM (2.5h)</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<span class="font-code-sm text-code-sm text-secondary">Nov 09, 2024</span>
+</td>
+<td class="py-space-md px-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    Approved
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-space-sm py-1 rounded text-secondary hover:text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-colors">
+                    View
+                  </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-secondary font-code-sm text-code-sm">
+<span>Showing 1-4 of 14 queue items</span>
+<div class="flex items-center gap-1">
+<button class="w-7 h-7 rounded bg-surface-container flex items-center justify-center hover:bg-surface-container-high transition-colors" disabled="">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+</button>
+<button class="w-7 h-7 rounded bg-primary text-on-primary flex items-center justify-center font-bold">1</button>
+<button class="w-7 h-7 rounded bg-surface-container flex items-center justify-center hover:bg-surface-container-high transition-colors">2</button>
+<button class="w-7 h-7 rounded bg-surface-container flex items-center justify-center hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface block font-semibold">Active Reviewer Sign-off</span>
+<span class="font-code-sm text-code-sm text-secondary">Logged as Dr. Eleanor Vance (Dean's Delegate)</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded bg-surface-container-low font-code-sm text-code-sm text-secondary">Audit Tier 1</span>
+</div>
+</div>
+<div class="col-span-12 xl:col-span-5 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between border-b border-surface-container pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">assignment_ind</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Inspection Canvas</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed-variant font-code-sm text-code-sm">ID: REQ-2024-8841</span>
+</div>
+<div class="flex flex-col gap-space-sm bg-surface-container-low rounded-lg p-space-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-md text-label-md font-bold">
+                AS
+              </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Aarav Sharma</span>
+<span class="font-body-sm text-body-sm text-secondary">Electronics &amp; Communication • 3rd Year</span>
+<span class="font-code-sm text-code-sm text-secondary">Roll ID: EC2022-118</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-code-sm text-code-sm text-secondary block">Submitted</span>
+<span class="font-code-sm text-code-sm text-on-surface font-medium">Nov 11, 2024 • 10:15 AM</span>
+</div>
+</div>
+<div class="mt-space-xs bg-surface-container-lowest p-space-md rounded-md shadow-sm">
+<span class="font-code-sm text-code-sm text-secondary uppercase tracking-wider block mb-1">Student Justification</span>
+<p class="font-body-sm text-body-sm text-on-surface italic">
+              “Selected as teaching mentor and technical facilitator for AI Builders Workshop hands-on session. Requesting OD leave for CS-302 laboratory session.”
+            </p>
+</div>
+</div>
+<div class="rounded-lg bg-surface-container-low p-space-md flex flex-col gap-space-xs">
+<span class="font-code-sm text-code-sm text-secondary uppercase tracking-wider">Associated Sanctioned Event</span>
+<div class="flex items-start gap-space-md mt-1">
+<div class="w-14 h-14 rounded-lg bg-surface-container-highest overflow-hidden shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="A clean, minimalist architectural flyer thumbnail for an AI academic student conference with indigo geometric wireframes on crisp white backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnKHajDXY-kRV6-Jxye6qT3RPf089mgoeYvoKPi7D0wCkthPIOb0ShZpe2b81_txEwuBu1r7Y-yd7yWM_Ho3mBOM1KFL3FisX3QAMuWEU5iOABUnZqAEFvGRVGWfeYr08SaAe4H7ro3hOUFq-fxAuzXx3bDvToJXX05Z7bXnxYCKvliqVh2R83IAjQpN7Tfh8-0v-9e5qhPQIj5_jM826xr6eHoyfqVwKWC81KJZdd">
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">AI Builders Workshop: Foundational LLM Agent Workflows</span>
+<span class="font-body-sm text-body-sm text-secondary">Host: CodeCamp Society</span>
+<div class="flex items-center gap-space-xs mt-1 text-secondary font-code-sm text-code-sm">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span>
+<span>Thu, Nov 14, 2024</span>
+<span class="text-outline-variant">•</span>
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span>2:00 PM – 4:00 PM</span>
+</div>
+<div class="flex items-center gap-space-xs mt-0.5 text-secondary font-code-sm text-code-sm">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>Seminar Hall B</span>
+<span class="text-outline-variant">•</span>
+<span class="text-primary font-medium">Approved Proposal #DSA-2025-089</span>
+</div>
+</div>
+</div>
+</div>
+<div class="rounded-lg bg-surface-container-low p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">warning</span>
+              Overlapping Curricular Slot
+            </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest font-code-sm text-code-sm text-secondary">1 hr 50 min conflict</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex justify-between items-start">
+<div>
+<span class="font-label-md text-label-md text-on-surface font-bold">CS-302 Web Technology &amp; Distributed Systems</span>
+<span class="font-body-sm text-body-sm text-secondary block">Lab Session • Prof. K. Vance</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-code-sm text-code-sm font-semibold">
+                Lab Conflict
+              </span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs pt-space-xs font-code-sm text-code-sm">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[15px]">timer</span>
+<span>02:00 PM – 03:50 PM</span>
+</div>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[15px]">room</span>
+<span>Lab Room 402</span>
+</div>
+</div>
+</div>
+<div class="p-space-xs rounded bg-surface-container flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[16px] shrink-0 mt-0.5">lock</span>
+<p class="font-code-sm text-code-sm text-secondary">
+<strong class="text-on-surface font-semibold">Protected Timetable View:</strong> Student’s full personal weekly schedule is shielded. Only the verified overlapping curricular slot is presented for evaluation.
+            </p>
+</div>
+</div>
+<div class="rounded-lg bg-surface-container-low p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">how_to_reg</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Event Check-In Status</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+              Gate B Kiosk (01:56 PM, Nov 14)
+            </span>
+</div>
+<p class="font-code-sm text-code-sm text-secondary mt-1">
+            Check-in status verifies physical gate arrival at the event. OD approval status is adjudicated independently and does not automatically dictate course attendance credit.
+          </p>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Adjudication Decision</span>
+<div class="flex gap-space-sm">
+<button class="flex-1 py-space-sm px-space-md rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md hover:bg-primary transition-colors flex items-center justify-center gap-space-xs shadow-sm active:scale-98" id="approveBtn">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Approve OD Exemption</span>
+</button>
+<button class="py-space-sm px-space-md rounded-lg bg-surface-container hover:bg-error-container text-on-surface hover:text-on-error-container font-label-md text-label-md transition-colors flex items-center justify-center gap-space-xs" id="rejectToggleBtn">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+<span>Reject Request</span>
+</button>
+</div>
+<div class="hidden flex-col gap-space-xs p-space-md rounded-lg bg-error-container/20" id="rejectionPanel">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm text-error font-semibold flex items-center gap-1" for="rejectionReason">
+<span class="material-symbols-outlined text-[16px]">report</span>
+                Required Rejection Reason
+              </label>
+<span class="font-code-sm text-code-sm text-secondary">Mandatory Field</span>
+</div>
+<div class="flex flex-wrap gap-1 mb-1">
+<button class="reason-tag px-2 py-0.5 rounded bg-surface-container text-on-surface font-code-sm text-code-sm hover:bg-surface-container-highest" type="button">
+                Attendance Below 75%
+              </button>
+<button class="reason-tag px-2 py-0.5 rounded bg-surface-container text-on-surface font-code-sm text-code-sm hover:bg-surface-container-highest" type="button">
+                Non-Qualifying Category
+              </button>
+<button class="reason-tag px-2 py-0.5 rounded bg-surface-container text-on-surface font-code-sm text-code-sm hover:bg-surface-container-highest" type="button">
+                Conflicting Midterm
+              </button>
+<button class="reason-tag px-2 py-0.5 rounded bg-surface-container text-on-surface font-code-sm text-code-sm hover:bg-surface-container-highest" type="button">
+                Late Submission
+              </button>
+</div>
+<textarea class="w-full p-space-sm rounded-md bg-surface-container-lowest text-on-surface font-body-sm text-body-sm shadow-inner resize-none focus:outline-none focus:ring-2 focus:ring-primary" id="rejectionReason" placeholder="Provide mandatory academic or administrative justification for rejection... required before submitting rejection" rows="3"></textarea>
+<button class="mt-space-xs py-space-xs px-space-md rounded bg-error text-on-error font-label-sm text-label-sm hover:opacity-90 transition-opacity self-end flex items-center gap-1" id="confirmRejectBtn">
+<span>Confirm &amp; Reject Application</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+<div class="hidden p-space-md rounded-lg bg-secondary-container text-on-secondary-fixed flex items-center gap-space-sm" id="approvalSuccess">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold">OD Exemption Granted</span>
+<span class="font-code-sm text-code-sm">Decision written to DSA Internal Record (TX-2901-AC)</span>
+</div>
+</div>
+<p class="font-code-sm text-code-sm text-secondary text-center pt-space-xs">
+            Decisions are logged to the CampusSync audit ledger with reviewer credentials (<strong class="text-on-surface">Dr. Eleanor Vance</strong>).
+          </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initODReviewer() {
+    const rejectToggleBtn = document.getElementById('rejectToggleBtn');
+    const rejectionPanel = document.getElementById('rejectionPanel');
+    const approveBtn = document.getElementById('approveBtn');
+    const approvalSuccess = document.getElementById('approvalSuccess');
+    const rejectionReason = document.getElementById('rejectionReason');
+    const reasonTags = document.querySelectorAll('.reason-tag');
+    const confirmRejectBtn = document.getElementById('confirmRejectBtn');
+
+    if (rejectToggleBtn && rejectionPanel) {
+      rejectToggleBtn.addEventListener('click', () => {
+        rejectionPanel.classList.toggle('hidden');
+        rejectionPanel.classList.toggle('flex');
+        if (approvalSuccess) approvalSuccess.classList.add('hidden');
+      });
+    }
+
+    if (reasonTags && rejectionReason) {
+      reasonTags.forEach(tag => {
+        tag.addEventListener('click', () => {
+          rejectionReason.value = tag.textContent.trim();
+        });
+      });
+    }
+
+    if (approveBtn && approvalSuccess) {
+      approveBtn.addEventListener('click', () => {
+        if (rejectionPanel) rejectionPanel.classList.add('hidden');
+        approvalSuccess.classList.remove('hidden');
+        approveBtn.disabled = true;
+        approveBtn.classList.add('opacity-60');
+      });
+    }
+
+    if (confirmRejectBtn && rejectionReason) {
+      confirmRejectBtn.addEventListener('click', () => {
+        if (!rejectionReason.value.trim()) {
+          rejectionReason.focus();
+          return;
+        }
+        rejectionPanel.innerHTML = '<div class="p-2 text-error font-label-sm text-label-sm flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">block</span>OD Request officially rejected and logged in immutable ledger.</div>';
+      });
+    }
+  })();
+</script></main></div></body></html>

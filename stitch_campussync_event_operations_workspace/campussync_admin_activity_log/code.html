@@ -1,0 +1,550 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface": "#faf9ff", "tertiary-fixed-dim": "#ffb77e", "on-primary-fixed-variant": "#3533b0", "on-primary-fixed": "#0a006b", "on-error-container": "#93000a", "on-secondary-container": "#5c6573", "on-secondary-fixed": "#131c28", "primary-fixed-dim": "#c1c1ff", "background": "#faf9ff", "surface-container-low": "#f1f3ff", "outline-variant": "#c7c4d6", "inverse-surface": "#2b303d", "tertiary-container": "#a35700", "tertiary": "#804300", "on-background": "#161b27", "surface-dim": "#d5d9ea", "inverse-on-surface": "#edf0ff", "outline": "#777585", "on-tertiary-fixed": "#2f1500", "surface-bright": "#faf9ff", "surface-container-high": "#e4e8f8", "secondary-container": "#dae3f4", "error-container": "#ffdad6", "secondary": "#565f6d", "surface-container-highest": "#dee2f3", "inverse-primary": "#c1c1ff", "primary-fixed": "#e2dfff", "tertiary-fixed": "#ffdcc3", "on-tertiary": "#ffffff", "on-primary": "#ffffff", "surface-variant": "dee2f3", "on-surface-variant": "#464553", "surface-container-lowest": "#ffffff", "primary-container": "#5b5bd6", "on-tertiary-container": "#ffe8d9", "secondary-fixed": "#dae3f4", "secondary-fixed-dim": "#bec7d7", "on-surface": "#161b27", "on-primary-container": "#edeaff", "surface-container": "#e9edfe", "on-secondary": "#ffffff", "on-secondary-fixed-variant": "#3e4755", "error": "#ba1a1a", "on-error": "#ffffff", "on-tertiary-fixed-variant": "#6e3900", "surface-tint": "#4e4ec9", "primary": "#4241bc" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-2xl": "2rem", "space-xxs": "0.125rem", "space-xl": "1.5rem", "margin-md": "1.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "margin": "1rem", "space-md": "0.75rem", "gutter": "1rem", "gutter-lg": "1.5rem", "space-lg": "1rem", "margin-lg": "2rem" }, "fontFamily": { "body-sm": ["Inter"], "headline-lg": ["Inter"], "body-md": ["Inter"], "label-md": ["Inter"], "headline-md": ["Inter"], "label-sm": ["Inter"], "body-lg": ["Inter"], "display-lg": ["Inter"], "headline-sm": ["Inter"], "code-sm": ["Inter"] }, "fontSize": { "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "500" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "body-lg": ["15px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "code-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0em", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col justify-between py-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-space-lg"><div class="px-space-lg flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">corporate_fare</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-tight">CampusSync</span><span class="font-code-sm text-code-sm text-on-surface-variant leading-none">Admin Console</span></div></div><div class="px-space-md"><div class="w-full h-px bg-surface-container-highest mb-space-sm"></div><span class="px-space-sm font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-space-xs">Navigation</span><nav class="flex flex-col gap-space-xxs" data-active-classes="bg-surface-container-highest text-on-surface font-semibold"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="overview" href="#"><span class="material-symbols-outlined text-[18px]">dashboard</span><span>Overview</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="users" href="#"><span class="material-symbols-outlined text-[18px]">group</span><span>Users</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="clubs-and-societies" href="#"><span class="material-symbols-outlined text-[18px]">diversity_3</span><span>Clubs &amp; Societies</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="venues-and-facilities" href="#"><span class="material-symbols-outlined text-[18px]">domain</span><span>Venues &amp; Facilities</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="records-and-archives" href="#"><span class="material-symbols-outlined text-[18px]">inventory_2</span><span>Records &amp; Archives</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="system-settings" href="#"><span class="material-symbols-outlined text-[18px]">settings</span><span>System Settings</span></a></nav></div></div><div class="px-space-md"><div class="bg-surface-container rounded-lg p-space-sm flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[16px]">calendar_today</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Academic Year</span><span class="font-body-sm text-body-sm font-semibold text-on-surface leading-tight">2024–2025</span></div></div><span class="inline-flex items-center px-space-xs py-space-xxs rounded bg-secondary-container text-on-secondary-container font-code-sm text-code-sm">Term 2</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-md"><span class="font-headline-sm text-headline-sm text-on-surface font-semibold">CampusSync Admin Console</span><div class="inline-flex items-center gap-space-xs px-space-sm py-space-xxs rounded-full bg-surface-container-highest"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Institutional Instance Active</span></div></div><div class="flex items-center gap-space-md"><div class="relative flex items-center bg-surface-container-low rounded-lg px-space-sm py-space-xs gap-space-xs w-64"><span class="material-symbols-outlined text-on-surface-variant text-[18px]">search</span><input class="bg-transparent border-0 outline-none font-body-sm text-body-sm text-on-surface placeholder:text-outline w-full" placeholder="Search records, users, logs..." type="text"></div><button class="p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-right hidden sm:flex"><span class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight">SysAdmin</span><span class="font-code-sm text-code-sm text-on-surface-variant leading-tight">Root Administrator</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full px-8 pt-16 bg-surface"><div class="flex flex-col w-full">
+<!-- Sub-header / Breadcrumbs & View Meta -->
+<div class="flex flex-col gap-space-sm mb-space-xl">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-code-sm text-code-sm">
+<span class="hover:text-on-surface transition-colors cursor-pointer">System Administration</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-label-sm text-label-sm">Activity Log</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-space-xxs rounded-full bg-surface-container-high">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="font-code-sm text-code-sm text-on-surface font-semibold uppercase tracking-wider">Live Stream Active</span>
+</div>
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded bg-surface-container-lowest text-on-surface shadow-sm hover:bg-surface-container-low transition-colors font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">download</span>
+<span>Export Log (CSV/JSON)</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-space-xxs">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Activity Log</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+        Immutable, append-only chronological history of administrative operations, state transitions, and governance events across CampusSync.
+      </p>
+</div>
+</div>
+<!-- Summary Metric Strip -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md mb-space-xl">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Events Logged Today</span>
+<div class="flex items-baseline gap-space-xs mt-space-xxs">
+<span class="font-headline-md text-headline-md text-on-surface">142 Entries</span>
+<span class="font-code-sm text-code-sm text-primary font-medium">+18 in last hour</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">dynamic_feed</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Active Reviewers &amp; Actors</span>
+<div class="flex items-baseline gap-space-xs mt-space-xxs">
+<span class="font-headline-md text-headline-md text-on-surface">28 Unique Actors</span>
+<span class="font-body-sm text-body-sm text-secondary truncate max-w-[130px]">DSA, SysAdmin, Leads</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Log Integrity</span>
+<div class="flex items-baseline gap-space-xs mt-space-xxs">
+<span class="font-headline-md text-headline-md text-on-surface">Append-Only Sealed</span>
+<span class="font-code-sm text-code-sm text-secondary">SHA-256 Validated</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+</div>
+</div>
+<!-- Filter Controls Strip -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm mb-space-md flex flex-wrap items-center gap-space-sm">
+<div class="flex-1 min-w-[280px] relative flex items-center bg-surface-container-low rounded-lg px-space-sm py-space-xs gap-space-xs">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">search</span>
+<input class="bg-transparent border-0 outline-none font-body-sm text-body-sm text-on-surface placeholder:text-outline w-full" placeholder="Filter by actor, action description, record ID or entity..." type="text">
+</div>
+<div class="flex items-center gap-space-xs">
+<!-- Date Filter -->
+<div class="flex items-center bg-surface-container-low rounded-lg px-space-sm py-space-xs gap-space-xs cursor-pointer hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-secondary text-[16px]">calendar_today</span>
+<span class="font-label-md text-label-md text-on-surface">Today (Nov 14, 2024)</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">arrow_drop_down</span>
+</div>
+<!-- Action Type Filter -->
+<div class="flex items-center bg-surface-container-low rounded-lg px-space-sm py-space-xs gap-space-xs cursor-pointer hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-secondary text-[16px]">filter_list</span>
+<span class="font-label-md text-label-md text-on-surface">All Actions</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">arrow_drop_down</span>
+</div>
+<!-- Actor Role Filter -->
+<div class="flex items-center bg-surface-container-low rounded-lg px-space-sm py-space-xs gap-space-xs cursor-pointer hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-secondary text-[16px]">group</span>
+<span class="font-label-md text-label-md text-on-surface">All Roles</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">arrow_drop_down</span>
+</div>
+<!-- Refresh / Reset -->
+<button class="w-9 h-9 flex items-center justify-center rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Refresh activity feed" type="button">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+</button>
+</div>
+</div>
+<!-- Main Canvas: Dual Pane (Table Workbench + Side Inspector) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-md items-start">
+<!-- Left Column: Data Table Container -->
+<div class="xl:col-span-8 flex flex-col bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-secondary font-label-sm text-label-sm uppercase tracking-wider h-10 select-none">
+<th class="px-space-md font-semibold">Timestamp</th>
+<th class="px-space-md font-semibold">Actor</th>
+<th class="px-space-md font-semibold">Action</th>
+<th class="px-space-md font-semibold">Related Entity</th>
+<th class="px-space-md font-semibold text-right">Integrity</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface font-body-sm text-body-sm">
+<!-- Row 1: Selected / Highlighted -->
+<tr class="bg-surface-container-high/60 hover:bg-surface-container-high transition-colors cursor-pointer" onclick="selectAuditRow(this, 'ACT-2024-9914')">
+<td class="px-space-md py-space-sm whitespace-nowrap">
+<div class="font-code-sm text-code-sm font-semibold text-on-surface">14:02:18</div>
+<div class="text-[11px] text-on-surface-variant leading-none mt-0.5">Today • GMT+5:30</div>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary-container font-label-sm text-[10px] font-bold flex items-center justify-center shrink-0">EV</span>
+<div class="min-w-0">
+<div class="font-label-md text-label-md text-on-surface truncate">Dr. Eleanor Vance</div>
+<div class="text-[11px] text-on-surface-variant truncate">DSA Reviewer</div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-sm whitespace-nowrap">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-800 font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+<span>Event approved</span>
+</div>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="truncate max-w-[200px] text-on-surface font-medium">AI Builders Workshop</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant">#EVT-2024-084</div>
+</td>
+<td class="px-space-md py-space-sm text-right whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-secondary">
+<span class="material-symbols-outlined text-[13px] text-primary">verified</span>
+                  Sealed
+                </span>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer" onclick="selectAuditRow(this, 'ACT-2024-9913')">
+<td class="px-space-md py-space-sm whitespace-nowrap">
+<div class="font-code-sm text-code-sm font-semibold text-on-surface">13:56:14</div>
+<div class="text-[11px] text-on-surface-variant leading-none mt-0.5">Today • GMT+5:30</div>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-[10px] font-bold flex items-center justify-center shrink-0">SA</span>
+<div class="min-w-0">
+<div class="font-label-md text-label-md text-on-surface truncate">Root Administrator</div>
+<div class="text-[11px] text-on-surface-variant truncate">SysAdmin</div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-sm whitespace-nowrap">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-indigo-50 text-indigo-800 font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-indigo-600"></span>
+<span>User role changed</span>
+</div>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="truncate max-w-[200px] text-on-surface font-medium">Marcus Chen</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant">#USR-EC2022-045</div>
+</td>
+<td class="px-space-md py-space-sm text-right whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-secondary">
+<span class="material-symbols-outlined text-[13px] text-primary">verified</span>
+                  Sealed
+                </span>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer" onclick="selectAuditRow(this, 'ACT-2024-9912')">
+<td class="px-space-md py-space-sm whitespace-nowrap">
+<div class="font-code-sm text-code-sm font-semibold text-on-surface">13:48:50</div>
+<div class="text-[11px] text-on-surface-variant leading-none mt-0.5">Today • GMT+5:30</div>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface font-label-sm text-[10px] font-bold flex items-center justify-center shrink-0">MC</span>
+<div class="min-w-0">
+<div class="font-label-md text-label-md text-on-surface truncate">Marcus Chen</div>
+<div class="text-[11px] text-on-surface-variant truncate">Club Organizer</div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-sm whitespace-nowrap">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-amber-50 text-amber-800 font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+<span>Event submitted</span>
+</div>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="truncate max-w-[200px] text-on-surface font-medium">CodeCamp Winter Hackathon</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant">#PRP-2024-079</div>
+</td>
+<td class="px-space-md py-space-sm text-right whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-secondary">
+<span class="material-symbols-outlined text-[13px] text-primary">verified</span>
+                  Sealed
+                </span>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer" onclick="selectAuditRow(this, 'ACT-2024-9911')">
+<td class="px-space-md py-space-sm whitespace-nowrap">
+<div class="font-code-sm text-code-sm font-semibold text-on-surface">13:30:05</div>
+<div class="text-[11px] text-on-surface-variant leading-none mt-0.5">Today • GMT+5:30</div>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface font-label-sm text-[10px] font-bold flex items-center justify-center shrink-0">SD</span>
+<div class="min-w-0">
+<div class="font-label-md text-label-md text-on-surface truncate">System Daemon</div>
+<div class="text-[11px] text-on-surface-variant truncate">Automated Audit</div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-sm whitespace-nowrap">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-blue-50 text-blue-800 font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+<span>OD decided</span>
+</div>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="truncate max-w-[200px] text-on-surface font-medium">Automatic Exemption Sync</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant">#OD-8842</div>
+</td>
+<td class="px-space-md py-space-sm text-right whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-secondary">
+<span class="material-symbols-outlined text-[13px] text-primary">verified</span>
+                  Sealed
+                </span>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer" onclick="selectAuditRow(this, 'ACT-2024-9910')">
+<td class="px-space-md py-space-sm whitespace-nowrap">
+<div class="font-code-sm text-code-sm font-semibold text-on-surface">13:15:22</div>
+<div class="text-[11px] text-on-surface-variant leading-none mt-0.5">Today • GMT+5:30</div>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface font-label-sm text-[10px] font-bold flex items-center justify-center shrink-0">PS</span>
+<div class="min-w-0">
+<div class="font-label-md text-label-md text-on-surface truncate">Priya Sharma</div>
+<div class="text-[11px] text-on-surface-variant truncate">Club Organizer</div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-sm whitespace-nowrap">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-800 font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+<span>Attendance marked</span>
+</div>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="truncate max-w-[200px] text-on-surface font-medium">Session B Gate Scan (Batch 3)</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant">#ATT-2024-512</div>
+</td>
+<td class="px-space-md py-space-sm text-right whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-secondary">
+<span class="material-symbols-outlined text-[13px] text-primary">verified</span>
+                  Sealed
+                </span>
+</td>
+</tr>
+<!-- Row 6 -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer" onclick="selectAuditRow(this, 'ACT-2024-9909')">
+<td class="px-space-md py-space-sm whitespace-nowrap">
+<div class="font-code-sm text-code-sm font-semibold text-on-surface">12:44:11</div>
+<div class="text-[11px] text-on-surface-variant leading-none mt-0.5">Today • GMT+5:30</div>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface font-label-sm text-[10px] font-bold flex items-center justify-center shrink-0">AS</span>
+<div class="min-w-0">
+<div class="font-label-md text-label-md text-on-surface truncate">Aarav Sharma</div>
+<div class="text-[11px] text-on-surface-variant truncate">Student</div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-sm whitespace-nowrap">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-zinc-100 text-zinc-700 font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-zinc-500"></span>
+<span>Registration cancelled</span>
+</div>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="truncate max-w-[200px] text-on-surface font-medium">Robotics Orientation Day</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant">#REG-1184</div>
+</td>
+<td class="px-space-md py-space-sm text-right whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-secondary">
+<span class="material-symbols-outlined text-[13px] text-primary">verified</span>
+                  Sealed
+                </span>
+</td>
+</tr>
+<!-- Row 7 -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer" onclick="selectAuditRow(this, 'ACT-2024-9908')">
+<td class="px-space-md py-space-sm whitespace-nowrap">
+<div class="font-code-sm text-code-sm font-semibold text-on-surface">11:58:02</div>
+<div class="text-[11px] text-on-surface-variant leading-none mt-0.5">Today • GMT+5:30</div>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary-container font-label-sm text-[10px] font-bold flex items-center justify-center shrink-0">EV</span>
+<div class="min-w-0">
+<div class="font-label-md text-label-md text-on-surface truncate">Dr. Eleanor Vance</div>
+<div class="text-[11px] text-on-surface-variant truncate">DSA Reviewer</div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-sm whitespace-nowrap">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-rose-50 text-rose-800 font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-rose-600"></span>
+<span>Event rejected</span>
+</div>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="truncate max-w-[200px] text-on-surface font-medium">Late Night DJ Fest Proposal</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant">#PRP-2024-071</div>
+</td>
+<td class="px-space-md py-space-sm text-right whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-secondary">
+<span class="material-symbols-outlined text-[13px] text-primary">verified</span>
+                  Sealed
+                </span>
+</td>
+</tr>
+<!-- Row 8 -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer" onclick="selectAuditRow(this, 'ACT-2024-9907')">
+<td class="px-space-md py-space-sm whitespace-nowrap">
+<div class="font-code-sm text-code-sm font-semibold text-on-surface">10:12:49</div>
+<div class="text-[11px] text-on-surface-variant leading-none mt-0.5">Today • GMT+5:30</div>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface font-label-sm text-[10px] font-bold flex items-center justify-center shrink-0">MC</span>
+<div class="min-w-0">
+<div class="font-label-md text-label-md text-on-surface truncate">Marcus Chen</div>
+<div class="text-[11px] text-on-surface-variant truncate">Club Organizer</div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-sm whitespace-nowrap">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>Event created</span>
+</div>
+</td>
+<td class="px-space-md py-space-sm">
+<div class="truncate max-w-[200px] text-on-surface font-medium">Intro to Competitive Rust</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant">#EVT-2024-083</div>
+</td>
+<td class="px-space-md py-space-sm text-right whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-secondary">
+<span class="material-symbols-outlined text-[13px] text-primary">verified</span>
+                  Sealed
+                </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination Bar -->
+<div class="flex items-center justify-between px-space-md py-space-sm bg-surface-container-low text-secondary font-label-sm text-label-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-code-sm text-code-sm">
+<span>Showing <strong class="text-on-surface">1–8</strong> of 1,482 entries</span>
+<span class="text-outline-variant">•</span>
+<span>Page 1 of 186</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-space-xxs rounded bg-surface-container-lowest text-on-surface-variant opacity-50 cursor-not-allowed" disabled="" type="button">Previous</button>
+<button class="px-space-sm py-space-xxs rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors shadow-sm" type="button">Next</button>
+</div>
+</div>
+</div>
+<!-- Right Column: Detail Inspection Panel (Sticky / Slide-over style 380px) -->
+<div class="xl:col-span-4 flex flex-col bg-surface-container-lowest rounded-xl shadow-sm p-space-md sticky top-20">
+<!-- Panel Header -->
+<div class="flex items-center justify-between pb-space-sm mb-space-sm bg-surface-container-low/50 -mx-space-md -mt-space-md px-space-md pt-space-md rounded-t-xl">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Activity Inspection</span>
+<span class="inline-flex items-center px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-code-sm text-[10px] font-semibold">Read-Only</span>
+</div>
+<span class="font-code-sm text-code-sm font-semibold text-primary" id="panelRecordId">#ACT-2024-9914</span>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface p-1 rounded hover:bg-surface-container transition-colors" title="Close Panel" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Immutability Notice -->
+<div class="bg-surface-container-low rounded-lg p-space-sm mb-space-md flex gap-space-xs items-start">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">lock</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+<strong class="text-on-surface font-semibold">Audit Record: Read-Only History.</strong> This is an immutable chronological entry. Historical logs cannot be modified, edited, or purged.
+        </p>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Section: Who Acted -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Who Acted</span>
+<div class="bg-surface-container-low/40 rounded-lg p-space-sm flex flex-col gap-space-xxs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Actor Name</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Dr. Eleanor Vance</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Institutional Email</span>
+<span class="font-code-sm text-code-sm text-on-surface">e.vance@campus.edu</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Institutional Role</span>
+<span class="font-label-sm text-label-sm text-on-surface">Dean of Student Affairs / Reviewer</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">IP / Terminal</span>
+<span class="font-code-sm text-code-sm text-on-surface">10.14.82.10 (Secured Subnet)</span>
+</div>
+</div>
+</div>
+<!-- Section: What Changed (Diff Block) -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">State Transition (Diff)</span>
+<div class="bg-surface-container-low rounded-lg p-space-sm font-code-sm text-code-sm flex flex-col gap-space-xs">
+<div class="flex items-start gap-space-xs">
+<span class="px-1 py-0.5 rounded bg-rose-100 text-rose-800 text-[10px] font-bold shrink-0 uppercase">Prior</span>
+<span class="text-on-surface-variant">approval_state: <span class="text-rose-700">"pending_dsa_review"</span></span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="px-1 py-0.5 rounded bg-emerald-100 text-emerald-800 text-[10px] font-bold shrink-0 uppercase">Next</span>
+<span class="text-on-surface-variant">approval_state: <span class="text-emerald-700 font-semibold">"approved_sanctioned"</span></span>
+</div>
+<div class="pt-1 mt-1 border-t border-surface-container-high/60 flex items-start gap-space-xs text-[11px] text-secondary">
+<span class="material-symbols-outlined text-[14px]">comment</span>
+<span>Note: "Safety protocol verified; venue capacity confirmed."</span>
+</div>
+</div>
+</div>
+<!-- Section: When -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Recorded Timestamp</span>
+<div class="bg-surface-container-low/40 rounded-lg p-space-sm flex flex-col gap-space-xxs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Local Time</span>
+<span class="font-code-sm text-code-sm text-on-surface">Nov 14, 2024 • 14:02:18 GMT+5:30</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">UTC Epoch</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">1731573138000</span>
+</div>
+</div>
+</div>
+<!-- Section: Related Entity -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Target Entity</span>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface">AI Builders Workshop</div>
+<div class="font-code-sm text-code-sm text-primary">#EVT-2024-084</div>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary-fixed font-label-sm text-[11px]">Event Record</span>
+</div>
+<div class="flex flex-col gap-0.5 text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center justify-between">
+<span>Organizer Club:</span>
+<span class="text-on-surface font-medium">CodeCamp Society</span>
+</div>
+<div class="flex items-center justify-between">
+<span>Assigned Facility:</span>
+<span class="text-on-surface font-medium">Seminar Hall B (Capacity 120)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Section: Cryptographic Chain Integrity -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Cryptographic Verification</span>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Status</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-emerald-800 font-semibold">
+<span class="material-symbols-outlined text-[14px] text-emerald-600">verified</span>
+                Verified Valid
+              </span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-[11px] text-on-surface-variant">SHA-256 Digest Excerpt:</span>
+<span class="font-code-sm text-[11px] text-secondary break-all bg-surface-container-lowest p-1.5 rounded select-all">
+                e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+              </span>
+</div>
+</div>
+</div>
+<!-- Strict Read-Only Controls -->
+<div class="flex items-center gap-space-xs pt-space-xs">
+<button class="flex-1 inline-flex items-center justify-center gap-space-xs px-space-sm py-space-xs rounded bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors font-label-md text-label-md" onclick="copyHash('e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855')" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">content_copy</span>
+<span>Copy Event Hash</span>
+</button>
+<button class="flex-1 inline-flex items-center justify-center gap-space-xs px-space-sm py-space-xs rounded bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">open_in_new</span>
+<span>View Related Entity</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function selectAuditRow(element, recordId) {
+    // Unhighlight all rows
+    const rows = element.closest('tbody').querySelectorAll('tr');
+    rows.forEach(r => {
+      r.classList.remove('bg-surface-container-high/60');
+      r.classList.remove('bg-surface-container-high');
+    });
+
+    // Highlight clicked row
+    element.classList.add('bg-surface-container-high/60');
+
+    // Update panel record identifier
+    const panelId = document.getElementById('panelRecordId');
+    if (panelId) {
+      panelId.textContent = '#' + recordId;
+    }
+  }
+
+  function copyHash(hashText) {
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(hashText);
+    }
+  }
+</script></main></div></body></html>
